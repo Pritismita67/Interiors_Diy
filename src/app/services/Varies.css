@@ -1,0 +1,454 @@
+/* Varies Component Styles */
+
+.varies-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F5F5F5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.varies-content {
+  max-width: 1400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Image Section */
+.varies-image {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.varies-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text Section */
+.varies-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.varies-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #FBE9E1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.varies-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #2C2C2C;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.varies-subtitle {
+  font-size: 20px;
+  color: #666666;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.varies-description {
+  font-size: 16px;
+  color: #4A4A4A;
+  line-height: 1.6;
+  margin: 8px 0 20px 0;
+  max-width: 600px;
+}
+
+/* Features List */
+.varies-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.varies-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: #2C2C2C;
+  line-height: 1.5;
+}
+
+.checkmark {
+  flex-shrink: 0;
+}
+
+/* Pricing Section */
+.varies-pricing {
+  margin-top: 8px;
+}
+
+.pricing-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #C17A5C;
+  margin: 0 0 6px 0;
+  line-height: 1.3;
+}
+
+.pricing-subtitle {
+  font-size: 15px;
+  color: #666666;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+}
+
+/* Vastu Button */
+.vastu-button {
+  display: inline-block;
+  background-color: #C17A5C;
+  color: #FFFFFF;
+  padding: 11px 28px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.vastu-button:hover {
+  background-color: #A86A4E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(193, 122, 92, 0.3);
+}
+
+.vastu-button:active {
+  transform: translateY(0);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .varies-container {
+    padding: 60px 0;
+  }
+
+  .varies-content {
+    gap: 60px;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .varies-image {
+    min-height: 400px;
+    max-height: 500px;
+  }
+
+  .varies-title {
+    font-size: 44px;
+  }
+
+  .varies-subtitle {
+    font-size: 19px;
+  }
+
+  .varies-text {
+    padding: 0;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .varies-container {
+    padding: 50px 0;
+  }
+
+  .varies-content {
+    gap: 40px;
+    padding: 0 16px;
+  }
+
+  .varies-image {
+    min-height: 300px;
+    max-height: 400px;
+  }
+
+  .varies-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .varies-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .varies-title {
+    font-size: 36px;
+  }
+
+  .varies-subtitle {
+    font-size: 18px;
+  }
+
+  .varies-description {
+    font-size: 15px;
+    margin: 6px 0 18px 0;
+  }
+
+  .varies-features {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .varies-features li {
+    font-size: 14px;
+  }
+
+  .pricing-title {
+    font-size: 26px;
+  }
+
+  .pricing-subtitle {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .vastu-button {
+    width: auto;
+    text-align: center;
+    padding: 11px 28px;
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .varies-container {
+    padding: 40px 0;
+  }
+
+  .varies-content {
+    gap: 32px;
+    padding: 0 12px;
+  }
+
+  .varies-image {
+    min-height: 250px;
+    max-height: 350px;
+    border-radius: 8px;
+  }
+
+  .varies-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .varies-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .varies-title {
+    font-size: 32px;
+  }
+
+  .varies-subtitle {
+    font-size: 17px;
+  }
+
+  .varies-description {
+    font-size: 14px;
+    margin: 4px 0 16px 0;
+  }
+
+  .varies-features {
+    gap: 11px;
+    margin-bottom: 20px;
+  }
+
+  .varies-features li {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .checkmark {
+    width: 18px;
+    height: 18px;
+  }
+
+  .pricing-title {
+    font-size: 24px;
+  }
+
+  .pricing-subtitle {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .vastu-button {
+    padding: 11px 26px;
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .varies-container {
+    padding: 35px 0;
+  }
+
+  .varies-content {
+    gap: 28px;
+    padding: 0 10px;
+  }
+
+  .varies-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .varies-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .varies-title {
+    font-size: 28px;
+  }
+
+  .varies-subtitle {
+    font-size: 16px;
+  }
+
+  .varies-description {
+    font-size: 13px;
+  }
+
+  .varies-features li {
+    font-size: 12px;
+  }
+
+  .pricing-title {
+    font-size: 22px;
+  }
+
+  .pricing-subtitle {
+    font-size: 12px;
+  }
+
+  .vastu-button {
+    padding: 10px 24px;
+    font-size: 13px;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+  .varies-container {
+    padding: 100px 0;
+  }
+
+  .varies-content {
+    gap: 100px;
+    padding: 0 60px;
+  }
+
+  .varies-image {
+    min-height: 550px;
+  }
+
+  .varies-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .varies-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .varies-title {
+    font-size: 52px;
+  }
+
+  .varies-subtitle {
+    font-size: 22px;
+  }
+
+  .varies-description {
+    font-size: 17px;
+    max-width: 650px;
+  }
+
+  .varies-features {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .varies-features li {
+    font-size: 16px;
+  }
+
+  .pricing-title {
+    font-size: 30px;
+  }
+
+  .pricing-subtitle {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+
+  .vastu-button {
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+}
+
+/* Extra Large Displays */
+@media (min-width: 1920px) {
+  .varies-content {
+    max-width: 1600px;
+    gap: 120px;
+  }
+
+  .varies-image {
+    min-height: 600px;
+  }
+
+  .varies-title {
+    font-size: 56px;
+  }
+
+  .varies-subtitle {
+    font-size: 24px;
+  }
+
+  .varies-description {
+    font-size: 18px;
+  }
+}

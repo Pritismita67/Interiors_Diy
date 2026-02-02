@@ -1,0 +1,429 @@
+/* Four Component Styles */
+
+.four-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #E8E2D8;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.four-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Header Section */
+.four-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.four-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4A4A4A;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.5px;
+}
+
+.four-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #2C2C2C;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.5px;
+}
+
+.four-subtitle {
+  font-size: 18px;
+  color: #666666;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Cards Section */
+.four-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.four-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 40px 32px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.four-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Icon */
+.card-icon {
+  width: 56px;
+  height: 56px;
+  background-color: #FBE9E1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 24px 0;
+  line-height: 1.3;
+}
+
+/* Card Features */
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  color: #4A4A4A;
+  line-height: 1.6;
+}
+
+.checkmark {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .four-container {
+    padding: 60px 0;
+  }
+
+  .four-header {
+    margin-bottom: 50px;
+  }
+
+  .four-label {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .four-title {
+    font-size: 44px;
+    margin-bottom: 14px;
+  }
+
+  .four-subtitle {
+    font-size: 17px;
+  }
+
+  .four-cards {
+    gap: 24px;
+  }
+
+  .four-card {
+    padding: 36px 28px;
+  }
+
+  .card-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 20px;
+  }
+
+  .card-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .card-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .card-features {
+    gap: 14px;
+  }
+
+  .card-features li {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .four-container {
+    padding: 50px 0;
+  }
+
+  .four-content {
+    padding: 0 16px;
+  }
+
+  .four-header {
+    margin-bottom: 40px;
+  }
+
+  .four-label {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .four-title {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .four-subtitle {
+    font-size: 16px;
+  }
+
+  .four-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .four-card {
+    padding: 32px 24px;
+  }
+
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+  }
+
+  .card-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .card-features {
+    gap: 12px;
+  }
+
+  .card-features li {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .four-container {
+    padding: 40px 0;
+  }
+
+  .four-content {
+    padding: 0 12px;
+  }
+
+  .four-header {
+    margin-bottom: 32px;
+  }
+
+  .four-label {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .four-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .four-subtitle {
+    font-size: 15px;
+  }
+
+  .four-cards {
+    gap: 16px;
+  }
+
+  .four-card {
+    padding: 28px 20px;
+  }
+
+  .card-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+  }
+
+  .card-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .card-title {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+
+  .card-features {
+    gap: 11px;
+  }
+
+  .card-features li {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .checkmark {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .four-container {
+    padding: 35px 0;
+  }
+
+  .four-content {
+    padding: 0 10px;
+  }
+
+  .four-header {
+    margin-bottom: 28px;
+  }
+
+  .four-label {
+    font-size: 10px;
+  }
+
+  .four-title {
+    font-size: 28px;
+  }
+
+  .four-subtitle {
+    font-size: 14px;
+  }
+
+  .four-card {
+    padding: 24px 16px;
+  }
+
+  .card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-features li {
+    font-size: 12px;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+  .four-container {
+    padding: 100px 0;
+  }
+
+  .four-content {
+    max-width: 1300px;
+    padding: 0 60px;
+  }
+
+  .four-header {
+    margin-bottom: 70px;
+  }
+
+  .four-label {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .four-title {
+    font-size: 52px;
+    margin-bottom: 18px;
+  }
+
+  .four-subtitle {
+    font-size: 19px;
+  }
+
+  .four-cards {
+    gap: 36px;
+  }
+
+  .four-card {
+    padding: 44px 36px;
+  }
+
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 28px;
+  }
+
+  .card-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .card-title {
+    font-size: 26px;
+    margin-bottom: 28px;
+  }
+
+  .card-features {
+    gap: 18px;
+  }
+
+  .card-features li {
+    font-size: 16px;
+  }
+}
+
+/* Extra Large Displays */
+@media (min-width: 1920px) {
+  .four-content {
+    max-width: 1400px;
+  }
+
+  .four-title {
+    font-size: 56px;
+  }
+
+  .four-subtitle {
+    font-size: 20px;
+  }
+
+  .four-cards {
+    gap: 40px;
+  }
+
+  .four-card {
+    padding: 48px 40px;
+  }
+}

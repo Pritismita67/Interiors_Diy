@@ -1,0 +1,321 @@
+/* Vision Component Styles */
+
+.vision-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://foyr.com/learn/wp-content/uploads/2019/01/best-interior-design-tips.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 80px 20px;
+}
+
+/* Dark Overlay */
+.vision-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* Content Section */
+.vision-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+/* Title */
+.vision-title {
+  font-size: 72px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.2;
+  margin: 0 0 28px 0;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Subtitle */
+.vision-subtitle {
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+  line-height: 1.4;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Description */
+.vision-description {
+  font-size: 17px;
+  color: #FFFFFF;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+  font-weight: 400;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
+}
+
+.desktop-break {
+  display: block;
+}
+
+/* CTA Button */
+.vision-cta-button {
+  display: inline-block;
+  background-color: #D97853;
+  color: #FFFFFF;
+  padding: 16px 40px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(217, 120, 83, 0.35);
+}
+
+.vision-cta-button:hover {
+  background-color: #C26744;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(217, 120, 83, 0.45);
+}
+
+.vision-cta-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(217, 120, 83, 0.35);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .vision-container {
+    padding: 70px 20px;
+    min-height: 90vh;
+  }
+
+  .vision-content {
+    padding: 30px 20px;
+  }
+
+  .vision-title {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+
+  .vision-subtitle {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .vision-description {
+    font-size: 16px;
+    margin-bottom: 36px;
+  }
+
+  .vision-cta-button {
+    padding: 15px 36px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .vision-container {
+    padding: 60px 16px;
+    min-height: 85vh;
+  }
+
+  .vision-content {
+    padding: 20px 16px;
+  }
+
+  .vision-title {
+    font-size: 48px;
+    margin-bottom: 22px;
+    letter-spacing: -0.5px;
+  }
+
+  .vision-subtitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .vision-description {
+    font-size: 16px;
+    margin-bottom: 32px;
+    padding: 0 10px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .vision-cta-button {
+    padding: 14px 32px;
+    font-size: 15px;
+    width: auto;
+    max-width: 320px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .vision-container {
+    padding: 50px 12px;
+    min-height: 80vh;
+  }
+
+  .vision-content {
+    padding: 16px 12px;
+  }
+
+  .vision-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .vision-subtitle {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .vision-description {
+    font-size: 15px;
+    margin-bottom: 28px;
+    padding: 0 8px;
+  }
+
+  .vision-cta-button {
+    padding: 13px 28px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .vision-container {
+    padding: 45px 10px;
+  }
+
+  .vision-title {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+
+  .vision-subtitle {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  .vision-description {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .vision-cta-button {
+    padding: 12px 24px;
+    font-size: 13px;
+  }
+}
+
+/* Landscape Mobile */
+@media (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+  .vision-container {
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .vision-content {
+    padding: 20px;
+  }
+
+  .vision-title {
+    font-size: 42px;
+    margin-bottom: 16px;
+  }
+
+  .vision-subtitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .vision-description {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .vision-cta-button {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+/* High Resolution Displays */
+@media (min-width: 1440px) {
+  .vision-container {
+    padding: 90px 20px;
+  }
+
+  .vision-title {
+    font-size: 80px;
+    margin-bottom: 32px;
+  }
+
+  .vision-subtitle {
+    font-size: 26px;
+    margin-bottom: 22px;
+  }
+
+  .vision-description {
+    font-size: 18px;
+    margin-bottom: 44px;
+  }
+
+  .vision-cta-button {
+    padding: 18px 44px;
+    font-size: 18px;
+  }
+}
+
+/* Extra Large Displays */
+@media (min-width: 1920px) {
+  .vision-content {
+    max-width: 1400px;
+  }
+
+  .vision-title {
+    font-size: 88px;
+    margin-bottom: 36px;
+  }
+
+  .vision-subtitle {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .vision-description {
+    font-size: 19px;
+    margin-bottom: 48px;
+  }
+
+  .vision-cta-button {
+    padding: 19px 48px;
+    font-size: 19px;
+  }
+}

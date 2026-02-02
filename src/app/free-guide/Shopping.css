@@ -1,0 +1,252 @@
+/* Shopping Component Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.shopping-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f8f5f2 0%, #ffffff 100%);
+  padding: 60px 20px 80px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.shopping-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Free Download Badge */
+.free-download-badge {
+  background-color: #fce8e6;
+  color: #d9534f;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.free-download-badge:hover {
+  background-color: #fad4d0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(217, 83, 79, 0.2);
+}
+
+.free-download-badge:active {
+  transform: translateY(0);
+}
+
+.download-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Main Heading */
+.shopping-heading {
+  font-size: 56px;
+  font-weight: 700;
+  color: #2d2d2d;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  max-width: 900px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Subtitle */
+.shopping-subtitle {
+  font-size: 18px;
+  color: #6b6b6b;
+  line-height: 1.6;
+  margin-bottom: 80px;
+  max-width: 700px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 32px;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 48px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Benefits Container */
+.benefits-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Benefit Card */
+.benefit-card {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: #d9d9d9;
+}
+
+.benefit-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.benefit-description {
+  font-size: 16px;
+  color: #6b6b6b;
+  line-height: 1.6;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Tablet Responsive (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .shopping-container {
+    padding: 50px 30px 70px;
+  }
+
+  .shopping-heading {
+    font-size: 48px;
+  }
+
+  .shopping-subtitle {
+    font-size: 17px;
+    margin-bottom: 60px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .benefits-container {
+    gap: 20px;
+  }
+
+  .benefit-card {
+    padding: 36px 28px;
+  }
+
+  .benefit-title {
+    font-size: 19px;
+  }
+
+  .benefit-description {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Responsive (below 768px) */
+@media screen and (max-width: 768px) {
+  .shopping-container {
+    padding: 40px 20px 60px;
+  }
+
+  .free-download-badge {
+    font-size: 13px;
+    padding: 9px 20px;
+    margin-bottom: 28px;
+  }
+
+  .shopping-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .shopping-subtitle {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .section-heading {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+
+  .benefits-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .benefit-card {
+    padding: 32px 24px;
+  }
+
+  .benefit-title {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .benefit-description {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile (below 480px) */
+@media screen and (max-width: 480px) {
+  .shopping-container {
+    padding: 32px 16px 50px;
+  }
+
+  .free-download-badge {
+    font-size: 12px;
+    padding: 8px 18px;
+    margin-bottom: 24px;
+  }
+
+  .shopping-heading {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .shopping-subtitle {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .section-heading {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+
+  .benefit-card {
+    padding: 28px 20px;
+  }
+
+  .benefit-title {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  .benefit-description {
+    font-size: 14px;
+  }
+}

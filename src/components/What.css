@@ -1,0 +1,181 @@
+/* What Section Styles */
+.what-section {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 80px 20px;
+}
+
+.what-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.what-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.what-text {
+  flex: 1;
+  max-width: 520px;
+}
+
+.what-chapter {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.what-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+.what-description {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.what-tagline {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #b8634f;
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+.what-image {
+  flex: 1;
+  max-width: 600px;
+}
+
+.what-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Tablet Styles (768px - 1024px) */
+@media (max-width: 1024px) {
+  .what-section {
+    padding: 60px 20px;
+  }
+
+  .what-content {
+    gap: 40px;
+  }
+
+  .what-title {
+    font-size: 42px;
+  }
+
+  .what-description,
+  .what-tagline {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Landscape and Small Tablet (600px - 768px) */
+@media (max-width: 768px) {
+  .what-section {
+    padding: 50px 16px;
+  }
+
+  .what-content {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .what-text {
+    max-width: 100%;
+  }
+
+  .what-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .what-chapter {
+    font-size: 10px;
+    margin-bottom: 16px;
+  }
+
+  .what-description {
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 18px;
+  }
+
+  .what-tagline {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .what-image {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Portrait (max 600px) */
+@media (max-width: 600px) {
+  .what-section {
+    padding: 40px 16px;
+  }
+
+  .what-content {
+    gap: 30px;
+  }
+
+  .what-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .what-chapter {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+  }
+
+  .what-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .what-tagline {
+    font-size: 14px;
+    margin-top: 18px;
+  }
+}
+
+/* Extra Small Mobile (max 400px) */
+@media (max-width: 400px) {
+  .what-section {
+    padding: 35px 12px;
+  }
+
+  .what-title {
+    font-size: 28px;
+  }
+
+  .what-description,
+  .what-tagline {
+    font-size: 13px;
+  }
+}

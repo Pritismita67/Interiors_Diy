@@ -1,0 +1,329 @@
+/* Seven Component Styles */
+
+.seven-section {
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/v5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 100px 20px;
+}
+
+.seven-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.seven-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.seven-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.seven-title {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.seven-subtitle {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+  font-weight: 400;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.seven-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #f5f5f5;
+  margin: 0 0 36px 0;
+  font-weight: 400;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.seven-button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #d85a3a;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 36px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(216, 90, 58, 0.35);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.seven-button:hover {
+  background-color: #c24d2f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(216, 90, 58, 0.45);
+}
+
+.seven-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(216, 90, 58, 0.3);
+}
+
+.seven-button:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1440px) {
+  .seven-section {
+    min-height: 650px;
+    padding: 120px 20px;
+  }
+
+  .seven-container {
+    max-width: 1600px;
+    padding: 0 60px;
+  }
+
+  .seven-content {
+    max-width: 1000px;
+  }
+
+  .seven-title {
+    font-size: 76px;
+    margin: 0 0 28px 0;
+  }
+
+  .seven-subtitle {
+    font-size: 24px;
+    margin: 0 0 18px 0;
+  }
+
+  .seven-description {
+    font-size: 17px;
+    margin: 0 0 40px 0;
+  }
+
+  .seven-button {
+    font-size: 17px;
+    padding: 18px 40px;
+  }
+}
+
+/* Desktop */
+@media screen and (max-width: 1280px) {
+  .seven-section {
+    min-height: 580px;
+  }
+
+  .seven-title {
+    font-size: 64px;
+  }
+
+  .seven-subtitle {
+    font-size: 21px;
+  }
+}
+
+/* Tablet Large */
+@media screen and (max-width: 1024px) {
+  .seven-section {
+    min-height: 550px;
+    padding: 90px 20px;
+  }
+
+  .seven-container {
+    padding: 0 30px;
+  }
+
+  .seven-content {
+    max-width: 750px;
+  }
+
+  .seven-title {
+    font-size: 56px;
+    margin: 0 0 20px 0;
+  }
+
+  .seven-subtitle {
+    font-size: 20px;
+    margin: 0 0 14px 0;
+  }
+
+  .seven-description {
+    font-size: 15px;
+    margin: 0 0 32px 0;
+  }
+
+  .seven-button {
+    font-size: 15px;
+    padding: 15px 34px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .seven-section {
+    min-height: 500px;
+    padding: 80px 16px;
+  }
+
+  .seven-container {
+    padding: 0 20px;
+  }
+
+  .seven-content {
+    max-width: 600px;
+  }
+
+  .seven-title {
+    font-size: 48px;
+    margin: 0 0 18px 0;
+    letter-spacing: -0.5px;
+  }
+
+  .seven-subtitle {
+    font-size: 19px;
+    margin: 0 0 12px 0;
+  }
+
+  .seven-description {
+    font-size: 15px;
+    margin: 0 0 28px 0;
+  }
+
+  .seven-button {
+    font-size: 15px;
+    padding: 14px 32px;
+  }
+}
+
+/* Mobile Large */
+@media screen and (max-width: 640px) {
+  .seven-section {
+    min-height: 480px;
+    padding: 70px 16px;
+  }
+
+  .seven-container {
+    padding: 0 16px;
+  }
+
+  .seven-title {
+    font-size: 42px;
+    margin: 0 0 16px 0;
+  }
+
+  .seven-subtitle {
+    font-size: 18px;
+    margin: 0 0 12px 0;
+  }
+
+  .seven-description {
+    font-size: 14px;
+    margin: 0 0 26px 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .seven-section {
+    min-height: 450px;
+    padding: 60px 16px;
+  }
+
+  .seven-title {
+    font-size: 36px;
+    margin: 0 0 14px 0;
+    letter-spacing: -0.3px;
+  }
+
+  .seven-subtitle {
+    font-size: 17px;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+  }
+
+  .seven-description {
+    font-size: 14px;
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+  }
+
+  .seven-button {
+    font-size: 15px;
+    padding: 14px 30px;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* Mobile Small */
+@media screen and (max-width: 375px) {
+  .seven-section {
+    min-height: 420px;
+    padding: 50px 12px;
+  }
+
+  .seven-container {
+    padding: 0 12px;
+  }
+
+  .seven-title {
+    font-size: 32px;
+    margin: 0 0 12px 0;
+  }
+
+  .seven-subtitle {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+
+  .seven-description {
+    font-size: 13px;
+    margin: 0 0 22px 0;
+  }
+
+  .seven-button {
+    font-size: 14px;
+    padding: 13px 28px;
+  }
+}
+
+/* Background Image Optimization for Mobile */
+@media screen and (max-width: 768px) {
+  .seven-section {
+    background-position: center center;
+  }
+
+  .seven-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

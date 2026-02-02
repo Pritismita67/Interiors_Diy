@@ -1,0 +1,605 @@
+/* Ready Section Styles */
+.ready-section {
+  width: 100%;
+  background-color: #f5f3f0;
+  padding: 100px 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ready-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Image Section */
+.ready-image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.ready-image {
+  width: 800px;
+  height: 700px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+/* Content Section */
+.ready-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ready-icon {
+  width: 56px;
+  height: 56px;
+  background-color: #f0e5dc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.ready-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: #c75a3c;
+}
+
+.ready-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2a2a2a;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.ready-subtitle {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.ready-description {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5a5a5a;
+  margin: 8px 0 16px 0;
+  font-weight: 400;
+}
+
+/* Features List */
+.ready-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ready-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: #2a2a2a;
+  line-height: 1.5;
+}
+
+.feature-check {
+  width: 18px;
+  height: 18px;
+  stroke: #c75a3c;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Pricing Section */
+.ready-pricing {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ready-price {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #c75a3c;
+  margin: 0;
+  line-height: 1;
+}
+
+.ready-price-note {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Browse Button */
+.ready-browse-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c75a3c;
+  color: #ffffff;
+  padding: 16px 36px;
+  border-radius: 6px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  border: none;
+  margin-top: 8px;
+  align-self: flex-start;
+}
+
+.ready-browse-button:hover {
+  background-color: #a84a2f;
+  transform: translateY(-2px);
+}
+
+.ready-browse-button:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Large Desktop (1440px and above) */
+@media screen and (min-width: 1440px) {
+  .ready-container {
+    max-width: 1400px;
+    gap: 100px;
+  }
+
+  .ready-title {
+    font-size: 52px;
+  }
+
+  .ready-subtitle {
+    font-size: 22px;
+  }
+}
+
+/* Medium Desktop (1200px to 1439px) */
+@media screen and (max-width: 1439px) and (min-width: 1200px) {
+  .ready-container {
+    gap: 70px;
+  }
+
+  .ready-title {
+    font-size: 46px;
+  }
+}
+
+/* Small Desktop / Large Tablet (1024px to 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+  .ready-section {
+    padding: 80px 20px;
+  }
+
+  .ready-container {
+    gap: 60px;
+  }
+
+  .ready-title {
+    font-size: 42px;
+  }
+
+  .ready-subtitle {
+    font-size: 19px;
+  }
+
+  .ready-description {
+    font-size: 15px;
+  }
+}
+
+/* Tablet Landscape (768px to 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .ready-section {
+    padding: 70px 20px;
+  }
+
+  .ready-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    max-width: 700px;
+  }
+
+  .ready-image-wrapper {
+    order: 1;
+  }
+
+  .ready-content {
+    order: 2;
+    gap: 20px;
+  }
+
+  .ready-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .ready-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .ready-title {
+    font-size: 40px;
+  }
+
+  .ready-subtitle {
+    font-size: 18px;
+  }
+
+  .ready-description {
+    font-size: 15px;
+  }
+
+  .ready-feature-item {
+    font-size: 14px;
+  }
+
+  .ready-price {
+    font-size: 30px;
+  }
+}
+
+/* Tablet Portrait (600px to 767px) */
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  .ready-section {
+    padding: 60px 16px;
+  }
+
+  .ready-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 600px;
+  }
+
+  .ready-image-wrapper {
+    order: 1;
+  }
+
+  .ready-content {
+    order: 2;
+    gap: 18px;
+  }
+
+  .ready-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .ready-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .ready-title {
+    font-size: 36px;
+  }
+
+  .ready-subtitle {
+    font-size: 17px;
+  }
+
+  .ready-description {
+    font-size: 15px;
+  }
+
+  .ready-features {
+    gap: 14px;
+  }
+
+  .ready-feature-item {
+    font-size: 14px;
+  }
+
+  .ready-price {
+    font-size: 28px;
+  }
+
+  .ready-browse-button {
+    padding: 15px 32px;
+    font-size: 15px;
+  }
+}
+
+/* Mobile Large (481px to 599px) */
+@media screen and (max-width: 599px) and (min-width: 481px) {
+  .ready-section {
+    padding: 50px 16px;
+  }
+
+  .ready-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .ready-image-wrapper {
+    order: 1;
+  }
+
+  .ready-content {
+    order: 2;
+    gap: 16px;
+  }
+
+  .ready-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .ready-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ready-title {
+    font-size: 32px;
+  }
+
+  .ready-subtitle {
+    font-size: 16px;
+  }
+
+  .ready-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .ready-features {
+    gap: 12px;
+  }
+
+  .ready-feature-item {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .feature-check {
+    width: 16px;
+    height: 16px;
+  }
+
+  .ready-pricing {
+    margin-top: 12px;
+  }
+
+  .ready-price {
+    font-size: 26px;
+  }
+
+  .ready-price-note {
+    font-size: 13px;
+  }
+
+  .ready-browse-button {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+}
+
+/* Mobile Medium (376px to 480px) */
+@media screen and (max-width: 480px) and (min-width: 376px) {
+  .ready-section {
+    padding: 45px 16px;
+  }
+
+  .ready-container {
+    gap: 32px;
+  }
+
+  .ready-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .ready-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .ready-title {
+    font-size: 30px;
+  }
+
+  .ready-subtitle {
+    font-size: 15px;
+  }
+
+  .ready-description {
+    font-size: 14px;
+  }
+
+  .ready-features {
+    gap: 12px;
+  }
+
+  .ready-feature-item {
+    font-size: 13px;
+  }
+
+  .ready-price {
+    font-size: 24px;
+  }
+
+  .ready-browse-button {
+    padding: 13px 26px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+/* Mobile Small (320px to 375px) */
+@media screen and (max-width: 375px) {
+  .ready-section {
+    padding: 40px 12px;
+  }
+
+  .ready-container {
+    gap: 28px;
+  }
+
+  .ready-content {
+    gap: 14px;
+  }
+
+  .ready-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ready-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ready-title {
+    font-size: 28px;
+  }
+
+  .ready-subtitle {
+    font-size: 14px;
+  }
+
+  .ready-description {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 6px 0 12px 0;
+  }
+
+  .ready-features {
+    gap: 10px;
+  }
+
+  .ready-feature-item {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .feature-check {
+    width: 15px;
+    height: 15px;
+  }
+
+  .ready-pricing {
+    margin-top: 10px;
+  }
+
+  .ready-price {
+    font-size: 22px;
+  }
+
+  .ready-price-note {
+    font-size: 12px;
+  }
+
+  .ready-browse-button {
+    padding: 12px 24px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media screen and (max-width: 319px) {
+  .ready-section {
+    padding: 35px 10px;
+  }
+
+  .ready-container {
+    gap: 24px;
+  }
+
+  .ready-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .ready-title {
+    font-size: 26px;
+  }
+
+  .ready-subtitle {
+    font-size: 13px;
+  }
+
+  .ready-description {
+    font-size: 12px;
+  }
+
+  .ready-feature-item {
+    font-size: 11px;
+  }
+
+  .ready-price {
+    font-size: 20px;
+  }
+
+  .ready-browse-button {
+    padding: 11px 20px;
+    font-size: 13px;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .ready-section {
+    padding: 40px 20px;
+  }
+
+  .ready-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .ready-image-wrapper {
+    order: 1;
+  }
+
+  .ready-content {
+    order: 2;
+    gap: 12px;
+  }
+
+  .ready-title {
+    font-size: 28px;
+  }
+
+  .ready-features {
+    gap: 8px;
+  }
+
+  .ready-feature-item {
+    font-size: 12px;
+  }
+
+  .ready-pricing {
+    margin-top: 8px;
+  }
+}

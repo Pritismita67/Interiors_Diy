@@ -1,0 +1,300 @@
+/* Guidance Component Styles */
+
+.guidance-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F5F5F5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guidance-content {
+  max-width: 1400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Text Section */
+.guidance-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.guidance-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999999;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin: 0 0 4px 0;
+}
+
+.guidance-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #2C2C2C;
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.guidance-description {
+  font-size: 17px;
+  color: #4A4A4A;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.guidance-tagline {
+  font-size: 17px;
+  color: #C17A5C;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 8px 0 0 0;
+}
+
+/* Image Section */
+.guidance-image {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.guidance-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .guidance-container {
+    padding: 60px 0;
+  }
+
+  .guidance-content {
+    gap: 60px;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .guidance-text {
+    padding: 0;
+    order: 1;
+  }
+
+  .guidance-image {
+    min-height: 400px;
+    max-height: 500px;
+    order: 2;
+  }
+
+  .guidance-label {
+    font-size: 11px;
+    letter-spacing: 2.3px;
+  }
+
+  .guidance-title {
+    font-size: 44px;
+  }
+
+  .guidance-description {
+    font-size: 16px;
+  }
+
+  .guidance-tagline {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .guidance-container {
+    padding: 50px 0;
+  }
+
+  .guidance-content {
+    gap: 40px;
+    padding: 0 16px;
+  }
+
+  .guidance-image {
+    min-height: 300px;
+    max-height: 400px;
+  }
+
+  .guidance-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+  }
+
+  .guidance-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .guidance-description {
+    font-size: 15px;
+  }
+
+  .guidance-tagline {
+    font-size: 15px;
+    margin-top: 6px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .guidance-container {
+    padding: 40px 0;
+  }
+
+  .guidance-content {
+    gap: 32px;
+    padding: 0 12px;
+  }
+
+  .guidance-text {
+    gap: 18px;
+  }
+
+  .guidance-image {
+    min-height: 250px;
+    max-height: 350px;
+    border-radius: 8px;
+  }
+
+  .guidance-label {
+    font-size: 9px;
+    letter-spacing: 1.8px;
+  }
+
+  .guidance-title {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .guidance-description {
+    font-size: 14px;
+  }
+
+  .guidance-tagline {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .guidance-container {
+    padding: 35px 0;
+  }
+
+  .guidance-content {
+    gap: 28px;
+    padding: 0 10px;
+  }
+
+  .guidance-text {
+    gap: 16px;
+  }
+
+  .guidance-label {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .guidance-title {
+    font-size: 28px;
+  }
+
+  .guidance-description {
+    font-size: 13px;
+  }
+
+  .guidance-tagline {
+    font-size: 13px;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+  .guidance-container {
+    padding: 100px 0;
+  }
+
+  .guidance-content {
+    gap: 100px;
+    padding: 0 60px;
+  }
+
+  .guidance-text {
+    gap: 22px;
+  }
+
+  .guidance-image {
+    min-height: 550px;
+  }
+
+  .guidance-label {
+    font-size: 13px;
+    letter-spacing: 2.8px;
+  }
+
+  .guidance-title {
+    font-size: 52px;
+    margin-bottom: 14px;
+  }
+
+  .guidance-description {
+    font-size: 18px;
+  }
+
+  .guidance-tagline {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+/* Extra Large Displays */
+@media (min-width: 1920px) {
+  .guidance-content {
+    max-width: 1600px;
+    gap: 120px;
+  }
+
+  .guidance-image {
+    min-height: 600px;
+  }
+
+  .guidance-label {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .guidance-title {
+    font-size: 56px;
+  }
+
+  .guidance-description {
+    font-size: 19px;
+  }
+
+  .guidance-tagline {
+    font-size: 19px;
+  }
+}
