@@ -8,7 +8,7 @@ const Problem = () => {
         <div className="problem-content">
           <div className="problem-image">
             <img 
-              src="https://odeafloorcoverings.com.au/shared/content/uploads/Blinds-hero.jpg" 
+              src="https://www.bhg.com/thmb/RZyEMDRcdOeIaTxA3HRWM22Rul0=/5118x0/filters:no_upscale():strip_icc()/103318785-f97f64f57d5a4e7db5eec8d649200092.jpg" 
               alt="Modern living space with contemporary design" 
             />
           </div>
@@ -26,7 +26,7 @@ const Problem = () => {
               and confusion.
             </p>
             <p className="problem-solution">
-              We bridge the gap — giving you expert design without the execution 
+              We bridge the gap, giving you expert design without the execution 
               cost.
             </p>
           </div>

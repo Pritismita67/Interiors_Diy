@@ -73,7 +73,7 @@
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
-  background-color: #d85a3a;
+  background-color: #d4695b;
   border: none;
   border-radius: 6px;
   padding: 16px 36px;
@@ -222,6 +222,8 @@
   .seven-button {
     font-size: 15px;
     padding: 14px 32px;
+    width: auto;
+    max-width: 240px;
   }
 }
 
@@ -249,6 +251,11 @@
   .seven-description {
     font-size: 14px;
     margin: 0 0 26px 0;
+  }
+
+  .seven-button {
+    width: auto;
+    max-width: 240px;
   }
 }
 
@@ -280,8 +287,8 @@
   .seven-button {
     font-size: 15px;
     padding: 14px 30px;
-    width: 100%;
-    max-width: 320px;
+    width: auto;
+    max-width: 240px;
   }
 }
 
@@ -314,6 +321,8 @@
   .seven-button {
     font-size: 14px;
     padding: 13px 28px;
+    width: auto;
+    max-width: 220px;
   }
 }
 

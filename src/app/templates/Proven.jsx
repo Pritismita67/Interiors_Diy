@@ -13,7 +13,7 @@ const Proven = () => {
         <div className="proven-features">
           {/* Feature 1 */}
           <div className="proven-feature">
-            <h3 className="feature-title">Starting from ₹1,999</h3>
+            <h3 className="feature-title">Starting from ₹2,499</h3>
             <p className="feature-description">
               A fraction of custom design costs. Professional results without the premium price tag.
             </p>

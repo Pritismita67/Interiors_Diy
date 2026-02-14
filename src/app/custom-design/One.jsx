@@ -7,7 +7,7 @@ const One = () => {
       <div className="one-content">
         <div className="one-image">
           <img 
-            src="https://www.asenseinterior.com/assets/uploads/30b09e16d48d442f16235552d2f0ed21.webp" 
+            src="https://dkorinteriors.com/wp-content/uploads/2021/11/Living-Room-Reveal-Interior-Design-by-DKOR-Interiors-4.jpg" 
             alt="1:1 Designer Collaboration - Modern kitchen design" 
           />
         </div>
@@ -26,7 +26,7 @@ const One = () => {
           </p>
           
           <p className="one-description">
-            Video calls, WhatsApp support, multiple revisions — we're with you throughout the process.
+            Video calls, WhatsApp support, multiple revisions, we're with you throughout the process.
           </p>
           
           <p className="one-tagline">

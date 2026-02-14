@@ -2,23 +2,24 @@
 .problem-section {
   width: 100%;
   background-color: #e8e3dc;
-  padding: 80px 20px;
+  padding: 80px 20px 80px 60px;
 }
 
 .problem-container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .problem-content {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 100px;
 }
 
 .problem-image {
-  flex: 1;
-  max-width: 600px;
+  flex: 0 0 480px;
+  max-width: 500px;
 }
 
 .problem-image img {
@@ -32,7 +33,6 @@
 
 .problem-text {
   flex: 1;
-  max-width: 520px;
 }
 
 .problem-chapter {
@@ -74,11 +74,11 @@
 /* Tablet Styles (768px - 1024px) */
 @media (max-width: 1024px) {
   .problem-section {
-    padding: 60px 20px;
+    padding: 60px 40px;
   }
 
   .problem-content {
-    gap: 40px;
+    gap: 50px;
   }
 
   .problem-title {
@@ -89,20 +89,26 @@
   .problem-solution {
     font-size: 15px;
   }
+
+  .problem-image {
+    flex: 0 0 400px;
+    max-width: 400px;
+  }
 }
 
 /* Mobile Landscape and Small Tablet (600px - 768px) */
 @media (max-width: 768px) {
   .problem-section {
-    padding: 50px 16px;
+    padding: 50px 20px;
   }
 
   .problem-content {
     flex-direction: column;
-    gap: 35px;
+    gap: 30px;
   }
 
   .problem-image {
+    flex: 0 0 auto;
     max-width: 100%;
     order: 1;
   }

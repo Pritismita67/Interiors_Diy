@@ -3,6 +3,7 @@
 .wisdom-container {
   width: 100%;
   min-height: 100vh;
+  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -12,7 +13,8 @@
   background-position: center;
   background-repeat: no-repeat;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 80px 20px;
+  padding: 20px;
+  overflow: hidden;
 }
 
 /* Dark Overlay */
@@ -33,7 +35,7 @@
   text-align: center;
   max-width: 1200px;
   width: 100%;
-  padding: 40px 20px;
+  padding: 10px 20px;
 }
 
 /* Label */
@@ -43,31 +45,34 @@
   color: #FFFFFF;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  margin: 0 0 28px 0;
+  margin: 0 0 12px 0;
   opacity: 0.95;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease-out;
 }
 
 /* Title */
 .wisdom-title {
-  font-size: 68px;
+  font-size: 100px;
   font-weight: 700;
   color: #FFFFFF;
-  line-height: 1.2;
-  margin: 0 0 32px 0;
+  line-height: 1.05;
+  margin: 0 0 12px 0;
   letter-spacing: -1px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  animation: fadeInDown 1s ease-out;
 }
 
 /* Subtitle */
 .wisdom-subtitle {
   font-size: 22px;
   color: #FFFFFF;
-  margin: 0 0 40px 0;
+  margin: 0 0 18px 0;
   font-weight: 400;
   line-height: 1.5;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   opacity: 0.95;
+  animation: fadeInDown 1s ease-out;
 }
 
 .desktop-break {
@@ -77,9 +82,9 @@
 /* CTA Button */
 .wisdom-cta-button {
   display: inline-block;
-  background-color: #D97853;
+  background-color: #d4695b;
   color: #FFFFFF;
-  padding: 16px 40px;
+  padding: 16px 32px;
   border-radius: 6px;
   font-size: 17px;
   font-weight: 500;
@@ -89,6 +94,7 @@
   cursor: pointer;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   box-shadow: 0 4px 12px rgba(217, 120, 83, 0.35);
+  animation: fadeInDown 1s ease-out;
 }
 
 .wisdom-cta-button:hover {
@@ -130,7 +136,7 @@
   }
 
   .wisdom-cta-button {
-    padding: 15px 36px;
+    padding: 15px 30px;
     font-size: 16px;
   }
 }
@@ -169,18 +175,19 @@
   }
 
   .wisdom-cta-button {
-    padding: 14px 32px;
+    padding: 14px 28px;
     font-size: 15px;
     width: auto;
-    max-width: 320px;
+    max-width: 240px;
   }
 }
 
-/* Small Mobile Styles */
-@media (max-width: 480px) {
+/* Mobile Large (481px to 599px) */
+@media screen and (max-width: 599px) and (min-width: 481px) {
   .wisdom-container {
     padding: 50px 12px;
     min-height: 80vh;
+    background-image: url('/m3.jpg'); /* Replace with your mobile image */
   }
 
   .wisdom-content {
@@ -194,7 +201,7 @@
   }
 
   .wisdom-title {
-    font-size: 36px;
+    font-size: 50px; /* Fixed at 50px */
     margin-bottom: 20px;
   }
 
@@ -204,18 +211,64 @@
     padding: 0 8px;
   }
 
+  .desktop-break {
+    display: none;
+  }
+
   .wisdom-cta-button {
-    padding: 13px 28px;
+    padding: 13px 24px;
     font-size: 14px;
-    width: 100%;
-    max-width: 100%;
+    width: auto;
+    max-width: 240px;
   }
 }
 
-/* Extra Small Devices */
-@media (max-width: 360px) {
+/* Small Mobile Styles (376px to 480px) */
+@media (max-width: 480px) and (min-width: 376px) {
+  .wisdom-container {
+    padding: 50px 12px;
+    min-height: 80vh;
+    background-image: url('/m3.jpg'); /* Replace with your mobile image */
+  }
+
+  .wisdom-content {
+    padding: 16px 12px;
+  }
+
+  .wisdom-label {
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    margin-bottom: 18px;
+  }
+
+  .wisdom-title {
+    font-size: 50px; /* Fixed at 50px */
+    margin-bottom: 20px;
+  }
+
+  .wisdom-subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+    padding: 0 8px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .wisdom-cta-button {
+    padding: 13px 24px;
+    font-size: 14px;
+    width: auto;
+    max-width: 240px;
+  }
+}
+
+/* Extra Small Mobile (320px to 375px) */
+@media (max-width: 375px) {
   .wisdom-container {
     padding: 45px 10px;
+    background-image: url('/m3.jpg'); /* Replace with your mobile image */
   }
 
   .wisdom-label {
@@ -225,7 +278,7 @@
   }
 
   .wisdom-title {
-    font-size: 32px;
+    font-size: 40px; /* Fixed at 40px */
     margin-bottom: 18px;
   }
 
@@ -234,9 +287,50 @@
     margin-bottom: 24px;
   }
 
+  .desktop-break {
+    display: none;
+  }
+
   .wisdom-cta-button {
-    padding: 12px 24px;
+    padding: 12px 20px;
     font-size: 13px;
+    width: auto;
+    max-width: 220px;
+  }
+}
+
+/* Extra Extra Small Devices (below 320px) */
+@media (max-width: 319px) {
+  .wisdom-container {
+    padding: 45px 10px;
+    background-image: url('/m3.jpg'); /* Replace with your mobile image */
+  }
+
+  .wisdom-label {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+  }
+
+  .wisdom-title {
+    font-size: 40px; /* Fixed at 40px */
+    margin-bottom: 18px;
+  }
+
+  .wisdom-subtitle {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .wisdom-cta-button {
+    padding: 12px 20px;
+    font-size: 13px;
+    width: auto;
+    max-width: 200px;
   }
 }
 
@@ -268,7 +362,7 @@
   }
 
   .wisdom-cta-button {
-    padding: 12px 30px;
+    padding: 12px 26px;
     font-size: 14px;
   }
 }
@@ -276,27 +370,27 @@
 /* High Resolution Displays */
 @media (min-width: 1440px) {
   .wisdom-container {
-    padding: 90px 20px;
+    padding: 30px 20px;
   }
 
   .wisdom-label {
     font-size: 14px;
     letter-spacing: 2.8px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
 
   .wisdom-title {
-    font-size: 76px;
-    margin-bottom: 36px;
+    font-size: 100px;
+    margin-bottom: 16px;
   }
 
   .wisdom-subtitle {
     font-size: 24px;
-    margin-bottom: 44px;
+    margin-bottom: 24px;
   }
 
   .wisdom-cta-button {
-    padding: 18px 44px;
+    padding: 18px 38px;
     font-size: 18px;
   }
 }
@@ -310,21 +404,33 @@
   .wisdom-label {
     font-size: 15px;
     letter-spacing: 3px;
-    margin-bottom: 36px;
+    margin-bottom: 18px;
   }
 
   .wisdom-title {
-    font-size: 84px;
-    margin-bottom: 40px;
+    font-size: 100px;
+    margin-bottom: 18px;
   }
 
   .wisdom-subtitle {
     font-size: 26px;
-    margin-bottom: 48px;
+    margin-bottom: 28px;
   }
 
   .wisdom-cta-button {
-    padding: 19px 48px;
+    padding: 19px 40px;
     font-size: 19px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

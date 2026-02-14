@@ -11,7 +11,7 @@ const What = () => {
             <h1 className="what-title">What is DIY Interiors?</h1>
             <p className="what-description">
               It's the freedom to have a beautifully designed home without the hefty 
-              price tag. We give you the professional design plan — you bring it to life at 
+              price tag. We give you the professional design plan, you bring it to life at 
               your own pace, in your own way.
             </p>
             <p className="what-description">

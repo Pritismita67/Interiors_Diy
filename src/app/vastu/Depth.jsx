@@ -10,7 +10,7 @@ const Depth = () => {
       description: 'A comprehensive analysis of your existing space',
       features: [
         'Detailed Vastu report for your home',
-        '30-minute consultation call',
+        '1:1 expert consultation',
         'Key corrections and recommendations',
         'Room-by-room analysis',
         'Practical, non-disruptive solutions'

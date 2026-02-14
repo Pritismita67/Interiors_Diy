@@ -1,42 +1,178 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import Link from 'next/link';
 import './Made.css';
 
 const Made = () => {
+  const [fullscreenImage, setFullscreenImage] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   const templates = [
     {
       id: 1,
-      image: 'https://images.woodenstreet.de/image/data/Looks/LR-01+(3).jpg',
-      title: 'Modern Minimalist Retreat',
-      style: 'Minimalist',
-      size: '10x12 ft',
-      description: 'Clean lines, neutral palette, and smart storage solutions for a peaceful bedroom sanctuary.',
-      price: '₹1,999',
-      popular: true
-    },
-    {
-      id: 2,
-      image: 'https://images.woodenstreet.de/image/data/Looks/berlin1.jpg',
-      title: 'Cozy Bohemian Haven',
-      style: 'Bohemian',
-      size: '10x12 ft',
-      description: 'Warm textures, layered textiles, and eclectic decor for a cozy artistic bedroom.',
+      images: [
+        '/h3.png',
+        '/h2.png',
+        '/h1.png',
+       
+      ],
+      title: 'BLUE BIRD',
+      style: 'Japandi, Eclectic',
+      size: '225 sq ft',
+      description: 'Premium Living Type1',
       price: '₹2,499',
       popular: true
     },
     {
+      id: 2,
+      images: [
+        '/h6.png',
+        '/h4.png',
+        '/h5.png',
+        
+      ],
+      title: 'Viridity',
+      style: 'Quirky',
+      size: '150 Sq ft',
+      description: 'Premium Living Type2',
+      price: '₹2,799',
+      popular: true
+    },
+    {
       id: 3,
-      image: 'https://i.pinimg.com/originals/92/fd/c3/92fdc3d1f1b360bf4c470ca3be8b33a1.jpg',
-      title: 'Scandinavian Simplicity',
-      style: 'Scandinavian',
-      size: '12x15 ft',
-      description: 'Light, airy, and functional living space with Nordic-inspired design elements.',
-      price: '₹2,999',
+      images: [
+        '/h7.png',
+        '/h8.png',
+        '/h9.png',
+    
+      ],
+      title: 'White Dove',
+      style: 'Minimal',
+      size: '147 Sq ft',
+      description: 'Premium Living Type2',
+      price: '₹3,299',
       popular: true
     }
   ];
 
   const whatsappLink = 'https://api.whatsapp.com/send?phone=917710051499';
+
+  // Fullscreen image handlers
+  const openFullscreen = (images, index) => {
+    setFullscreenImage(images);
+    setCurrentImageIndex(index);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeFullscreen = () => {
+    setFullscreenImage(null);
+    setCurrentImageIndex(0);
+    document.body.style.overflow = 'auto';
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === fullscreenImage.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === 0 ? fullscreenImage.length - 1 : prev - 1
+    );
+  };
+
+  // Image Gallery Component
+  const ImageGallery = ({ images, templateTitle }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const scrollToImage = (index) => {
+      setCurrentIndex(index);
+      const container = document.getElementById(`made-gallery-${templateTitle}`);
+      if (container) {
+        const imageWidth = container.offsetWidth;
+        container.scrollTo({
+          left: imageWidth * index,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    const handleScroll = (e) => {
+      const container = e.target;
+      const imageWidth = container.offsetWidth;
+      const index = Math.round(container.scrollLeft / imageWidth);
+      setCurrentIndex(index);
+    };
+
+    return (
+      <div className="made-image-wrapper">
+        <div 
+          className="made-image-gallery" 
+          id={`made-gallery-${templateTitle}`}
+          onScroll={handleScroll}
+        >
+          {images.map((image, index) => (
+            <div key={index} className="made-image">
+              <img
+                src={image}
+                alt={`${templateTitle} - View ${index + 1}`}
+                onClick={() => openFullscreen(images, index)}
+              />
+            </div>
+          ))}
+        </div>
+        
+        {/* Image indicators */}
+        <div className="made-img-indicators">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              className={`made-indicator ${currentIndex === index ? 'made-indicator-active' : ''}`}
+              onClick={() => scrollToImage(index)}
+              aria-label={`View image ${index + 1}`}
+            />
+          ))}
+        </div>
+
+        {/* Fullscreen button */}
+        <button 
+          className="made-fullscreen-btn"
+          onClick={() => openFullscreen(images, currentIndex)}
+          aria-label="View fullscreen"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+        </button>
+
+        {/* Navigation arrows for desktop */}
+        {images.length > 1 && (
+          <>
+            <button 
+              className="made-nav-btn made-nav-prev"
+              onClick={() => scrollToImage(currentIndex === 0 ? images.length - 1 : currentIndex - 1)}
+              aria-label="Previous image"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+            <button 
+              className="made-nav-btn made-nav-next"
+              onClick={() => scrollToImage(currentIndex === images.length - 1 ? 0 : currentIndex + 1)}
+              aria-label="Next image"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+          </>
+        )}
+      </div>
+    );
+  };
 
   return (
     <section className="made-section">
@@ -70,9 +206,7 @@ const Made = () => {
                 </div>
               )}
               
-              <div className="made-image">
-                <img src={template.image} alt={template.title} />
-              </div>
+              <ImageGallery images={template.images} templateTitle={template.title} />
 
               <div className="made-content">
                 <h3 className="made-card-title">{template.title}</h3>
@@ -131,6 +265,59 @@ const Made = () => {
           </Link>
         </div>
       </div>
+
+      {/* Fullscreen Modal */}
+      {fullscreenImage && (
+        <div className="made-fullscreen-modal" onClick={closeFullscreen}>
+          <button className="made-modal-close" onClick={closeFullscreen}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+
+          <div className="made-modal-content" onClick={(e) => e.stopPropagation()}>
+            <img 
+              src={fullscreenImage[currentImageIndex]} 
+              alt={`Fullscreen view ${currentImageIndex + 1}`}
+              className="made-modal-img"
+            />
+
+            {fullscreenImage.length > 1 && (
+              <>
+                <button className="made-modal-prev" onClick={prevImage}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="15 18 9 12 15 6"/>
+                  </svg>
+                </button>
+                <button className="made-modal-next" onClick={nextImage}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="9 18 15 12 9 6"/>
+                  </svg>
+                </button>
+              </>
+            )}
+
+            {/* Image counter */}
+            <div className="made-modal-counter">
+              {currentImageIndex + 1} / {fullscreenImage.length}
+            </div>
+
+            {/* Thumbnail navigation */}
+            <div className="made-modal-thumbnails">
+              {fullscreenImage.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Thumbnail ${index + 1}`}
+                  className={`made-modal-thumbnail ${index === currentImageIndex ? 'made-thumbnail-active' : ''}`}
+                  onClick={() => setCurrentImageIndex(index)}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

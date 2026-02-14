@@ -19,7 +19,7 @@ const Guidance = () => {
           </p>
           
           <p className="guidance-description">
-            It's your home. You should have the final say — with professional guidance every step of the way.
+            It's your home. You should have the final say, with professional guidance every step of the way.
           </p>
           
           <p className="guidance-tagline">
@@ -29,7 +29,7 @@ const Guidance = () => {
         
         <div className="guidance-image">
           <img 
-            src="https://media.designcafe.com/wp-content/uploads/2022/06/30173737/family-living-room-interiors-for-memorable-moments.jpg" 
+            src="https://i.etsystatic.com/22485202/r/il/8f8df9/5268243375/il_570xN.5268243375_kfxa.jpg" 
             alt="Creativity and guidance - Modern living room design" 
           />
         </div>

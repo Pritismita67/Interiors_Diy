@@ -11,7 +11,7 @@ const Led = () => {
           <h2 className="led-title">Lifestyle-Led Design</h2>
           
           <p className="led-description">
-            Your home should reflect how you actually live — not just how it looks in photos.
+            Your home should reflect how you actually live, not just how it looks in photos.
           </p>
           
           <p className="led-description">
@@ -19,7 +19,7 @@ const Led = () => {
           </p>
           
           <p className="led-description">
-            We design around your daily routines, habits, and aspirations — creating spaces that truly work for you.
+            We design around your daily routines, habits, and aspirations, creating spaces that truly work for you.
           </p>
           
           <p className="led-tagline">

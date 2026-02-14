@@ -1,13 +1,13 @@
-/* Dress Component Styles */
+/* Mars Component Styles */
 
-.dress-container {
+.mars-container {
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 80px 20px;
+  padding: 80px 20px 80px 60px;
 }
 
-.dress-content {
+.mars-content {
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
@@ -17,17 +17,16 @@
 }
 
 /* Image Section */
-.dress-image-wrapper {
+.mars-image-wrapper {
   width: 100%;
   height: 100%;
   min-height: 500px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
-.dress-image {
+.mars-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -35,14 +34,14 @@
 }
 
 /* Text Section */
-.dress-text-section {
+.mars-text-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
   padding: 20px 0;
 }
 
-.dress-icon-box {
+.mars-icon-box {
   width: 48px;
   height: 48px;
   background-color: #FBE9E1;
@@ -50,91 +49,86 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
-.dress-main-title {
-  font-size: 48px;
+.mars-main-title {
+  font-size: 56px;
   font-weight: 600;
   color: #2C2C2C;
   line-height: 1.2;
   margin: 0;
   letter-spacing: -0.5px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  white-space: nowrap;
 }
 
-.dress-main-subtitle {
+.mars-main-subtitle {
   font-size: 20px;
   color: #666666;
   margin: 0;
   font-weight: 400;
   line-height: 1.4;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.dress-description-text {
+.mars-description-text {
   font-size: 16px;
   color: #4A4A4A;
   line-height: 1.6;
-  margin: 8px 0 20px 0;
+  margin: 12px 0 24px 0;
   max-width: 600px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Features List */
-.dress-features-list {
+.mars-features-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 28px 0;
+  margin: 0 0 32px 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
-.dress-feature-item {
+.mars-feature-item {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 15px;
+  font-size: 16px;
   color: #2C2C2C;
   line-height: 1.5;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.dress-checkmark {
+.mars-checkmark {
   flex-shrink: 0;
 }
 
 /* Pricing Section */
-.dress-pricing-section {
-  margin-top: 8px;
+.mars-pricing-section {
+  margin-top: 16px;
 }
 
-.dress-pricing-title {
+.mars-pricing-title {
   font-size: 28px;
   font-weight: 600;
   color: #C17A5C;
-  margin: 0 0 6px 0;
+  margin: 0 0 8px 0;
   line-height: 1.3;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.dress-pricing-subtitle {
-  font-size: 15px;
+.mars-pricing-subtitle {
+  font-size: 16px;
   color: #666666;
-  margin: 0 0 20px 0;
+  margin: 0 0 24px 0;
   font-weight: 400;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Templates Button */
-.dress-templates-btn {
+.mars-templates-btn {
   display: inline-block;
-  background-color: #C17A5C;
+  background-color: #d4695b;
   color: #FFFFFF;
-  padding: 11px 28px;
-  border-radius: 5px;
-  font-size: 15px;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -143,310 +137,337 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.dress-templates-btn:hover {
+.mars-templates-btn:hover {
   background-color: #A86A4E;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(193, 122, 92, 0.3);
 }
 
-.dress-templates-btn:active {
+.mars-templates-btn:active {
   transform: translateY(0);
 }
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
-  .dress-container {
-    padding: 60px 20px;
+  .mars-container {
+    padding: 60px 20px 60px 60px;
   }
 
-  .dress-content {
+  .mars-content {
     gap: 60px;
     grid-template-columns: 1fr;
   }
 
-  .dress-image-wrapper {
+  .mars-image-wrapper {
     min-height: 400px;
-    max-height: 500px;
   }
 
-  .dress-main-title {
-    font-size: 44px;
+  .mars-main-title {
+    font-size: 48px;
   }
 
-  .dress-main-subtitle {
-    font-size: 19px;
+  .mars-main-subtitle {
+    font-size: 18px;
   }
 
-  .dress-text-section {
+  .mars-text-section {
     padding: 0;
   }
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-  .dress-container {
-    padding: 50px 16px;
+  .mars-container {
+    padding: 16px;
+    min-height: auto;
+    background-color: #f5f5f0;
   }
 
-  .dress-content {
-    gap: 40px;
+  .mars-content {
+    gap: 0;
+    grid-template-columns: 1fr;
+    padding: 0;
+    background-color: #f5f5f0;
   }
 
-  .dress-image-wrapper {
+  .mars-image-wrapper {
     min-height: 300px;
     max-height: 400px;
+    border-radius: 12px;
+    box-shadow: none;
+    margin: 0 0 16px 0;
+    overflow: hidden;
   }
 
-  .dress-icon-box {
+  .mars-image {
+    border-radius: 12px;
+  }
+
+  .mars-text-section {
+    padding: 0px 0px 24px 0px;
+    gap: 12px;
+  }
+
+  .mars-icon-box {
     width: 44px;
     height: 44px;
+    margin-bottom: 4px;
   }
 
-  .dress-icon-box svg {
+  .mars-icon-box svg {
     width: 22px;
     height: 22px;
   }
 
-  .dress-main-title {
+  .mars-main-title {
     font-size: 36px;
+    white-space: normal;
   }
 
-  .dress-main-subtitle {
+  .mars-main-subtitle {
     font-size: 18px;
   }
 
-  .dress-description-text {
+  .mars-description-text {
     font-size: 15px;
-    margin: 6px 0 18px 0;
+    margin: 8px 0 16px 0;
   }
 
-  .dress-features-list {
+  .mars-features-list {
     gap: 12px;
     margin-bottom: 24px;
   }
 
-  .dress-feature-item {
+  .mars-feature-item {
     font-size: 14px;
   }
 
-  .dress-pricing-title {
+  .mars-pricing-title {
     font-size: 26px;
   }
 
-  .dress-pricing-subtitle {
+  .mars-pricing-subtitle {
     font-size: 14px;
     margin-bottom: 18px;
   }
 
-  .dress-templates-btn {
+  .mars-templates-btn {
     width: auto;
     text-align: center;
-    padding: 11px 28px;
+    padding: 13px 28px;
     font-size: 15px;
   }
 }
 
 /* Small Mobile Styles */
 @media (max-width: 480px) {
-  .dress-container {
-    padding: 40px 12px;
+  .mars-container {
+    padding: 12px;
   }
 
-  .dress-content {
-    gap: 32px;
-  }
-
-  .dress-image-wrapper {
+  .mars-image-wrapper {
     min-height: 250px;
     max-height: 350px;
-    border-radius: 8px;
+    border-radius: 12px;
+    margin: 0 0 12px 0;
   }
 
-  .dress-icon-box {
+  .mars-text-section {
+    padding: 0px 0px 28px 0px;
+    gap: 10px;
+  }
+
+  .mars-icon-box {
     width: 40px;
     height: 40px;
+    margin-bottom: 2px;
   }
 
-  .dress-icon-box svg {
+  .mars-icon-box svg {
     width: 20px;
     height: 20px;
   }
 
-  .dress-main-title {
+  .mars-main-title {
     font-size: 32px;
   }
 
-  .dress-main-subtitle {
+  .mars-main-subtitle {
     font-size: 17px;
   }
 
-  .dress-description-text {
+  .mars-description-text {
     font-size: 14px;
-    margin: 4px 0 16px 0;
+    margin: 6px 0 14px 0;
   }
 
-  .dress-features-list {
+  .mars-features-list {
     gap: 11px;
     margin-bottom: 20px;
   }
 
-  .dress-feature-item {
+  .mars-feature-item {
     font-size: 13px;
     gap: 10px;
   }
 
-  .dress-checkmark {
+  .mars-checkmark {
     width: 18px;
     height: 18px;
   }
 
-  .dress-pricing-title {
+  .mars-pricing-title {
     font-size: 24px;
   }
 
-  .dress-pricing-subtitle {
+  .mars-pricing-subtitle {
     font-size: 13px;
     margin-bottom: 16px;
   }
 
-  .dress-templates-btn {
-    padding: 11px 26px;
+  .mars-templates-btn {
+    padding: 12px 26px;
     font-size: 14px;
-    width: auto;
   }
 }
 
 /* Extra Small Devices */
 @media (max-width: 360px) {
-  .dress-container {
-    padding: 35px 10px;
+  .mars-image-wrapper {
+    min-height: 240px;
+    max-height: 320px;
+    border-radius: 12px;
+    margin: 0 0 10px 0;
   }
 
-  .dress-content {
-    gap: 28px;
+  .mars-text-section {
+    padding: 0px 0px 24px 0px;
+    gap: 8px;
   }
 
-  .dress-icon-box {
+  .mars-icon-box {
     width: 36px;
     height: 36px;
+    margin-bottom: 0;
   }
 
-  .dress-icon-box svg {
+  .mars-icon-box svg {
     width: 18px;
     height: 18px;
   }
 
-  .dress-main-title {
+  .mars-main-title {
     font-size: 28px;
   }
 
-  .dress-main-subtitle {
+  .mars-main-subtitle {
     font-size: 16px;
   }
 
-  .dress-description-text {
+  .mars-description-text {
     font-size: 13px;
+    margin: 4px 0 12px 0;
   }
 
-  .dress-feature-item {
+  .mars-feature-item {
     font-size: 12px;
   }
 
-  .dress-pricing-title {
+  .mars-pricing-title {
     font-size: 22px;
   }
 
-  .dress-pricing-subtitle {
+  .mars-pricing-subtitle {
     font-size: 12px;
   }
 
-  .dress-templates-btn {
-    padding: 10px 24px;
+  .mars-templates-btn {
+    padding: 11px 24px;
     font-size: 13px;
   }
 }
 
 /* Large Desktop Styles */
 @media (min-width: 1440px) {
-  .dress-container {
-    padding: 100px 60px;
+  .mars-container {
+    padding: 100px 40px 100px 120px;
   }
 
-  .dress-content {
+  .mars-content {
     gap: 100px;
   }
 
-  .dress-image-wrapper {
+  .mars-image-wrapper {
     min-height: 550px;
   }
 
-  .dress-icon-box {
+  .mars-icon-box {
     width: 52px;
     height: 52px;
   }
 
-  .dress-icon-box svg {
+  .mars-icon-box svg {
     width: 26px;
     height: 26px;
   }
 
-  .dress-main-title {
-    font-size: 52px;
+  .mars-main-title {
+    font-size: 60px;
   }
 
-  .dress-main-subtitle {
+  .mars-main-subtitle {
     font-size: 22px;
   }
 
-  .dress-description-text {
+  .mars-description-text {
     font-size: 17px;
     max-width: 650px;
   }
 
-  .dress-features-list {
+  .mars-features-list {
     gap: 16px;
     margin-bottom: 32px;
   }
 
-  .dress-feature-item {
+  .mars-feature-item {
     font-size: 16px;
   }
 
-  .dress-pricing-title {
+  .mars-pricing-title {
     font-size: 30px;
   }
 
-  .dress-pricing-subtitle {
+  .mars-pricing-subtitle {
     font-size: 16px;
     margin-bottom: 22px;
   }
 
-  .dress-templates-btn {
-    padding: 12px 30px;
+  .mars-templates-btn {
+    padding: 14px 30px;
     font-size: 15px;
   }
 }
 
 /* Extra Large Displays */
 @media (min-width: 1920px) {
-  .dress-content {
+  .mars-content {
     max-width: 1600px;
     gap: 120px;
   }
 
-  .dress-image-wrapper {
+  .mars-image-wrapper {
     min-height: 600px;
   }
 
-  .dress-main-title {
-    font-size: 56px;
+  .mars-main-title {
+    font-size: 64px;
   }
 
-  .dress-main-subtitle {
+  .mars-main-subtitle {
     font-size: 24px;
   }
 
-  .dress-description-text {
+  .mars-description-text {
     font-size: 18px;
   }
 }

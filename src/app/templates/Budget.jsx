@@ -12,7 +12,7 @@ const Budget = () => {
             A 10x12 bedroom. Standard layout. Limited budget. Sound familiar?
           </p>
           <p className="budget-text">
-            This is the most common room we design. Instead of reinventing the wheel, we've perfected templates that maximize space, storage, and style — ready for you to implement.
+            This is the most common room we design. Instead of reinventing the wheel, we've perfected templates that maximize space, storage, and style, ready for you to implement.
           </p>
           <p className="budget-tagline">
             Proven designs. Real results. Your budget.
@@ -20,7 +20,7 @@ const Budget = () => {
         </div>
         <div className="budget-image-wrapper">
           <img 
-            src="https://img.staticmb.com/mbimages/interiorDesignerCMS/decorPartner/174/projectImage/Master-bedroom-Camera001.jpg.webp" 
+            src="https://closetsworld.com/wp-content/uploads/2024/08/ClosetsWorld-KSA-FullBedroomsSets-12.webp" 
             alt="Modern bedroom design with dark walls and elegant furniture" 
             className="budget-image"
           />

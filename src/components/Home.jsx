@@ -8,7 +8,7 @@ const Home = () => {
         <div className="hero-content">
           <p className="hero-subtitle">WELCOME TO DIY INTERIORS</p>
           <h1 className="hero-title">
-            Your home tells a story Let's write it together
+            Your Home tells a Story. Let's Write it Together.
           </h1>
           <p className="hero-description">
             Professional design. Your execution. Your budget

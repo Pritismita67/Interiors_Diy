@@ -8,6 +8,8 @@ import Simple from "@/components/Simple";
 import Templates from "@/components/Templates";
 import Transform from "@/components/Transform";
 import What from "@/components/What";
+import Mars from "./services/Mars";
+import Custom from "./services/Custom";
 
 
 export default function Page() {
@@ -18,7 +20,8 @@ export default function Page() {
   <Simple />
   <Made />
   {/* <Templates /> */}
-  <Ready />
+  <Mars />
+  <Custom />
   <Analysis />
   <Transform />
   <Footer />

@@ -8,7 +8,7 @@ const Vision = () => {
       
       <div className="vision-content">
         <h1 className="vision-title">
-          Let's Discuss Your<br />Home
+          Let's Discuss<br className="mobile-break" /> Your Home
         </h1>
         
         <p className="vision-subtitle">

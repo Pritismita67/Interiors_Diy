@@ -10,12 +10,12 @@ const Unique = () => {
         <p className="unique-label">PERSONALIZED DESIGN JOURNEY</p>
         
         <h1 className="unique-title">
-          Some homes need<br />more than templates
+          Some Homes need<br />more than Templates
         </h1>
         
         <p className="unique-subtitle">
-          When your space, lifestyle, or vision is unique — you<br className="desktop-break" />
-          deserve a custom approach.
+          When your space, lifestyle or vision is unique, <br className="desktop-break" />
+          you deserve a custom approach.
         </p>
         
         <a 

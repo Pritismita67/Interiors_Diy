@@ -1,24 +1,24 @@
 /* What Section Styles */
 .what-section {
   width: 100%;
-  background-color: #f5f5f5;
-  padding: 80px 20px;
+  background-color: #f5f5f0;
+  padding: 80px 20px 80px 60px;
 }
 
 .what-container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .what-content {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 80px;
 }
 
 .what-text {
   flex: 1;
-  max-width: 520px;
 }
 
 .what-chapter {
@@ -37,6 +37,7 @@
   color: #1a1a1a;
   margin-bottom: 28px;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 .what-description {
@@ -58,8 +59,8 @@
 }
 
 .what-image {
-  flex: 1;
-  max-width: 600px;
+  flex: 0 0 480px;
+  max-width: 480px;
 }
 
 .what-image img {
@@ -73,11 +74,11 @@
 /* Tablet Styles (768px - 1024px) */
 @media (max-width: 1024px) {
   .what-section {
-    padding: 60px 20px;
+    padding: 60px 40px;
   }
 
   .what-content {
-    gap: 40px;
+    gap: 50px;
   }
 
   .what-title {
@@ -88,45 +89,48 @@
   .what-tagline {
     font-size: 15px;
   }
+
+  .what-image {
+    flex: 0 0 400px;
+    max-width: 400px;
+  }
 }
 
 /* Mobile Landscape and Small Tablet (600px - 768px) */
 @media (max-width: 768px) {
   .what-section {
-    padding: 50px 16px;
+    padding: 25px 20px;
   }
 
   .what-content {
     flex-direction: column;
-    gap: 35px;
-  }
-
-  .what-text {
-    max-width: 100%;
+    gap: 30px;
   }
 
   .what-title {
-    font-size: 36px;
-    margin-bottom: 24px;
+    font-size: 35px;
+    margin-bottom: 14px;
+    white-space: normal;
   }
 
   .what-chapter {
-    font-size: 10px;
-    margin-bottom: 16px;
+    font-size: 9.5px;
+    margin-bottom: 8px;
   }
 
   .what-description {
-    font-size: 15px;
-    line-height: 1.65;
-    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
   }
 
   .what-tagline {
-    font-size: 15px;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 12px;
   }
 
   .what-image {
+    flex: 0 0 auto;
     max-width: 100%;
   }
 }
@@ -134,48 +138,63 @@
 /* Mobile Portrait (max 600px) */
 @media (max-width: 600px) {
   .what-section {
-    padding: 40px 16px;
+    padding: 20px 16px;
   }
 
   .what-content {
-    gap: 30px;
+    gap: 20px;
   }
 
   .what-title {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 12px;
   }
 
   .what-chapter {
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 1.5px;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
   }
 
   .what-description {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 16px;
+    font-size: 13.5px;
+    line-height: 1.48;
+    margin-bottom: 8px;
   }
 
   .what-tagline {
-    font-size: 14px;
-    margin-top: 18px;
+    font-size: 13.5px;
+    margin-top: 10px;
   }
 }
 
 /* Extra Small Mobile (max 400px) */
 @media (max-width: 400px) {
   .what-section {
-    padding: 35px 12px;
+    padding: 18px 12px;
+  }
+
+  .what-content {
+    gap: 16px;
   }
 
   .what-title {
-    font-size: 28px;
+    font-size: 25px;
+    margin-bottom: 10px;
   }
 
-  .what-description,
+  .what-chapter {
+    margin-bottom: 5px;
+  }
+
+  .what-description {
+    font-size: 13px;
+    line-height: 1.45;
+    margin-bottom: 7px;
+  }
+
   .what-tagline {
     font-size: 13px;
+    margin-top: 8px;
   }
 }

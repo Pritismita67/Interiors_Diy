@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://calendoostudios.com/wp-content/uploads/2025/07/20-Ideas-for-a-Fully-Thrifted-Still-Stylish-Home-Office.jpg');
+  background-image: url('https://www.wedezinestudio.com/blogs/wp-content/uploads/2024/11/V-4-2-2-scaled-1.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,17 +46,19 @@
   margin: 0 0 24px 0;
   opacity: 0.95;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease-out;
 }
 
 /* Title */
 .unique-title {
-  font-size: 68px;
+  font-size: 100px;
   font-weight: 700;
   color: #FFFFFF;
   line-height: 1.2;
   margin: 0 0 28px 0;
   letter-spacing: -1px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  animation: fadeInDown 1s ease-out;
 }
 
 /* Subtitle */
@@ -68,6 +70,7 @@
   line-height: 1.5;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   opacity: 0.95;
+  animation: fadeInDown 1s ease-out;
 }
 
 .desktop-break {
@@ -77,9 +80,9 @@
 /* CTA Button */
 .unique-cta-button {
   display: inline-block;
-  background-color: #D97853;
+  background-color: #d4695b;
   color: #FFFFFF;
-  padding: 16px 40px;
+  padding: 16px 32px;
   border-radius: 6px;
   font-size: 17px;
   font-weight: 500;
@@ -89,6 +92,7 @@
   cursor: pointer;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   box-shadow: 0 4px 12px rgba(217, 120, 83, 0.35);
+  animation: fadeInDown 1s ease-out;
 }
 
 .unique-cta-button:hover {
@@ -130,7 +134,7 @@
   }
 
   .unique-cta-button {
-    padding: 15px 36px;
+    padding: 15px 30px;
     font-size: 16px;
   }
 }
@@ -169,18 +173,19 @@
   }
 
   .unique-cta-button {
-    padding: 14px 32px;
+    padding: 14px 28px;
     font-size: 15px;
     width: auto;
-    max-width: 320px;
+    max-width: 280px;
   }
 }
 
-/* Small Mobile Styles */
-@media (max-width: 480px) {
+/* Mobile Large (481px to 599px) */
+@media screen and (max-width: 599px) and (min-width: 481px) {
   .unique-container {
     padding: 50px 12px;
     min-height: 80vh;
+    background-image: url('/m4.jpg'); /* Replace with your mobile image */
   }
 
   .unique-content {
@@ -194,7 +199,7 @@
   }
 
   .unique-title {
-    font-size: 36px;
+    font-size: 50px; /* Fixed at 50px */
     margin-bottom: 20px;
   }
 
@@ -204,18 +209,64 @@
     padding: 0 8px;
   }
 
+  .desktop-break {
+    display: none;
+  }
+
   .unique-cta-button {
-    padding: 13px 28px;
+    padding: 13px 24px;
     font-size: 14px;
-    width: 100%;
-    max-width: 100%;
+    width: auto;
+    max-width: 260px;
   }
 }
 
-/* Extra Small Devices */
-@media (max-width: 360px) {
+/* Small Mobile Styles (376px to 480px) */
+@media (max-width: 480px) and (min-width: 376px) {
+  .unique-container {
+    padding: 50px 12px;
+    min-height: 80vh;
+    background-image: url('/m4.jpg'); /* Replace with your mobile image */
+  }
+
+  .unique-content {
+    padding: 16px 12px;
+  }
+
+  .unique-label {
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    margin-bottom: 18px;
+  }
+
+  .unique-title {
+    font-size: 50px; /* Fixed at 50px */
+    margin-bottom: 20px;
+  }
+
+  .unique-subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+    padding: 0 8px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .unique-cta-button {
+    padding: 13px 24px;
+    font-size: 14px;
+    width: auto;
+    max-width: 260px;
+  }
+}
+
+/* Extra Small Mobile (320px to 375px) */
+@media (max-width: 375px) {
   .unique-container {
     padding: 45px 10px;
+    background-image: url('/m4.jpg'); /* Replace with your mobile image */
   }
 
   .unique-label {
@@ -225,7 +276,7 @@
   }
 
   .unique-title {
-    font-size: 32px;
+    font-size: 40px; /* Fixed at 40px */
     margin-bottom: 18px;
   }
 
@@ -234,9 +285,50 @@
     margin-bottom: 24px;
   }
 
+  .desktop-break {
+    display: none;
+  }
+
   .unique-cta-button {
-    padding: 12px 24px;
+    padding: 12px 20px;
     font-size: 13px;
+    width: auto;
+    max-width: 240px;
+  }
+}
+
+/* Extra Extra Small Devices (below 320px) */
+@media (max-width: 319px) {
+  .unique-container {
+    padding: 45px 10px;
+    background-image: url('/m4.jpg'); /* Replace with your mobile image */
+  }
+
+  .unique-label {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+  }
+
+  .unique-title {
+    font-size: 40px; /* Fixed at 40px */
+    margin-bottom: 18px;
+  }
+
+  .unique-subtitle {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .unique-cta-button {
+    padding: 12px 20px;
+    font-size: 13px;
+    width: auto;
+    max-width: 220px;
   }
 }
 
@@ -268,7 +360,7 @@
   }
 
   .unique-cta-button {
-    padding: 12px 30px;
+    padding: 12px 26px;
     font-size: 14px;
   }
 }
@@ -286,7 +378,7 @@
   }
 
   .unique-title {
-    font-size: 76px;
+    font-size: 100px;
     margin-bottom: 32px;
   }
 
@@ -296,7 +388,7 @@
   }
 
   .unique-cta-button {
-    padding: 18px 44px;
+    padding: 18px 38px;
     font-size: 18px;
   }
 }
@@ -314,7 +406,7 @@
   }
 
   .unique-title {
-    font-size: 84px;
+    font-size: 100px;
     margin-bottom: 36px;
   }
 
@@ -324,7 +416,19 @@
   }
 
   .unique-cta-button {
-    padding: 19px 48px;
+    padding: 19px 40px;
     font-size: 19px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

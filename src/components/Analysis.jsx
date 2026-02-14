@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import './Analysis.css';
@@ -8,7 +10,7 @@ const Analysis = () => {
       <div className="analysis-content">
         <div className="analysis-image">
           <img 
-            src="https://www.asenseinterior.com/assets/uploads/a44f725d1984987604fbad6f904e8e9e.webp" 
+            src="/homev.jpg" 
             alt="Modern living room with Vastu principles" 
           />
         </div>
@@ -47,7 +49,7 @@ const Analysis = () => {
               <svg className="checkmark" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#C17A5C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span>30-minute expert consultation</span>
+              <span>1:1 expert consultation</span>
             </li>
             <li>
               <svg className="checkmark" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,8 +66,8 @@ const Analysis = () => {
           </ul>
           
           <div className="analysis-pricing">
-            <h2 className="pricing-title">Pricing varies by scope</h2>
-            <p className="pricing-subtitle">Starting from ₹2,999</p>
+            <h2 className="pricing-title">Starting from ₹2,999</h2>
+            <p className="pricing-subtitle">Pricing varies by scope</p>
             
             <Link href="/vastu" className="vastu-button">
               Learn About Vastu

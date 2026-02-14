@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import './Varies.css';
@@ -8,8 +10,8 @@ const Varies = () => {
       <div className="varies-content">
         <div className="varies-image">
           <img 
-            src="https://galliardstudio.com/wp-content/uploads/2024/10/Galliard-Studio-Vastu-Tips-Photos00002.jpg" 
-            alt="Vastu consultation living room with photo wall" 
+            src="/vastu.jpg" 
+            alt="Modern living room with Vastu principles"
           />
         </div>
         
@@ -47,7 +49,7 @@ const Varies = () => {
               <svg className="checkmark" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#C17A5C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span>30-minute expert consultation</span>
+              <span>1:1 expert consultation</span>
             </li>
             <li>
               <svg className="checkmark" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,8 +66,8 @@ const Varies = () => {
           </ul>
           
           <div className="varies-pricing">
-            <h3 className="pricing-title">Pricing varies by scope</h3>
-            <p className="pricing-subtitle">Starting from ₹2,999</p>
+            <h3 className="pricing-title">Starting from ₹2,999</h3>
+            <p className="pricing-subtitle">Pricing varies by scope</p>
             
             <Link href="/vastu" className="vastu-button">
               Learn About Vastu

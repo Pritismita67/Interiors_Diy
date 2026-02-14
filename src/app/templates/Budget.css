@@ -141,12 +141,13 @@
   }
 
   .budget-content {
-    gap: 16px;
+    gap: 12px;
   }
 
   .budget-label {
     font-size: clamp(0.7rem, 2vw, 0.8rem);
     letter-spacing: 0.12em;
+    margin-bottom: 4px;
   }
 
   .budget-title {
@@ -187,12 +188,13 @@
   }
 
   .budget-content {
-    gap: 14px;
+    gap: 10px;
   }
 
   .budget-label {
     font-size: 0.7rem;
     letter-spacing: 0.1em;
+    margin-bottom: 2px;
   }
 
   .budget-title {
@@ -212,6 +214,17 @@
 
   .budget-image-wrapper {
     min-height: 300px;
+  }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 360px) {
+  .budget-content {
+    gap: 8px;
+  }
+
+  .budget-label {
+    margin-bottom: 0;
   }
 }
 

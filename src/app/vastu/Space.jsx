@@ -12,14 +12,14 @@ const Space = () => {
             
             <p className="description-text">
               Vastu Shastra is an ancient Indian science of architecture and spatial
-              design. At its core, it's about optimizing natural elements — light, air, and
-              space — to create harmonious living environments.
+              design. At its core, it's about optimizing natural elements, light, air, and
+              space, to create harmonious living environments.
             </p>
             
             <p className="description-text">
               Modern architecture has rediscovered many Vastu principles: natural
               ventilation, optimal sunlight, functional zoning, and energy-efficient
-              layouts. These aren't mystical concepts — they're practical design
+              layouts. These aren't mystical concepts, they're practical design
               strategies.
             </p>
             

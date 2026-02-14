@@ -3,7 +3,7 @@
 .five-container {
   width: 100%;
   min-height: 80vh;
-  background-color: #F5F5F5;
+  background-color: #f5f5f0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 80px 0;
   display: flex;
@@ -52,7 +52,7 @@
 .pricing-amount {
   font-size: 56px;
   font-weight: 600;
-  color: #C17A5C;
+  color: #d4695b;
   line-height: 1.2;
   margin: 0 0 16px 0;
   letter-spacing: -1px;
@@ -103,7 +103,7 @@
 
   .five-label {
     font-size: 13px;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .five-title {
@@ -150,11 +150,12 @@
 
   .five-label {
     font-size: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
   }
 
   .five-title {
     font-size: 36px;
+    margin-top: 0;
   }
 
   .five-pricing-card {
@@ -201,11 +202,12 @@
 
   .five-label {
     font-size: 11px;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
 
   .five-title {
     font-size: 32px;
+    margin-top: 0;
   }
 
   .five-pricing-card {
@@ -254,10 +256,12 @@
 
   .five-label {
     font-size: 10px;
+    margin-bottom: 2px;
   }
 
   .five-title {
     font-size: 28px;
+    margin-top: 0;
   }
 
   .five-pricing-card {

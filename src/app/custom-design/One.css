@@ -103,6 +103,7 @@
   .one-label {
     font-size: 11px;
     letter-spacing: 2.3px;
+    margin-bottom: 2px;
   }
 
   .one-title {
@@ -129,6 +130,10 @@
     padding: 0 16px;
   }
 
+  .one-text {
+    gap: 12px;
+  }
+
   .one-image {
     min-height: 300px;
     max-height: 400px;
@@ -137,12 +142,13 @@
   .one-label {
     font-size: 10px;
     letter-spacing: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
   }
 
   .one-title {
     font-size: 36px;
     margin-bottom: 10px;
+    margin-top: 4px;
   }
 
   .one-description {
@@ -167,7 +173,7 @@
   }
 
   .one-text {
-    gap: 18px;
+    gap: 10px;
   }
 
   .one-image {
@@ -179,11 +185,13 @@
   .one-label {
     font-size: 9px;
     letter-spacing: 1.8px;
+    margin-bottom: 0px;
   }
 
   .one-title {
     font-size: 32px;
     margin-bottom: 8px;
+    margin-top: 2px;
   }
 
   .one-description {
@@ -208,16 +216,18 @@
   }
 
   .one-text {
-    gap: 16px;
+    gap: 8px;
   }
 
   .one-label {
     font-size: 8px;
     letter-spacing: 1.5px;
+    margin-bottom: 0px;
   }
 
   .one-title {
     font-size: 28px;
+    margin-top: 2px;
   }
 
   .one-description {

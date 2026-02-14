@@ -6,139 +6,104 @@ import './Yellow.css';
 
 const Yellow = () => {
   const [activeFilter, setActiveFilter] = useState('All Templates');
+  const [fullscreenImage, setFullscreenImage] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Template data
+  // Template data with multiple images
   const templates = [
     {
       id: 1,
-      category: 'Bedrooms',
-      title: 'Modern Minimalist Retreat',
-      style: 'Modern',
-      size: '10x12 ft',
-      description: 'Sleek design with clean lines and sophisticated storage solutions.',
-      price: '₹3,999',
-      image: 'https://images.woodenstreet.de/image/data%2FLooks%2F3.jpg',
+      category: 'Living Rooms',
+      images: [
+        '/h3.png',
+        '/h2.png',
+        '/h1.png',
+       
+      ],
+      title: 'Urban Grove',
+      style: 'Contemporary Minimal',
+      size: '14*10 ft',
+      description: 'Earthy tones balanced with sleek black elements',
+      price: '₹2,499',
       isPopular: true
     },
     {
       id: 2,
-      category: 'Bedrooms',
-      title: 'Cozy Bohemian Haven',
-      style: 'Bohemian',
-      size: '10x12 ft',
-      description: 'Warm textures and layered comfort for a relaxed bedroom vibe.',
-      price: '₹3,499',
-      image: 'https://i.pinimg.com/736x/e5/d5/4a/e5d54afbd5f91a27ca26bc5583903bbc.jpg',
+      category: 'Living Rooms',
+      images: [
+        '/h6.png',
+        '/h4.png',
+        '/h5.png',
+        
+      ],
+      title: 'Arcadia Calm',
+      style: 'Modern Comfort',
+      size: '14*10 ft',
+      description: 'Elegant curves with cozy neutral palette',
+      price: '₹2,799',
       isPopular: true
     },
     {
       id: 3,
-      category: 'Bedrooms',
-      title: 'Contemporary Master Suite',
-      style: 'Contemporary',
-      size: '12x14 ft',
-      description: 'Luxurious bedroom design with elegant finishes and smart storage.',
-      price: '₹4,499',
-      image: 'https://media.designcafe.com/wp-content/uploads/2022/08/11142840/coastal-bedroom-ideas.jpg',
-      isPopular: false
-    },
-    {
-      id: 4,
-      category: 'Kitchens',
-      title: 'Modular Indian Kitchen',
-      style: 'Modern Indian',
-      size: '8x10 ft',
-      description: 'Efficient L-shaped layout designed for Indian cooking with ample storage.',
-      price: '₹4,999',
-      image: 'https://www.thespruce.com/thmb/8w7j4pMRe5sqJ8oap8rDXtv8wrY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/DesignbyNatalieKraiemPhotobyKirstenFrancis-c8c60d48cd3541a9bdb756a933aa3780.jpg',
+      category: 'Living Rooms',
+      images: [
+        '/h7.png',
+        '/h8.png',
+        '/h9.png',
+    
+      ],
+      title: 'The Neutral Nook',
+      style: 'Scandinavian Modern',
+      size: '14*10 ft',
+      description: 'Light woods paired with soft beige tones',
+      price: '₹2,999',
       isPopular: true
     },
     {
-      id: 5,
-      category: 'Kitchens',
-      title: 'Parallel Kitchen Layout',
-      style: 'Contemporary',
-      size: '7x12 ft',
-      description: 'Galley-style kitchen maximizing workflow efficiency for narrow spaces.',
-      price: '₹5,499',
-      image: 'https://bonito.in/wp-content/uploads/2021/10/Blog-Detail-01-1.jpg',
+      id: 4,
+      category: 'Bedrooms',
+      title: 'Boho Chique',
+      style: 'Boho Chic',
+      size: '11*13 ft',
+      description: 'Natural boho-chic interiors with cane and wood accents',
+      price: '₹3,299',
+      images: [
+        '/h12.png',
+        '/h11.png',
+        '/h13.png',
+        '/h10.png'
+      ],
       isPopular: false
+    },
+    {
+      id: 5,
+      category: 'Bedrooms',
+      title: 'Serene Regal Nest',
+      style: 'Modern Luxe',
+      size: '12*12 ft',
+      description: 'Soft botanical backdrop with refined furnishings',
+      price: '₹2,799',
+      images: [
+        '/Render 1.jpg',
+        '/Render 2.jpg'
+        
+      ],
+      isPopular: true
     },
     {
       id: 6,
-      category: 'Living Rooms',
-      title: 'Minimalist Living Space',
-      style: 'Minimalist',
-      size: '12x15 ft',
-      description: 'Clean, functional living room with smart furniture placement.',
-      price: '₹3,799',
-      image: 'https://www.marthastewart.com/thmb/lxfu2-95SWCS0jwciHs1mkbsGUM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/modern-living-rooms-wb-1-bc45b0dc70e541f0ba40364ae6bd8421.jpg',
-      isPopular: false
-    },
-    {
-      id: 7,
-      category: 'Living Rooms',
-      title: 'Contemporary Living Hub',
-      style: 'Contemporary',
-      size: '14x16 ft',
-      description: 'Modern living room design with entertainment and seating zones.',
-      price: '₹4,299',
-      image: 'https://utahstyle-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/27111537/LCA_7314-3-2.jpg',
-      isPopular: false
-    },
-    {
-      id: 8,
-      category: 'Living Rooms',
+      category: 'Bedrooms',
       title: 'Cozy Family Room',
       style: 'Transitional',
       size: '13x15 ft',
       description: 'Warm and inviting living space perfect for family gatherings.',
       price: '₹3,999',
-      image: 'https://st.hzcdn.com/simgs/4ec185730f6c8fe2_14-2379/_.jpg',
-      isPopular: false
-    },
-    {
-      id: 9,
-      category: 'Dining',
-      title: 'Modern Dining Setup',
-      style: 'Modern',
-      size: '10x12 ft',
-      description: 'Sleek dining area with optimal seating and storage solutions.',
-      price: '₹3,299',
-      image: 'https://www.spotblue.com/app/uploads/2023/06/modern-dining-room-2022-11-10-09-38-55-utc1.jpg',
-      isPopular: false
-    },
-    {
-      id: 10,
-      category: 'Dining',
-      title: 'Classic Dining Space',
-      style: 'Classic',
-      size: '11x13 ft',
-      description: 'Elegant dining room with timeless appeal and functionality.',
-      price: '₹3,599',
-      image: 'https://www.bhg.com/thmb/rvOm4fbrqM3Kv-tT2tqIn0VKljY=/3958x0/filters:no_upscale():strip_icc()/Midcentury-modern-dining-room-HGQ36597-E78HH53cq_eA6d2sgX1v8t-b8a6ea0f544f43d59feabcc6aba6a546.jpg',
-      isPopular: false
-    },
-    {
-      id: 11,
-      category: 'Home Office',
-      title: 'Productive Home Office',
-      style: 'Modern',
-      size: '8x10 ft',
-      description: 'Efficient workspace with ergonomic layout and storage.',
-      price: '₹2,999',
-      image: 'https://www.nobroker.in/blog/wp-content/uploads/2023/12/Accent-Wall-In-The-Attic-for-home-office-design-1200x673.webp',
-      isPopular: false
-    },
-    {
-      id: 12,
-      category: 'Home Office',
-      title: 'Executive Home Office',
-      style: 'Contemporary',
-      size: '10x12 ft',
-      description: 'Professional home office with premium finishes and design.',
-      price: '₹3,499',
-      image: 'https://rnb.scene7.com/is/image/roomandboard/parsons_699588_25e1?size=2400,2400&scl=1',
+      images: [
+        'https://st.hzcdn.com/simgs/4ec185730f6c8fe2_14-2379/_.jpg',
+        'https://hips.hearstapps.com/hmg-prod/images/family-room-ideas-1578948041.jpg',
+        'https://www.thespruce.com/thmb/family-room-design-ideas-4783087.jpg',
+        'https://www.bhg.com/thmb/cozy-family-room-ideas-1234567890.jpg'
+      ],
       isPopular: false
     }
   ];
@@ -164,6 +129,122 @@ const Yellow = () => {
   ];
 
   const whatsappLink = 'https://api.whatsapp.com/send?phone=917710051499';
+
+  // Fullscreen image handlers
+  const openFullscreen = (images, index) => {
+    setFullscreenImage(images);
+    setCurrentImageIndex(index);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeFullscreen = () => {
+    setFullscreenImage(null);
+    setCurrentImageIndex(0);
+    document.body.style.overflow = 'auto';
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === fullscreenImage.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === 0 ? fullscreenImage.length - 1 : prev - 1
+    );
+  };
+
+  // Image Gallery Component
+  const ImageGallery = ({ images, templateTitle }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const scrollToImage = (index) => {
+      setCurrentIndex(index);
+      const container = document.getElementById(`gallery-${templateTitle}`);
+      if (container) {
+        const imageWidth = container.offsetWidth;
+        container.scrollTo({
+          left: imageWidth * index,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    const handleScroll = (e) => {
+      const container = e.target;
+      const imageWidth = container.offsetWidth;
+      const index = Math.round(container.scrollLeft / imageWidth);
+      setCurrentIndex(index);
+    };
+
+    return (
+      <div className="yellow-img-wrapper">
+        <div 
+          className="yellow-img-gallery" 
+          id={`gallery-${templateTitle}`}
+          onScroll={handleScroll}
+        >
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`${templateTitle} - View ${index + 1}`}
+              className="yellow-img"
+              onClick={() => openFullscreen(images, index)}
+            />
+          ))}
+        </div>
+        
+        {/* Image indicators */}
+        <div className="yellow-img-indicators">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              className={`yellow-indicator ${currentIndex === index ? 'yellow-indicator-active' : ''}`}
+              onClick={() => scrollToImage(index)}
+              aria-label={`View image ${index + 1}`}
+            />
+          ))}
+        </div>
+
+        {/* Fullscreen button */}
+        <button 
+          className="yellow-fullscreen-btn"
+          onClick={() => openFullscreen(images, currentIndex)}
+          aria-label="View fullscreen"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+        </button>
+
+        {/* Navigation arrows for desktop */}
+        {images.length > 1 && (
+          <>
+            <button 
+              className="yellow-nav-btn yellow-nav-prev"
+              onClick={() => scrollToImage(currentIndex === 0 ? images.length - 1 : currentIndex - 1)}
+              aria-label="Previous image"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+            <button 
+              className="yellow-nav-btn yellow-nav-next"
+              onClick={() => scrollToImage(currentIndex === images.length - 1 ? 0 : currentIndex + 1)}
+              aria-label="Next image"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+          </>
+        )}
+      </div>
+    );
+  };
 
   return (
     <section className="yellow-section">
@@ -206,13 +287,9 @@ const Yellow = () => {
                   <span className="yellow-popular-text">Popular</span>
                 </div>
               )}
-              <div className="yellow-img-wrapper">
-                <img 
-                  src={template.image} 
-                  alt={template.title} 
-                  className="yellow-img"
-                />
-              </div>
+              
+              <ImageGallery images={template.images} templateTitle={template.title} />
+              
               <div className="yellow-card-body">
                 <h3 className="yellow-card-title">{template.title}</h3>
                 <div className="yellow-card-meta">
@@ -248,6 +325,59 @@ const Yellow = () => {
           </div>
         )}
       </div>
+
+      {/* Fullscreen Modal */}
+      {fullscreenImage && (
+        <div className="yellow-fullscreen-modal" onClick={closeFullscreen}>
+          <button className="yellow-modal-close" onClick={closeFullscreen}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+
+          <div className="yellow-modal-content" onClick={(e) => e.stopPropagation()}>
+            <img 
+              src={fullscreenImage[currentImageIndex]} 
+              alt={`Fullscreen view ${currentImageIndex + 1}`}
+              className="yellow-modal-img"
+            />
+
+            {fullscreenImage.length > 1 && (
+              <>
+                <button className="yellow-modal-prev" onClick={prevImage}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="15 18 9 12 15 6"/>
+                  </svg>
+                </button>
+                <button className="yellow-modal-next" onClick={nextImage}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="9 18 15 12 9 6"/>
+                  </svg>
+                </button>
+              </>
+            )}
+
+            {/* Image counter */}
+            <div className="yellow-modal-counter">
+              {currentImageIndex + 1} / {fullscreenImage.length}
+            </div>
+
+            {/* Thumbnail navigation */}
+            <div className="yellow-modal-thumbnails">
+              {fullscreenImage.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Thumbnail ${index + 1}`}
+                  className={`yellow-modal-thumbnail ${index === currentImageIndex ? 'yellow-thumbnail-active' : ''}`}
+                  onClick={() => setCurrentImageIndex(index)}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

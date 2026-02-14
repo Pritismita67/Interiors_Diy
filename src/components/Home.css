@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://images.wallpapersden.com/image/download/interior-design-style-istanbul_Z25sa2uUmZqaraWkpJRmbmdlrWZlbWU.jpg');
+  background-image: url('https://arcediorv3-assets.s3.amazonaws.com/270386/Luxury-Minimalism-in-Interiors.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@
   font-size: 0.875rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 2.5rem; */
   font-weight: 400;
   color: rgba(255, 255, 255, 0.95);
   animation: fadeInDown 1s ease-out;
@@ -59,21 +59,22 @@
 
 /* Main Title */
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 100px; /* fixed at 100px */
   font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
   color: white;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   animation: fadeInUp 1s ease-out 0.2s both;
 }
 
+
 /* Description */
 .hero-description {
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.6;
-  margin-bottom: 2.5rem;
+  line-height: 1.8;
+   margin-bottom: 1rem; 
   color: rgba(255, 255, 255, 0.95);
   max-width: 800px;
   margin-left: auto;
@@ -84,10 +85,10 @@
 /* CTA Button */
 .cta-button {
   display: inline-block;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   background-color: #d4695b;
   color: white;
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
   border-radius: 5px;
@@ -152,7 +153,7 @@
 
   .cta-button {
     padding: 1.25rem 3.5rem;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -163,7 +164,7 @@
   }
 
   .hero-title {
-    font-size: 4.5rem;
+    font-size: 100px;
   }
 
   .hero-description {
@@ -189,14 +190,14 @@
 
   .cta-button {
     padding: 0.95rem 2.75rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
 /* Tablet Landscape (768px to 1023px) */
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .hero-section {
-    height: 90vh;
+    height: 100vh;
   }
 
   .hero-content {
@@ -230,7 +231,8 @@
 /* Tablet Portrait (600px to 767px) */
 @media screen and (max-width: 767px) and (min-width: 600px) {
   .hero-section {
-    height: 85vh;
+    height: 100vh;
+    min-height: 100vh;
   }
 
   .hero-content {
@@ -239,55 +241,22 @@
   }
 
   .hero-subtitle {
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.25;
-  }
-
-  .hero-description {
-    font-size: 1.125rem;
-    margin-bottom: 1.75rem;
-    max-width: 500px;
-  }
-
-  .cta-button {
-    padding: 0.85rem 2.25rem;
-    font-size: 1rem;
-  }
-}
-
-/* Mobile Large (481px to 599px) */
-@media screen and (max-width: 599px) and (min-width: 481px) {
-  .hero-section {
-    height: 80vh;
-  }
-
-  .hero-content {
-    padding: 0 1.5rem;
-  }
-
-  .hero-subtitle {
     font-size: 0.7rem;
-    letter-spacing: 1.8px;
-    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
   }
 
   .hero-title {
     font-size: 2.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     line-height: 1.3;
   }
 
   .hero-description {
     font-size: 1.05rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    line-height: 1.6;
   }
 
   .cta-button {
@@ -296,10 +265,48 @@
   }
 }
 
+/* Mobile Large (481px to 599px) */
+@media screen and (max-width: 599px) and (min-width: 481px) {
+  .hero-section {
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('/m1.jpg'); /* Add your mobile image URL */
+  }
+
+  .hero-content {
+    padding: 0 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.65rem;
+    letter-spacing: 1.8px;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 50px; /* Changed to 50px as requested */
+    margin-bottom: 1.3rem;
+    line-height: 1.3;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.55;
+  }
+
+  .cta-button {
+    padding: 0.75rem 1.85rem;
+    font-size: 0.9rem;
+  }
+}
+
 /* Mobile Medium (376px to 480px) */
 @media screen and (max-width: 480px) and (min-width: 376px) {
   .hero-section {
-    height: 75vh;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('/m1.jpg'); /* Add your mobile image URL */
   }
 
   .hero-content {
@@ -307,26 +314,26 @@
   }
 
   .hero-subtitle {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     letter-spacing: 1.5px;
-    margin-bottom: 0.875rem;
+    margin-bottom: 1.2rem;
   }
 
   .hero-title {
-    font-size: 2rem;
-    margin-bottom: 0.875rem;
-    line-height: 1.3;
+    font-size: 50px; /* Changed to 50px as requested */
+    margin-bottom: 1.3rem;
+    line-height: 1.35;
   }
 
   .hero-description {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
     line-height: 1.5;
   }
 
   .cta-button {
-    padding: 0.75rem 1.75rem;
-    font-size: 0.9rem;
+    padding: 0.7rem 1.65rem;
+    font-size: 0.85rem;
     width: auto;
   }
 }
@@ -334,7 +341,9 @@
 /* Mobile Small (320px to 375px) */
 @media screen and (max-width: 375px) {
   .hero-section {
-    height: 70vh;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('/m1.jpg'); /* Add your mobile image URL */
   }
 
   .hero-content {
@@ -342,26 +351,26 @@
   }
 
   .hero-subtitle {
-    font-size: 0.6rem;
+    font-size: 0.58rem;
     letter-spacing: 1.2px;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.1rem;
   }
 
   .hero-title {
-    font-size: 1.75rem;
-    margin-bottom: 0.75rem;
+    font-size: 40px; /* Changed to 40px as requested */
+    margin-bottom: 1.2rem;
     line-height: 1.35;
   }
 
   .hero-description {
-    font-size: 0.95rem;
-    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.7rem;
     line-height: 1.5;
   }
 
   .cta-button {
-    padding: 0.7rem 1.5rem;
-    font-size: 0.85rem;
+    padding: 0.65rem 1.5rem;
+    font-size: 0.82rem;
     width: auto;
   }
 }
@@ -369,7 +378,9 @@
 /* Extra Small Mobile (below 320px) */
 @media screen and (max-width: 319px) {
   .hero-section {
-    height: 65vh;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('/m1.jpg'); /* Add your mobile image URL */
   }
 
   .hero-content {
@@ -379,51 +390,52 @@
   .hero-subtitle {
     font-size: 0.55rem;
     letter-spacing: 1px;
-    margin-bottom: 0.65rem;
+    margin-bottom: 0.55rem;
   }
 
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 40px; /* Changed to 40px as requested */
     margin-bottom: 0.65rem;
-    line-height: 1.35;
+    line-height: 1.3;
   }
 
   .hero-description {
-    font-size: 0.875rem;
+    font-size: 0.85rem;
     margin-bottom: 1rem;
-    line-height: 1.45;
+    line-height: 1.38;
   }
 
   .cta-button {
-    padding: 0.65rem 1.25rem;
-    font-size: 0.8rem;
+    padding: 0.6rem 1.35rem;
+    font-size: 0.78rem;
   }
 }
 
 /* Landscape orientation adjustments */
 @media screen and (max-height: 600px) and (orientation: landscape) {
   .hero-section {
-    height: auto;
+    height: 100vh;
     min-height: 100vh;
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 
   .hero-content {
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 
   .hero-title {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   .hero-description {
-    font-size: 1rem;
-    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
   }
 
   .hero-subtitle {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
   }
 }
 

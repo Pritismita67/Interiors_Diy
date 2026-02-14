@@ -4,13 +4,15 @@ import Online from "./Online";
 import Path from "./Path";
 
 import Varies from "./Varies";
-import Dress from "./Dress";
+import Mars from "./Mars";
+
 
 export default function Services() {
   return (
     <>
     <Path />
-   <Dress />
+   
+   <Mars />
     <Custom />
     <Varies />
     <Online />

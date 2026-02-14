@@ -11,9 +11,8 @@ const Wisdom = () => {
         
         <h1 className="wisdom-title">
           Vastu is about space,<br />
-          flow, and balance —<br />
-          not fear or<br />
-          superstition
+          flow, and balance, <br />
+         not fear or superstition
         </h1>
         
         <p className="wisdom-subtitle">
