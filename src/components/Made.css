@@ -571,11 +571,11 @@
   }
 
   .made-title {
-    font-size: 38px;
+    font-size: 1.8rem;
   }
 
   .made-description {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .made-grid {
@@ -677,12 +677,12 @@
   }
 
   .made-title {
-    font-size: 32px;
+    font-size: 1.8rem;
     margin-bottom: 8px;
   }
 
   .made-description {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.55;
   }
 
@@ -806,11 +806,11 @@
   }
 
   .made-title {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
 
   .made-description {
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   .made-image-wrapper,

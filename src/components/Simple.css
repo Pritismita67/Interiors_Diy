@@ -127,7 +127,7 @@
   }
 
   .simple-title {
-    font-size: 36px;
+    font-size: 1.8rem;
     margin-bottom: 45px;
     line-height: 1.25;
   }
@@ -142,7 +142,7 @@
   }
 
   .step-description {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.55;
     max-width: 650px;
   }
@@ -160,7 +160,7 @@
   }
 
   .simple-title {
-    font-size: 30px;
+    font-size: 1.8rem;
     margin-bottom: 40px;
     line-height: 1.2;
   }
@@ -175,7 +175,7 @@
   }
 
   .step-description {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.5;
     max-width: 100%;
   }
@@ -193,7 +193,7 @@
   }
 
   .simple-title {
-    font-size: 26px;
+    font-size: 1.8rem;
     margin-bottom: 35px;
   }
 
@@ -206,6 +206,6 @@
   }
 
   .step-description {
-    font-size: 13px;
+    font-size: 1rem;
   }
 }

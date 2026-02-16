@@ -210,7 +210,7 @@
   }
 
   .analysis-title {
-    font-size: 36px;
+    font-size: 1.8rem;
   }
 
   .analysis-subtitle {
@@ -218,7 +218,7 @@
   }
 
   .analysis-description {
-    font-size: 15px;
+    font-size: 1rem;
     margin: 8px 0 16px 0;
   }
 
@@ -273,7 +273,7 @@
   }
 
   .analysis-title {
-    font-size: 32px;
+    font-size: 1.8rem;
   }
 
   .analysis-subtitle {
@@ -281,7 +281,7 @@
   }
 
   .analysis-description {
-    font-size: 14px;
+    font-size: 1rem;
     margin: 6px 0 14px 0;
   }
 
@@ -327,10 +327,11 @@
   }
 
   .analysis-title {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
 
   .analysis-description {
+    font-size: 1rem;
     margin: 4px 0 12px 0;
   }
 

@@ -86,7 +86,6 @@
   border: none;
   cursor: pointer;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  /* box-shadow: 0 4px 12px rgba(217, 120, 83, 0.3); */
 }
 
 .whatsapp-button:hover {
@@ -100,8 +99,8 @@
   box-shadow: 0 3px 8px rgba(217, 120, 83, 0.3);
 }
 
-/* Tablet Styles */
-@media (max-width: 1024px) {
+/* Tablet Styles (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
   .transform-container {
     padding: 50px 20px;
     min-height: 90vh;
@@ -130,8 +129,12 @@
   }
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
+/* Mobile and Below (767px and below) - Base mobile styles */
+@media (max-width: 767px) {
+  body {
+    font-size: 1rem;
+  }
+
   .transform-container {
     padding: 40px 16px;
     min-height: 85vh;
@@ -142,7 +145,7 @@
   }
 
   .transform-title {
-    font-size: 48px;
+    font-size: 1.8rem;
     margin-bottom: 20px;
     letter-spacing: -0.5px;
   }
@@ -170,8 +173,12 @@
   }
 }
 
-/* Mobile Large (481px to 599px) */
-@media screen and (max-width: 599px) and (min-width: 481px) {
+/* Mobile Large (481px to 767px) */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  body {
+    font-size: 1rem;
+  }
+
   .transform-container {
     padding: 30px 12px;
     min-height: 80vh;
@@ -183,7 +190,7 @@
   }
 
   .transform-title {
-    font-size: 40px;
+    font-size: 1.8rem;
     margin-bottom: 16px;
   }
 
@@ -212,6 +219,10 @@
 
 /* Small Mobile Styles (376px to 480px) */
 @media (max-width: 480px) and (min-width: 376px) {
+  body {
+    font-size: 1rem;
+  }
+
   .transform-container {
     padding: 30px 12px;
     min-height: 80vh;
@@ -223,7 +234,7 @@
   }
 
   .transform-title {
-    font-size: 40px;
+    font-size: 1.8rem;
     margin-bottom: 16px;
   }
 
@@ -252,12 +263,23 @@
 
 /* Extra Small Mobile (320px to 375px) */
 @media (max-width: 375px) {
+  body {
+    font-size: 1rem;
+  }
+
   .transform-container {
     background-image: url('/m5.jpg');
+    padding: 30px 12px;
+    min-height: 80vh;
+  }
+
+  .transform-content {
+    padding: 16px 12px;
   }
 
   .transform-title {
-    font-size: 36px;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
   }
 
   .transform-subtitle {
@@ -282,16 +304,27 @@
 
 /* Extra Extra Small Devices (below 320px) */
 @media (max-width: 319px) {
+  body {
+    font-size: 1rem;
+  }
+
   .transform-container {
     background-image: url('/m5.jpg');
+    padding: 30px 10px;
+    min-height: 80vh;
+  }
+
+  .transform-content {
+    padding: 14px 10px;
   }
 
   .transform-title {
-    font-size: 36px;
+    font-size: 1.8rem;
+    margin-bottom: 14px;
   }
 
   .transform-subtitle {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .transform-description {
@@ -312,6 +345,10 @@
 
 /* Landscape Mobile */
 @media (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+  body {
+    font-size: 1rem;
+  }
+
   .transform-container {
     min-height: 100vh;
     padding: 30px 20px;
@@ -322,7 +359,7 @@
   }
 
   .transform-title {
-    font-size: 42px;
+    font-size: 1.8rem;
     margin-bottom: 12px;
   }
 
@@ -342,7 +379,7 @@
   }
 }
 
-/* High Resolution Displays */
+/* High Resolution Displays (1440px and above) */
 @media (min-width: 1440px) {
   .transform-title {
     font-size: 80px;
@@ -363,7 +400,7 @@
   }
 }
 
-/* Extra Large Displays */
+/* Extra Large Displays (1920px and above) */
 @media (min-width: 1920px) {
   .transform-content {
     max-width: 1400px;

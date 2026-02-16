@@ -220,7 +220,7 @@
   }
 
   .mars-main-title {
-    font-size: 36px;
+    font-size: 1.8rem;
     white-space: normal;
   }
 
@@ -229,7 +229,7 @@
   }
 
   .mars-description-text {
-    font-size: 15px;
+    font-size: 1rem;
     margin: 8px 0 16px 0;
   }
 
@@ -289,7 +289,7 @@
   }
 
   .mars-main-title {
-    font-size: 32px;
+    font-size: 1.8rem;
   }
 
   .mars-main-subtitle {
@@ -297,7 +297,7 @@
   }
 
   .mars-description-text {
-    font-size: 14px;
+    font-size: 1rem;
     margin: 6px 0 14px 0;
   }
 
@@ -357,7 +357,7 @@
   }
 
   .mars-main-title {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
 
   .mars-main-subtitle {
@@ -365,7 +365,7 @@
   }
 
   .mars-description-text {
-    font-size: 13px;
+    font-size: 1rem;
     margin: 4px 0 12px 0;
   }
 

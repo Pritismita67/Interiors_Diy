@@ -9,50 +9,53 @@ const Made = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const templates = [
-    {
+     {
       id: 1,
+      category: 'Living Rooms',
       images: [
         '/h3.png',
         '/h2.png',
         '/h1.png',
        
       ],
-      title: 'BLUE BIRD',
-      style: 'Japandi, Eclectic',
-      size: '225 sq ft',
-      description: 'Premium Living Type1',
+      title: 'Urban Grove',
+      style: 'Contemporary Minimal',
+      size: '14*10 ft',
+      description: 'Earthy tones balanced with sleek black elements',
       price: '₹2,499',
-      popular: true
+      isPopular: true
     },
     {
       id: 2,
+      category: 'Living Rooms',
       images: [
         '/h6.png',
         '/h4.png',
         '/h5.png',
         
       ],
-      title: 'Viridity',
-      style: 'Quirky',
-      size: '150 Sq ft',
-      description: 'Premium Living Type2',
+      title: 'Arcadia Calm',
+      style: 'Modern Comfort',
+      size: '14*10 ft',
+      description: 'Elegant curves with cozy neutral palette',
       price: '₹2,799',
-      popular: true
+      isPopular: true
     },
     {
       id: 3,
+      category: 'Living Rooms',
       images: [
         '/h7.png',
         '/h8.png',
         '/h9.png',
     
       ],
-      title: 'White Dove',
-      style: 'Minimal',
-      size: '147 Sq ft',
-      description: 'Premium Living Type2',
-      price: '₹3,299',
-      popular: true
+      title: 'The Neutral Nook',
+      style: 'Scandinavian Modern',
+      size: '14*10 ft',
+      description: 'Light woods paired with soft beige tones',
+      price: '₹2,999',
+      isPopular: true
     }
   ];
 
