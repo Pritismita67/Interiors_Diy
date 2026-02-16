@@ -14,7 +14,7 @@ import Custom from "./services/Custom";
 
 export default function Page() {
   return <>
-  <Home />;
+  <Home />
   <What />
   <Problem />
   <Simple />

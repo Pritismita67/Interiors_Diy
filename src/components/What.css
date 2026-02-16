@@ -2,7 +2,7 @@
 .what-section {
   width: 100%;
   background-color: #f5f5f0;
-  padding: 80px 20px 80px 60px;
+  padding: 80px 60px 80px 20px;
 }
 
 .what-container {
@@ -14,7 +14,7 @@
 .what-content {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 100px;
 }
 
 .what-text {
@@ -37,7 +37,6 @@
   color: #1a1a1a;
   margin-bottom: 28px;
   line-height: 1.2;
-  white-space: nowrap;
 }
 
 .what-description {
@@ -60,7 +59,7 @@
 
 .what-image {
   flex: 0 0 480px;
-  max-width: 480px;
+  max-width: 500px;
 }
 
 .what-image img {
@@ -69,6 +68,7 @@
   display: block;
   border-radius: 8px;
   object-fit: cover;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Tablet Styles (768px - 1024px) */
@@ -99,7 +99,7 @@
 /* Mobile Landscape and Small Tablet (600px - 768px) */
 @media (max-width: 768px) {
   .what-section {
-    padding: 25px 20px;
+    padding: 50px 20px;
   }
 
   .what-content {
@@ -107,94 +107,84 @@
     gap: 30px;
   }
 
-  .what-title {
-    font-size: 35px;
-    margin-bottom: 14px;
-    white-space: normal;
-  }
-
-  .what-chapter {
-    font-size: 9.5px;
-    margin-bottom: 8px;
-  }
-
-  .what-description {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-  }
-
-  .what-tagline {
-    font-size: 14px;
-    margin-top: 12px;
-  }
-
   .what-image {
     flex: 0 0 auto;
     max-width: 100%;
+    order: 2;
+  }
+
+  .what-text {
+    max-width: 100%;
+    order: 1;
+  }
+
+  .what-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .what-chapter {
+    font-size: 10px;
+    margin-bottom: 16px;
+  }
+
+  .what-description {
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 18px;
+  }
+
+  .what-tagline {
+    font-size: 15px;
+    margin-top: 20px;
   }
 }
 
 /* Mobile Portrait (max 600px) */
 @media (max-width: 600px) {
   .what-section {
-    padding: 20px 16px;
+    padding: 40px 16px;
   }
 
   .what-content {
-    gap: 20px;
+    gap: 30px;
   }
 
   .what-title {
-    font-size: 25px;
-    margin-bottom: 12px;
+    font-size: 32px;
+    margin-bottom: 20px;
   }
 
   .what-chapter {
-    font-size: 9px;
+    font-size: 10px;
     letter-spacing: 1.5px;
-    margin-bottom: 6px;
+    margin-bottom: 14px;
   }
 
   .what-description {
-    font-size: 13.5px;
-    line-height: 1.48;
-    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
   }
 
   .what-tagline {
-    font-size: 13.5px;
-    margin-top: 10px;
+    font-size: 14px;
+    margin-top: 18px;
   }
 }
 
 /* Extra Small Mobile (max 400px) */
 @media (max-width: 400px) {
   .what-section {
-    padding: 18px 12px;
-  }
-
-  .what-content {
-    gap: 16px;
+    padding: 35px 12px;
   }
 
   .what-title {
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 28px;
   }
 
-  .what-chapter {
-    margin-bottom: 5px;
-  }
-
-  .what-description {
-    font-size: 13px;
-    line-height: 1.45;
-    margin-bottom: 7px;
-  }
-
+  .what-description,
   .what-tagline {
     font-size: 13px;
-    margin-top: 8px;
   }
 }

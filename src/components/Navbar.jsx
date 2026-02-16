@@ -33,7 +33,7 @@ const Navbar = () => {
 
         {/* Mobile Actions Container - WhatsApp Icon + Hamburger */}
         <div className="mobile-actions">
-          {/* WhatsApp Icon Button - Mobile Only */}
+          {/* WhatsApp Icon Button - Mobile & Tablet */}
           <a 
             href="https://api.whatsapp.com/send?phone=917710051499" 
             target="_blank"
