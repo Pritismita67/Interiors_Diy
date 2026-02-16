@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-column footer-brand">
           <div className="footer-logo">
             <Image 
-              src="/image.png" 
+              src="/bgimg.png" 
               alt="DIY Logo" 
               width={40} 
               height={40}
@@ -90,12 +90,12 @@ const Footer = () => {
           <h3 className="footer-heading">Services</h3>
           <ul className="footer-links">
             <li>
-              <Link href="/services/ready-made-templates">
+              <Link href="/templates">
                 Ready-Made Templates
               </Link>
             </li>
             <li>
-              <Link href="/services/custom-design-consult">
+              <Link href="/custom-design">
                 Custom Design Consult
               </Link>
             </li>

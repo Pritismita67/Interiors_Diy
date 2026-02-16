@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import './Browse.css';
 
 const Browse = () => {
@@ -14,9 +13,14 @@ const Browse = () => {
         <p className="browse-description">
           Sometimes, all you need is a proven template and the confidence to execute it yourself.
         </p>
-        <Link href="/templates" className="browse-button">
+        <a 
+          href="https://api.whatsapp.com/send?phone=917710051499" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="browse-button"
+        >
           Browse Templates
-        </Link>
+        </a>
       </div>
     </section>
   );

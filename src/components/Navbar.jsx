@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="navbar-logo" onClick={closeMobileMenu}>
           <Image 
-            src="/image.png" 
+            src="/bgimg.png" 
             alt="DIY Logo" 
             width={50} 
             height={50}

@@ -119,12 +119,21 @@
   color: #ffffff;
 }
 
-/* Template Cards Grid */
-.yellow-grid {
+/* Template Cards Grid - First Row (3 cards) */
+.yellow-grid-first {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+}
+
+/* Template Cards Grid - Second Row (2 cards centered) */
+.yellow-grid-second {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: calc(66.666% + 16px); /* Width of 2 cards + 1 gap */
+  margin: 0 auto 40px auto;
 }
 
 /* Template Card */
@@ -615,9 +624,14 @@
     margin-bottom: 50px;
   }
 
-  .yellow-grid {
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  .yellow-grid-first,
+  .yellow-grid-second {
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
+  }
+
+  .yellow-grid-second {
+    max-width: 100%;
   }
 
   .yellow-img-wrapper {
@@ -696,9 +710,16 @@
     margin-left: auto;
   }
 
-  .yellow-grid {
+  .yellow-grid-first,
+  .yellow-grid-second {
     grid-template-columns: 1fr;
     gap: 20px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .yellow-grid-second {
+    margin-bottom: 40px;
   }
 
   .yellow-img-wrapper {
@@ -816,7 +837,8 @@
     padding: 9px 10px;
   }
 
-  .yellow-grid {
+  .yellow-grid-first,
+  .yellow-grid-second {
     gap: 16px;
   }
 
@@ -933,8 +955,8 @@
     margin-bottom: 70px;
   }
 
-  .yellow-grid {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  .yellow-grid-first,
+  .yellow-grid-second {
     gap: 36px;
   }
 

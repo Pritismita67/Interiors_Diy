@@ -89,22 +89,6 @@ const Yellow = () => {
         
       ],
       isPopular: true
-    },
-    {
-      id: 6,
-      category: 'Bedrooms',
-      title: 'Cozy Family Room',
-      style: 'Transitional',
-      size: '13x15 ft',
-      description: 'Warm and inviting living space perfect for family gatherings.',
-      price: '₹3,999',
-      images: [
-        'https://st.hzcdn.com/simgs/4ec185730f6c8fe2_14-2379/_.jpg',
-        'https://hips.hearstapps.com/hmg-prod/images/family-room-ideas-1578948041.jpg',
-        'https://www.thespruce.com/thmb/family-room-design-ideas-4783087.jpg',
-        'https://www.bhg.com/thmb/cozy-family-room-ideas-1234567890.jpg'
-      ],
-      isPopular: false
     }
   ];
 
@@ -112,6 +96,10 @@ const Yellow = () => {
   const filteredTemplates = activeFilter === 'All Templates' 
     ? templates 
     : templates.filter(template => template.category === activeFilter);
+
+  // Split templates for display - first 3 and last 2
+  const firstRowTemplates = filteredTemplates.slice(0, 3);
+  const secondRowTemplates = filteredTemplates.slice(3);
 
   // Get count for each category
   const getCategoryCount = (category) => {
@@ -246,6 +234,45 @@ const Yellow = () => {
     );
   };
 
+  // Template Card Component
+  const TemplateCard = ({ template }) => (
+    <div className="yellow-card">
+      {template.isPopular && (
+        <div className="yellow-popular-tag">
+          <span className="yellow-popular-icon">🔥</span>
+          <span className="yellow-popular-text">Popular</span>
+        </div>
+      )}
+      
+      <ImageGallery images={template.images} templateTitle={template.title} />
+      
+      <div className="yellow-card-body">
+        <h3 className="yellow-card-title">{template.title}</h3>
+        <div className="yellow-card-meta">
+          <span className="yellow-meta-style">{template.style}</span>
+          <span className="yellow-meta-sep">•</span>
+          <span className="yellow-meta-size">{template.size}</span>
+        </div>
+        <p className="yellow-card-desc">{template.description}</p>
+        <div className="yellow-card-footer">
+          <div className="yellow-pricing">
+            <span className="yellow-price">{template.price}</span>
+            <span className="yellow-price-label">Complete design pack</span>
+          </div>
+          <a 
+            href={whatsappLink} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="yellow-btn"
+          >
+            <span className="yellow-btn-icon">💬</span>
+            <span className="yellow-btn-text">Get a Quote</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <section className="yellow-section">
       <div className="yellow-wrapper">
@@ -277,46 +304,23 @@ const Yellow = () => {
           ))}
         </div>
 
-        {/* Template Cards Grid */}
-        <div className="yellow-grid">
-          {filteredTemplates.map((template) => (
-            <div key={template.id} className="yellow-card">
-              {template.isPopular && (
-                <div className="yellow-popular-tag">
-                  <span className="yellow-popular-icon">🔥</span>
-                  <span className="yellow-popular-text">Popular</span>
-                </div>
-              )}
-              
-              <ImageGallery images={template.images} templateTitle={template.title} />
-              
-              <div className="yellow-card-body">
-                <h3 className="yellow-card-title">{template.title}</h3>
-                <div className="yellow-card-meta">
-                  <span className="yellow-meta-style">{template.style}</span>
-                  <span className="yellow-meta-sep">•</span>
-                  <span className="yellow-meta-size">{template.size}</span>
-                </div>
-                <p className="yellow-card-desc">{template.description}</p>
-                <div className="yellow-card-footer">
-                  <div className="yellow-pricing">
-                    <span className="yellow-price">{template.price}</span>
-                    <span className="yellow-price-label">Complete design pack</span>
-                  </div>
-                  <a 
-                    href={whatsappLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="yellow-btn"
-                  >
-                    <span className="yellow-btn-icon">💬</span>
-                    <span className="yellow-btn-text">Get a Quote</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Template Cards - First Row (3 cards) */}
+        {firstRowTemplates.length > 0 && (
+          <div className="yellow-grid yellow-grid-first">
+            {firstRowTemplates.map((template) => (
+              <TemplateCard key={template.id} template={template} />
+            ))}
+          </div>
+        )}
+
+        {/* Template Cards - Second Row (2 cards centered) */}
+        {secondRowTemplates.length > 0 && (
+          <div className="yellow-grid yellow-grid-second">
+            {secondRowTemplates.map((template) => (
+              <TemplateCard key={template.id} template={template} />
+            ))}
+          </div>
+        )}
 
         {/* No Results Message */}
         {filteredTemplates.length === 0 && (
