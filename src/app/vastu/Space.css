@@ -115,7 +115,7 @@
 /* Mobile Landscape and Small Tablet */
 @media screen and (max-width: 768px) {
   .vastu-section {
-    padding: 50px 16px;
+    padding: 40px 16px;
   }
 
   .vastu-container {
@@ -124,7 +124,7 @@
 
   .vastu-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 
   .text-content {
@@ -136,13 +136,13 @@
   }
 
   .section-title {
-    font-size: 42px;
+    font-size: 1.8rem;
     margin-top: 2px;
   }
 
   .description-text,
   .tagline {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.7;
   }
 
@@ -177,14 +177,14 @@
   }
 
   .section-title {
-    font-size: 36px;
+    font-size: 1.8rem;
     letter-spacing: -0.5px;
     margin-top: 0px;
   }
 
   .description-text,
   .tagline {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.65;
   }
 
@@ -196,7 +196,7 @@
 /* Extra Small Mobile */
 @media screen and (max-width: 375px) {
   .vastu-section {
-    padding: 32px 12px;
+    padding: 40px 12px;
   }
 
   .vastu-container {
@@ -212,13 +212,13 @@
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 1.8rem;
     margin-top: 0px;
   }
 
   .description-text,
   .tagline {
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   .image-content {

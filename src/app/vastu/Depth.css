@@ -264,7 +264,7 @@
 /* Tablet */
 @media screen and (max-width: 768px) {
   .depth-section {
-    padding: 70px 16px 90px;
+    padding: 40px 16px;
   }
 
   .depth-container {
@@ -272,7 +272,7 @@
   }
 
   .depth-header {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .depth-badge {
@@ -282,11 +282,11 @@
   }
 
   .depth-title {
-    font-size: 38px;
+    font-size: 1.8rem;
   }
 
   .depth-subtitle {
-    font-size: 15px;
+    font-size: 1rem;
   }
 
   .depth-cards {
@@ -347,7 +347,7 @@
 /* Mobile Large */
 @media screen and (max-width: 640px) {
   .depth-section {
-    padding: 60px 16px 70px;
+    padding: 40px 16px;
   }
 
   .depth-container {
@@ -355,11 +355,15 @@
   }
 
   .depth-header {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
 
   .depth-title {
-    font-size: 34px;
+    font-size: 1.8rem;
+  }
+
+  .depth-subtitle {
+    font-size: 1rem;
   }
 
   .depth-cards {
@@ -378,7 +382,7 @@
 /* Mobile */
 @media screen and (max-width: 480px) {
   .depth-section {
-    padding: 50px 16px 60px;
+    padding: 40px 16px;
   }
 
   .depth-header {
@@ -392,12 +396,12 @@
   }
 
   .depth-title {
-    font-size: 30px;
+    font-size: 1.8rem;
     margin: 0 0 12px 0;
   }
 
   .depth-subtitle {
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   .depth-cards {
@@ -461,7 +465,7 @@
 /* Mobile Small */
 @media screen and (max-width: 375px) {
   .depth-section {
-    padding: 40px 12px 50px;
+    padding: 40px 12px;
   }
 
   .depth-container {
@@ -473,11 +477,11 @@
   }
 
   .depth-title {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
 
   .depth-subtitle {
-    font-size: 13px;
+    font-size: 1rem;
   }
 
   .depth-cards {

@@ -167,7 +167,7 @@
 /* Mobile Responsive (below 768px) */
 @media screen and (max-width: 768px) {
   .shopping-container {
-    padding: 40px 20px 60px;
+    padding: 40px 20px;
   }
 
   .free-download-badge {
@@ -177,17 +177,17 @@
   }
 
   .shopping-heading {
-    font-size: 36px;
+    font-size: 1.8rem;
     margin-bottom: 20px;
   }
 
   .shopping-subtitle {
-    font-size: 16px;
-    margin-bottom: 50px;
+    font-size: 1rem;
+    margin-bottom: 40px;
   }
 
   .section-heading {
-    font-size: 26px;
+    font-size: 1.8rem;
     margin-bottom: 32px;
   }
 
@@ -206,14 +206,14 @@
   }
 
   .benefit-description {
-    font-size: 15px;
+    font-size: 1rem;
   }
 }
 
 /* Small Mobile (below 480px) */
 @media screen and (max-width: 480px) {
   .shopping-container {
-    padding: 32px 16px 50px;
+    padding: 40px 16px;
   }
 
   .free-download-badge {
@@ -223,17 +223,17 @@
   }
 
   .shopping-heading {
-    font-size: 28px;
+    font-size: 1.8rem;
     margin-bottom: 16px;
   }
 
   .shopping-subtitle {
-    font-size: 15px;
+    font-size: 1rem;
     margin-bottom: 40px;
   }
 
   .section-heading {
-    font-size: 24px;
+    font-size: 1.8rem;
     margin-bottom: 28px;
   }
 
@@ -247,6 +247,6 @@
   }
 
   .benefit-description {
-    font-size: 14px;
+    font-size: 1rem;
   }
 }

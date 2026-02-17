@@ -128,10 +128,14 @@
   }
 }
 
-/* Mobile Responsive (below 768px) */
-@media screen and (max-width: 768px) {
+/* Mobile and Below (767px and below) - Base mobile styles */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 1rem;
+  }
+
   .kitchen-section {
-    padding: 60px 0;
+    padding: 20px 0 30px 0;
   }
 
   .kitchen-container {
@@ -141,32 +145,33 @@
   }
 
   .kitchen-content {
-    gap: 16px;
+    gap: 12px;
   }
 
   .kitchen-label {
-    font-size: clamp(0.7rem, 2vw, 0.8rem);
+    font-size: 0.7rem;
     letter-spacing: 0.12em;
+    margin-bottom: 4px;
   }
 
   .kitchen-title {
-    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    font-size: 1.8rem;
     line-height: 1.25;
   }
 
   .kitchen-description {
-    font-size: clamp(0.95rem, 3vw, 1.1rem);
+    font-size: 1rem;
     margin: 4px 0 0 0;
     line-height: 1.65;
   }
 
   .kitchen-text {
-    font-size: clamp(0.9rem, 2.8vw, 1.05rem);
+    font-size: 1rem;
     line-height: 1.75;
   }
 
   .kitchen-tagline {
-    font-size: clamp(0.9rem, 2.8vw, 1.05rem);
+    font-size: 1rem;
   }
 
   .kitchen-image-wrapper {
@@ -175,10 +180,35 @@
   }
 }
 
-/* Small Mobile (below 480px) */
-@media screen and (max-width: 480px) {
+/* Mobile Large (481px to 767px) */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  body {
+    font-size: 1rem;
+  }
+
   .kitchen-section {
-    padding: 50px 0;
+    padding: 20px 0 30px 0;
+  }
+
+  .kitchen-title {
+    font-size: 1.8rem;
+  }
+
+  .kitchen-description,
+  .kitchen-text,
+  .kitchen-tagline {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile (376px to 480px) */
+@media screen and (max-width: 480px) and (min-width: 376px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .kitchen-section {
+    padding: 20px 0 30px 0;
   }
 
   .kitchen-container {
@@ -187,31 +217,82 @@
   }
 
   .kitchen-content {
-    gap: 14px;
+    gap: 10px;
   }
 
   .kitchen-label {
     font-size: 0.7rem;
     letter-spacing: 0.1em;
+    margin-bottom: 2px;
   }
 
   .kitchen-title {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     line-height: 1.3;
   }
 
   .kitchen-description {
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin: 2px 0 0 0;
   }
 
   .kitchen-text,
   .kitchen-tagline {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .kitchen-image-wrapper {
     min-height: 300px;
+  }
+}
+
+/* Extra Small Devices (320px to 375px) */
+@media screen and (max-width: 375px) and (min-width: 320px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .kitchen-section {
+    padding: 20px 0 30px 0;
+  }
+
+  .kitchen-content {
+    gap: 8px;
+  }
+
+  .kitchen-label {
+    margin-bottom: 0;
+  }
+
+  .kitchen-title {
+    font-size: 1.8rem;
+  }
+
+  .kitchen-description,
+  .kitchen-text,
+  .kitchen-tagline {
+    font-size: 1rem;
+  }
+}
+
+/* Extra Extra Small Devices (below 320px) */
+@media screen and (max-width: 319px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .kitchen-section {
+    padding: 20px 0 30px 0;
+  }
+
+  .kitchen-title {
+    font-size: 1.8rem;
+  }
+
+  .kitchen-description,
+  .kitchen-text,
+  .kitchen-tagline {
+    font-size: 1rem;
   }
 }
 

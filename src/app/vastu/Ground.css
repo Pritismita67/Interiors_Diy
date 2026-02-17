@@ -182,7 +182,7 @@
 /* Tablet */
 @media screen and (max-width: 768px) {
   .ground-section {
-    padding: 70px 16px;
+    padding: 40px 16px;
   }
 
   .ground-container {
@@ -190,7 +190,7 @@
   }
 
   .ground-header {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .ground-badge {
@@ -200,11 +200,11 @@
   }
 
   .ground-title {
-    font-size: 38px;
+    font-size: 1.8rem;
   }
 
   .ground-subtitle {
-    font-size: 15px;
+    font-size: 1rem;
   }
 
   .ground-cards {
@@ -237,7 +237,7 @@
 /* Mobile Large */
 @media screen and (max-width: 640px) {
   .ground-section {
-    padding: 60px 16px;
+    padding: 40px 16px;
   }
 
   .ground-container {
@@ -245,11 +245,15 @@
   }
 
   .ground-header {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
 
   .ground-title {
-    font-size: 34px;
+    font-size: 1.8rem;
+  }
+
+  .ground-subtitle {
+    font-size: 1rem;
   }
 
   .ground-cards {
@@ -265,7 +269,7 @@
 /* Mobile */
 @media screen and (max-width: 480px) {
   .ground-section {
-    padding: 50px 16px;
+    padding: 40px 16px;
   }
 
   .ground-container {
@@ -283,12 +287,12 @@
   }
 
   .ground-title {
-    font-size: 30px;
+    font-size: 1.8rem;
     margin: 0 0 12px 0;
   }
 
   .ground-subtitle {
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   .ground-cards {
@@ -335,11 +339,11 @@
   }
 
   .ground-title {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
 
   .ground-subtitle {
-    font-size: 13px;
+    font-size: 1rem;
   }
 
   .ground-cards {

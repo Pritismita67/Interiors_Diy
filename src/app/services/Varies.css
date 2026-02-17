@@ -151,8 +151,8 @@
   transform: translateY(0);
 }
 
-/* Tablet Styles */
-@media (max-width: 1024px) {
+/* Tablet Styles (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
   .varies-container {
     padding: 60px 0;
   }
@@ -181,8 +181,12 @@
   }
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
+/* Mobile and Below (767px and below) - Base mobile styles */
+@media (max-width: 767px) {
+  body {
+    font-size: 1rem;
+  }
+
   .varies-container {
     padding: 50px 0;
   }
@@ -190,6 +194,7 @@
   .varies-content {
     gap: 40px;
     padding: 0 16px;
+    grid-template-columns: 1fr;
   }
 
   .varies-image {
@@ -199,6 +204,7 @@
 
   .varies-text {
     gap: 12px;
+    padding: 0;
   }
 
   .varies-icon {
@@ -213,7 +219,7 @@
   }
 
   .varies-title {
-    font-size: 36px;
+    font-size: 1.8rem;
   }
 
   .varies-subtitle {
@@ -250,8 +256,23 @@
   }
 }
 
-/* Small Mobile Styles */
-@media (max-width: 480px) {
+/* Mobile Large (481px to 767px) */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .varies-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small Mobile Styles (376px to 480px) */
+@media (max-width: 480px) and (min-width: 376px) {
+  body {
+    font-size: 1rem;
+  }
+
   .varies-container {
     padding: 40px 0;
   }
@@ -283,7 +304,7 @@
   }
 
   .varies-title {
-    font-size: 32px;
+    font-size: 1.8rem;
   }
 
   .varies-subtitle {
@@ -325,8 +346,12 @@
   }
 }
 
-/* Extra Small Devices */
-@media (max-width: 360px) {
+/* Extra Small Devices (320px to 375px) */
+@media (max-width: 375px) and (min-width: 320px) {
+  body {
+    font-size: 1rem;
+  }
+
   .varies-container {
     padding: 35px 0;
   }
@@ -352,7 +377,7 @@
   }
 
   .varies-title {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
 
   .varies-subtitle {
@@ -382,7 +407,18 @@
   }
 }
 
-/* Large Desktop Styles */
+/* Extra Extra Small Devices (below 320px) */
+@media (max-width: 319px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .varies-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large Desktop Styles (1440px and above) */
 @media (min-width: 1440px) {
   .varies-container {
     padding: 100px 0;
@@ -444,7 +480,7 @@
   }
 }
 
-/* Extra Large Displays */
+/* Extra Large Displays (1920px and above) */
 @media (min-width: 1920px) {
   .varies-content {
     max-width: 1600px;

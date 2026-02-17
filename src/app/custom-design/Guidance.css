@@ -124,12 +124,12 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .guidance-container {
-    padding: 50px 0;
+    padding: 30px 0 0 0;
   }
 
   .guidance-content {
     gap: 40px;
-    padding: 0 16px;
+    padding: 0 30px;
   }
 
   .guidance-text {
@@ -139,26 +139,29 @@
   .guidance-image {
     min-height: 300px;
     max-height: 400px;
+    order: -1;
   }
 
   .guidance-label {
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin-bottom: 0px;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 4px;
   }
 
   .guidance-title {
-    font-size: 36px;
+    font-size: 1.8rem;
     margin-bottom: 10px;
-    margin-top: 4px;
+    margin-top: 0px;
+    line-height: 1.25;
   }
 
   .guidance-description {
-    font-size: 15px;
+    font-size: 1rem;
+    line-height: 1.65;
   }
 
   .guidance-tagline {
-    font-size: 15px;
+    font-size: 1rem;
     margin-top: 6px;
   }
 }
@@ -166,12 +169,12 @@
 /* Small Mobile Styles */
 @media (max-width: 480px) {
   .guidance-container {
-    padding: 40px 0;
+    padding: 30px 0 0 0;
   }
 
   .guidance-content {
-    gap: 32px;
-    padding: 0 12px;
+    gap: 30px;
+    padding: 0 20px;
   }
 
   .guidance-text {
@@ -185,23 +188,25 @@
   }
 
   .guidance-label {
-    font-size: 9px;
-    letter-spacing: 1.8px;
-    margin-bottom: 0px;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 2px;
   }
 
   .guidance-title {
-    font-size: 32px;
+    font-size: 1.8rem;
     margin-bottom: 8px;
-    margin-top: 2px;
+    margin-top: 0px;
+    line-height: 1.3;
   }
 
   .guidance-description {
-    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.75;
   }
 
   .guidance-tagline {
-    font-size: 14px;
+    font-size: 1rem;
     margin-top: 4px;
   }
 }
@@ -209,12 +214,12 @@
 /* Extra Small Devices */
 @media (max-width: 360px) {
   .guidance-container {
-    padding: 35px 0;
+    padding: 30px 0 0 0;
   }
 
   .guidance-content {
     gap: 28px;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .guidance-text {
@@ -222,22 +227,22 @@
   }
 
   .guidance-label {
-    font-size: 8px;
-    letter-spacing: 1.5px;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
     margin-bottom: 0px;
   }
 
   .guidance-title {
-    font-size: 28px;
-    margin-top: 2px;
+    font-size: 1.8rem;
+    margin-top: 0px;
   }
 
   .guidance-description {
-    font-size: 13px;
+    font-size: 1rem;
   }
 
   .guidance-tagline {
-    font-size: 13px;
+    font-size: 1rem;
   }
 }
 
