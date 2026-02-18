@@ -51,6 +51,7 @@
   font-size: 0.875rem;
   letter-spacing: 3px;
   text-transform: uppercase;
+  /* margin-bottom: 2.5rem; */
   font-weight: 400;
   color: rgba(255, 255, 255, 0.95);
   animation: fadeInDown 1s ease-out;
@@ -58,7 +59,7 @@
 
 /* Main Title */
 .hero-title {
-  font-size: 100px;
+  font-size: 100px; /* fixed at 100px */
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 1rem;
@@ -67,12 +68,13 @@
   animation: fadeInUp 1s ease-out 0.2s both;
 }
 
+
 /* Description */
 .hero-description {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.8;
-  margin-bottom: 1rem;
+   margin-bottom: 1rem; 
   color: rgba(255, 255, 255, 0.95);
   max-width: 800px;
   margin-left: auto;
@@ -268,30 +270,29 @@
   .hero-section {
     height: 100vh;
     min-height: 100vh;
-    background-image: url('/m1.jpg');
+    background-image: url('/m1.jpg'); /* Add your mobile image URL */
   }
 
   .hero-content {
-    padding: 24px 16px;
+    padding: 0 1.5rem;
   }
 
   .hero-subtitle {
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
+    font-size: 0.65rem;
+    letter-spacing: 1.8px;
+    margin-bottom: 1.2rem;
   }
 
   .hero-title {
-    font-size: 28px;
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 16px;
+    font-size: 50px; /* Changed to 50px as requested */
+    margin-bottom: 1.3rem;
+    line-height: 1.3;
   }
 
   .hero-description {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 24px;
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.55;
   }
 
   .cta-button {
@@ -305,30 +306,29 @@
   .hero-section {
     height: 100vh;
     min-height: 100vh;
-    background-image: url('/m1.jpg');
+    background-image: url('/m1.jpg'); /* Add your mobile image URL */
   }
 
   .hero-content {
-    padding: 24px 16px;
+    padding: 0 1.25rem;
   }
 
   .hero-subtitle {
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.2rem;
   }
 
   .hero-title {
-    font-size: 28px;
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 16px;
+    font-size: 50px; /* Changed to 50px as requested */
+    margin-bottom: 1.3rem;
+    line-height: 1.35;
   }
 
   .hero-description {
-    font-size: 14px;
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
     line-height: 1.5;
-    margin-bottom: 24px;
   }
 
   .cta-button {
@@ -343,30 +343,29 @@
   .hero-section {
     height: 100vh;
     min-height: 100vh;
-    background-image: url('/m1.jpg');
+    background-image: url('/m1.jpg'); /* Add your mobile image URL */
   }
 
   .hero-content {
-    padding: 24px 16px;
+    padding: 0 1rem;
   }
 
   .hero-subtitle {
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
+    font-size: 0.58rem;
+    letter-spacing: 1.2px;
+    margin-bottom: 1.1rem;
   }
 
   .hero-title {
-    font-size: 28px;
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 16px;
+    font-size: 40px; /* Changed to 40px as requested */
+    margin-bottom: 1.2rem;
+    line-height: 1.35;
   }
 
   .hero-description {
-    font-size: 14px;
+    font-size: 0.9rem;
+    margin-bottom: 1.7rem;
     line-height: 1.5;
-    margin-bottom: 24px;
   }
 
   .cta-button {
@@ -381,30 +380,29 @@
   .hero-section {
     height: 100vh;
     min-height: 100vh;
-    background-image: url('/m1.jpg');
+    background-image: url('/m1.jpg'); /* Add your mobile image URL */
   }
 
   .hero-content {
-    padding: 24px 16px;
+    padding: 0 0.75rem;
   }
 
   .hero-subtitle {
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.55rem;
   }
 
   .hero-title {
-    font-size: 28px;
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 16px;
+    font-size: 40px; /* Changed to 40px as requested */
+    margin-bottom: 0.65rem;
+    line-height: 1.3;
   }
 
   .hero-description {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 24px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.38;
   }
 
   .cta-button {
