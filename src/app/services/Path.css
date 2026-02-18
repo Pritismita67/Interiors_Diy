@@ -155,7 +155,7 @@
   .path-container {
     height: 100vh;
     min-height: 100vh;
-    padding: 0 16px;
+    padding: 24px 16px;
   }
 
   .path-content {
@@ -163,25 +163,29 @@
   }
 
   .path-label {
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 2px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .path-title {
-    font-size: 44px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
     letter-spacing: -0.5px;
   }
 
   .path-subtitle {
-    font-size: 20px;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 12px;
   }
 
   .path-description {
-    font-size: 15px;
-    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
     padding: 0 10px;
   }
 
@@ -202,7 +206,7 @@
   .path-container {
     height: 100vh;
     min-height: 100vh;
-    padding: 0 12px;
+    padding: 24px 16px;
   }
 
   .path-content {
@@ -210,23 +214,27 @@
   }
 
   .path-label {
-    font-size: 10px;
-    letter-spacing: 1.8px;
-    margin-bottom: 14px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
   }
 
   .path-title {
-    font-size: 50px; /* Fixed at 50px */
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
     margin-bottom: 16px;
   }
 
   .path-subtitle {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
   }
 
   .path-description {
     font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 24px;
     padding: 0 8px;
   }
@@ -248,7 +256,7 @@
   .path-container {
     height: 100vh;
     min-height: 100vh;
-    padding: 0 12px;
+    padding: 24px 16px;
   }
 
   .path-content {
@@ -256,23 +264,27 @@
   }
 
   .path-label {
-    font-size: 10px;
-    letter-spacing: 1.8px;
-    margin-bottom: 14px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
   }
 
   .path-title {
-    font-size: 50px; /* Fixed at 50px */
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
     margin-bottom: 16px;
   }
 
   .path-subtitle {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
   }
 
   .path-description {
     font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 24px;
     padding: 0 8px;
   }
@@ -294,25 +306,32 @@
   .path-container {
     height: 100vh;
     min-height: 100vh;
-    padding: 0 10px;
+    padding: 24px 16px;
   }
 
   .path-label {
-    font-size: 9px;
-    letter-spacing: 1.5px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
   }
 
   .path-title {
-    font-size: 40px; /* Fixed at 40px */
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
 
   .path-subtitle {
-    font-size: 17px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
   }
 
   .path-description {
-    font-size: 13px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
   }
 
   .desktop-break {
@@ -332,25 +351,32 @@
   .path-container {
     height: 100vh;
     min-height: 100vh;
-    padding: 0 10px;
+    padding: 24px 16px;
   }
 
   .path-label {
-    font-size: 9px;
-    letter-spacing: 1.5px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
   }
 
   .path-title {
-    font-size: 40px; /* Fixed at 40px */
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
 
   .path-subtitle {
-    font-size: 17px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
   }
 
   .path-description {
-    font-size: 13px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
   }
 
   .desktop-break {

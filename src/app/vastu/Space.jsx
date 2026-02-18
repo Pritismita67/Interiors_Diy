@@ -18,7 +18,7 @@ const Space = () => {
             
             <p className="description-text">
               Modern architecture has rediscovered many Vastu principles: natural
-              ventilation, optimal sunlight, functional zoning, and energy-efficient
+              ventilation, optimal sunlight, functional zoning, and energy efficient
               layouts. These aren't mystical concepts, they're practical design
               strategies.
             </p>

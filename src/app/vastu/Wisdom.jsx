@@ -16,7 +16,7 @@ const Wisdom = () => {
         </h1>
         
         <p className="wisdom-subtitle">
-          A professional, architectural approach to harmonizing<br className="desktop-break" />
+          A professional, architectural approach to harmonizing <br className="desktop-break" />
           your living environment.
         </p>
         

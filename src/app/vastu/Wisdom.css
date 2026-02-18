@@ -144,8 +144,9 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .wisdom-container {
-    padding: 60px 16px;
-    min-height: 85vh;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 24px 16px;
   }
 
   .wisdom-content {
@@ -153,20 +154,23 @@
   }
 
   .wisdom-label {
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   .wisdom-title {
-    font-size: 44px;
-    margin-bottom: 24px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
     letter-spacing: -0.5px;
   }
 
   .wisdom-subtitle {
-    font-size: 18px;
-    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
     padding: 0 10px;
   }
 
@@ -185,8 +189,9 @@
 /* Mobile Large (481px to 599px) */
 @media screen and (max-width: 599px) and (min-width: 481px) {
   .wisdom-container {
-    padding: 50px 12px;
-    min-height: 80vh;
+    padding: 24px 16px;
+    height: 100vh;
+    min-height: 100vh;
     background-image: url('/m3.jpg'); /* Replace with your mobile image */
   }
 
@@ -195,19 +200,22 @@
   }
 
   .wisdom-label {
-    font-size: 10px;
-    letter-spacing: 1.8px;
-    margin-bottom: 18px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
   }
 
   .wisdom-title {
-    font-size: 50px; /* Fixed at 50px */
-    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
 
   .wisdom-subtitle {
-    font-size: 16px;
-    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
     padding: 0 8px;
   }
 
@@ -226,8 +234,9 @@
 /* Small Mobile Styles (376px to 480px) */
 @media (max-width: 480px) and (min-width: 376px) {
   .wisdom-container {
-    padding: 50px 12px;
-    min-height: 80vh;
+    padding: 24px 16px;
+    height: 100vh;
+    min-height: 100vh;
     background-image: url('/m3.jpg'); /* Replace with your mobile image */
   }
 
@@ -236,19 +245,22 @@
   }
 
   .wisdom-label {
-    font-size: 10px;
-    letter-spacing: 1.8px;
-    margin-bottom: 18px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
   }
 
   .wisdom-title {
-    font-size: 50px; /* Fixed at 50px */
-    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
 
   .wisdom-subtitle {
-    font-size: 16px;
-    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
     padding: 0 8px;
   }
 
@@ -267,23 +279,28 @@
 /* Extra Small Mobile (320px to 375px) */
 @media (max-width: 375px) {
   .wisdom-container {
-    padding: 45px 10px;
+    padding: 24px 16px;
+    height: 100vh;
+    min-height: 100vh;
     background-image: url('/m3.jpg'); /* Replace with your mobile image */
   }
 
   .wisdom-label {
-    font-size: 9px;
-    letter-spacing: 1.5px;
-    margin-bottom: 16px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
   }
 
   .wisdom-title {
-    font-size: 40px; /* Fixed at 40px */
-    margin-bottom: 18px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
 
   .wisdom-subtitle {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 24px;
   }
 
@@ -302,23 +319,28 @@
 /* Extra Extra Small Devices (below 320px) */
 @media (max-width: 319px) {
   .wisdom-container {
-    padding: 45px 10px;
+    padding: 24px 16px;
+    height: 100vh;
+    min-height: 100vh;
     background-image: url('/m3.jpg'); /* Replace with your mobile image */
   }
 
   .wisdom-label {
-    font-size: 9px;
-    letter-spacing: 1.5px;
-    margin-bottom: 16px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
   }
 
   .wisdom-title {
-    font-size: 40px; /* Fixed at 40px */
-    margin-bottom: 18px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
 
   .wisdom-subtitle {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 24px;
   }
 
