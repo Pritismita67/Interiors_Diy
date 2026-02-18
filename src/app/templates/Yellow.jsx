@@ -15,9 +15,10 @@ const Yellow = () => {
       id: 1,
       category: 'Living Rooms',
       images: [
-        '/h3.png',
-        '/h2.png',
-        '/h1.png',
+        '/t1.png',
+        '/t2.png',
+        '/t3.png',
+        '/t4.png'
        
       ],
       title: 'Urban Grove',
@@ -31,9 +32,9 @@ const Yellow = () => {
       id: 2,
       category: 'Living Rooms',
       images: [
-        '/h6.png',
-        '/h4.png',
-        '/h5.png',
+        '/o3.png',
+        '/o1.png',
+        '/o2.png',
         
       ],
       title: 'Arcadia Calm',
@@ -84,11 +85,28 @@ const Yellow = () => {
       description: 'Soft botanical backdrop with refined furnishings',
       price: '₹2,799',
       images: [
-        '/Render 1.jpg',
-        '/Render 2.jpg'
+        '/2.png',
+        '/4.png',
+        '/3.png',
+        '/1.png'
         
       ],
       isPopular: true
+    },
+    {
+      id: 6,
+      category: 'Bedrooms',
+      title: 'Royal Canvas',
+      style: ' Modern Luxe',
+      size: '12*12 ft',
+      description: 'Gallery-style backdrop with refined lighting',
+      price: '₹2,999',
+      images: [
+        '/n1.png',
+        '/n3.png',
+        '/n2.png'
+      ],
+      isPopular: false
     }
   ];
 
@@ -97,7 +115,7 @@ const Yellow = () => {
     ? templates 
     : templates.filter(template => template.category === activeFilter);
 
-  // Split templates for display - first 3 and last 2
+  // Split templates for display - first 3 and remaining
   const firstRowTemplates = filteredTemplates.slice(0, 3);
   const secondRowTemplates = filteredTemplates.slice(3);
 
@@ -313,9 +331,9 @@ const Yellow = () => {
           </div>
         )}
 
-        {/* Template Cards - Second Row (2 cards centered) */}
+        {/* Template Cards - Second Row (remaining cards - centered if 2, full width if more) */}
         {secondRowTemplates.length > 0 && (
-          <div className="yellow-grid yellow-grid-second">
+          <div className={`yellow-grid ${secondRowTemplates.length === 2 ? 'yellow-grid-second' : 'yellow-grid-first'}`}>
             {secondRowTemplates.map((template) => (
               <TemplateCard key={template.id} template={template} />
             ))}

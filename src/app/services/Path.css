@@ -153,8 +153,9 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .path-container {
-    padding: 60px 16px 40px 16px;
-    min-height: 85vh;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 16px;
   }
 
   .path-content {
@@ -199,8 +200,9 @@
 /* Mobile Large (481px to 599px) */
 @media screen and (max-width: 599px) and (min-width: 481px) {
   .path-container {
-    padding: 50px 12px 35px 12px;
-    min-height: 80vh;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 12px;
   }
 
   .path-content {
@@ -244,8 +246,9 @@
 /* Small Mobile Styles (376px to 480px) */
 @media (max-width: 480px) and (min-width: 376px) {
   .path-container {
-    padding: 50px 12px 35px 12px;
-    min-height: 80vh;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 12px;
   }
 
   .path-content {
@@ -289,7 +292,9 @@
 /* Extra Small Mobile (320px to 375px) */
 @media (max-width: 375px) {
   .path-container {
-    padding: 45px 10px 30px 10px;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 10px;
   }
 
   .path-label {
@@ -325,7 +330,9 @@
 /* Extra Extra Small Devices (below 320px) */
 @media (max-width: 319px) {
   .path-container {
-    padding: 45px 10px 30px 10px;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 10px;
   }
 
   .path-label {

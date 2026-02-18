@@ -142,8 +142,9 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .unique-container {
-    padding: 30px 16px 60px 16px;
-    min-height: 85vh;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 16px;
   }
 
   .unique-content {
@@ -183,8 +184,9 @@
 /* Mobile Large (481px to 599px) */
 @media screen and (max-width: 599px) and (min-width: 481px) {
   .unique-container {
-    padding: 30px 12px 50px 12px;
-    min-height: 80vh;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 12px;
     background-image: url('/m4.jpg'); /* Replace with your mobile image */
   }
 
@@ -224,8 +226,9 @@
 /* Small Mobile Styles (376px to 480px) */
 @media (max-width: 480px) and (min-width: 376px) {
   .unique-container {
-    padding: 30px 12px 50px 12px;
-    min-height: 80vh;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 12px;
     background-image: url('/m4.jpg'); /* Replace with your mobile image */
   }
 
@@ -265,7 +268,9 @@
 /* Extra Small Mobile (320px to 375px) */
 @media (max-width: 375px) {
   .unique-container {
-    padding: 30px 10px 45px 10px;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 10px;
     background-image: url('/m4.jpg'); /* Replace with your mobile image */
   }
 
@@ -300,7 +305,9 @@
 /* Extra Extra Small Devices (below 320px) */
 @media (max-width: 319px) {
   .unique-container {
-    padding: 30px 10px 45px 10px;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 10px;
     background-image: url('/m4.jpg'); /* Replace with your mobile image */
   }
 
