@@ -15,8 +15,8 @@ const Yellow = () => {
       id: 1,
       category: 'Living Rooms',
       images: [
-        '/t1.png',
         '/t2.png',
+        '/t1.png',
         '/t3.png',
         '/t4.png'
        
@@ -100,7 +100,7 @@ const Yellow = () => {
       style: ' Modern Luxe',
       size: '12*12 ft',
       description: 'Gallery-style backdrop with refined lighting',
-      price: '₹2,999',
+      price: '₹3,499',
       images: [
         '/n1.png',
         '/n3.png',

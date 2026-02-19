@@ -13,9 +13,10 @@ const Made = () => {
       id: 1,
       category: 'Living Rooms',
       images: [
-        '/h3.png',
-        '/h2.png',
-        '/h1.png',
+        '/t2.png',
+        '/t1.png',
+        '/t3.png',
+        '/t4.png'
        
       ],
       title: 'Urban Grove',
@@ -29,9 +30,9 @@ const Made = () => {
       id: 2,
       category: 'Living Rooms',
       images: [
-        '/h6.png',
-        '/h4.png',
-        '/h5.png',
+        '/o3.png',
+        '/o1.png',
+        '/o2.png',
         
       ],
       title: 'Arcadia Calm',

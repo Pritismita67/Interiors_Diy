@@ -117,7 +117,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/moodboard">
+              <Link href="/free-guide">
                 Free 3D Moodboard
               </Link>
             </li>

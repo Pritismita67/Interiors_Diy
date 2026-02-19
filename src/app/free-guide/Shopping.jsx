@@ -4,27 +4,15 @@ import React from 'react';
 import './Shopping.css';
 
 const Shopping = () => {
-  const handleDownload = () => {
-    // Create a link element
-    const link = document.createElement('a');
-    // Set the href to your PDF file in the public folder
-    link.href = '/your-moodboard-guide.pdf'; // Replace with your actual PDF filename
-    // Set the download attribute with desired filename
-    link.download = '3D-Moodboard-Shopping-List.pdf';
-    // Append to body, click, and remove
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <div className="shopping-container">
       <div className="shopping-content">
-        {/* Free Download Badge */}
-        <button className="free-download-badge" onClick={handleDownload}>
+
+        {/* Free Download Badge — design only */}
+        <div className="free-download-badge">
           <span className="download-icon">⬇</span>
           Free Download
-        </button>
+        </div>
 
         {/* Main Heading */}
         <h1 className="shopping-heading">
@@ -62,6 +50,7 @@ const Shopping = () => {
             </p>
           </div>
         </div>
+
       </div>
     </div>
   );

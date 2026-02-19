@@ -108,329 +108,145 @@
   box-shadow: 0 3px 8px rgba(217, 120, 83, 0.35);
 }
 
-/* Tablet Styles */
+/* Tablet Styles — UNCHANGED */
 @media (max-width: 1024px) {
-  .wisdom-container {
-    padding: 70px 20px;
-    min-height: 90vh;
-  }
-
-  .wisdom-content {
-    padding: 30px 20px;
-  }
-
-  .wisdom-label {
-    font-size: 12px;
-    letter-spacing: 2.3px;
-    margin-bottom: 24px;
-  }
-
-  .wisdom-title {
-    font-size: 58px;
-    margin-bottom: 28px;
-  }
-
-  .wisdom-subtitle {
-    font-size: 20px;
-    margin-bottom: 36px;
-  }
-
-  .wisdom-cta-button {
-    padding: 15px 30px;
-    font-size: 16px;
-  }
+  .wisdom-container { padding: 70px 20px; min-height: 90vh; }
+  .wisdom-content { padding: 30px 20px; }
+  .wisdom-label { font-size: 12px; letter-spacing: 2.3px; margin-bottom: 24px; }
+  .wisdom-title { font-size: 58px; margin-bottom: 28px; }
+  .wisdom-subtitle { font-size: 20px; margin-bottom: 36px; }
+  .wisdom-cta-button { padding: 15px 30px; font-size: 16px; }
 }
 
-/* Mobile Styles */
+/* Mobile (max-768px)
+   wisdom-label: 11px → 0.8rem  ↑
+   wisdom-title: 44px → 38px    ↓  */
 @media (max-width: 768px) {
-  .wisdom-container {
-    padding: 60px 16px;
-    min-height: 85vh;
-  }
-
-  .wisdom-content {
-    padding: 20px 16px;
-  }
-
+  .wisdom-container { padding: 60px 16px; min-height: 85vh; }
+  .wisdom-content { padding: 20px 16px; }
   .wisdom-label {
-    font-size: 11px;
+    font-size: 0.8rem;           /* ↑ increased from 11px */
     letter-spacing: 2px;
     margin-bottom: 20px;
   }
-
   .wisdom-title {
-    font-size: 44px;
+    font-size: 38px;             /* ↓ reduced from 44px */
     margin-bottom: 24px;
     letter-spacing: -0.5px;
   }
-
-  .wisdom-subtitle {
-    font-size: 18px;
-    margin-bottom: 32px;
-    padding: 0 10px;
-  }
-
-  .desktop-break {
-    display: none;
-  }
-
-  .wisdom-cta-button {
-    padding: 14px 28px;
-    font-size: 15px;
-    width: auto;
-    max-width: 240px;
-  }
+  .wisdom-subtitle { font-size: 18px; margin-bottom: 32px; padding: 0 10px; }
+  .desktop-break { display: none; }
+  .wisdom-cta-button { padding: 14px 28px; font-size: 15px; width: auto; max-width: 240px; }
 }
 
-/* Mobile Large (481px to 599px) */
+/* Mobile Large (481px to 599px)
+   wisdom-label: 10px → 0.78rem  ↑
+   wisdom-title: 50px → 42px     ↓  */
 @media screen and (max-width: 599px) and (min-width: 481px) {
-  .wisdom-container {
-    padding: 50px 12px;
-    min-height: 80vh;
-    background-image: url('/m3.jpg'); /* Replace with your mobile image */
-  }
-
-  .wisdom-content {
-    padding: 16px 12px;
-  }
-
+  .wisdom-container { padding: 50px 12px; min-height: 80vh; background-image: url('/m3.jpg'); }
+  .wisdom-content { padding: 16px 12px; }
   .wisdom-label {
-    font-size: 10px;
+    font-size: 0.78rem;          /* ↑ increased from 10px */
     letter-spacing: 1.8px;
     margin-bottom: 18px;
   }
-
   .wisdom-title {
-    font-size: 50px; /* Fixed at 50px */
+    font-size: 42px;             /* ↓ reduced from 50px */
     margin-bottom: 20px;
   }
-
-  .wisdom-subtitle {
-    font-size: 16px;
-    margin-bottom: 28px;
-    padding: 0 8px;
-  }
-
-  .desktop-break {
-    display: none;
-  }
-
-  .wisdom-cta-button {
-    padding: 13px 24px;
-    font-size: 14px;
-    width: auto;
-    max-width: 240px;
-  }
+  .wisdom-subtitle { font-size: 16px; margin-bottom: 28px; padding: 0 8px; }
+  .desktop-break { display: none; }
+  .wisdom-cta-button { padding: 13px 24px; font-size: 14px; width: auto; max-width: 240px; }
 }
 
-/* Small Mobile Styles (376px to 480px) */
+/* Small Mobile (376px to 480px)
+   wisdom-label: 10px → 0.76rem  ↑
+   wisdom-title: 50px → 42px     ↓  */
 @media (max-width: 480px) and (min-width: 376px) {
-  .wisdom-container {
-    padding: 50px 12px;
-    min-height: 80vh;
-    background-image: url('/m3.jpg'); /* Replace with your mobile image */
-  }
-
-  .wisdom-content {
-    padding: 16px 12px;
-  }
-
+  .wisdom-container { padding: 50px 12px; min-height: 80vh; background-image: url('/m3.jpg'); }
+  .wisdom-content { padding: 16px 12px; }
   .wisdom-label {
-    font-size: 10px;
+    font-size: 0.76rem;          /* ↑ increased from 10px */
     letter-spacing: 1.8px;
     margin-bottom: 18px;
   }
-
   .wisdom-title {
-    font-size: 50px; /* Fixed at 50px */
+    font-size: 42px;             /* ↓ reduced from 50px */
     margin-bottom: 20px;
   }
-
-  .wisdom-subtitle {
-    font-size: 16px;
-    margin-bottom: 28px;
-    padding: 0 8px;
-  }
-
-  .desktop-break {
-    display: none;
-  }
-
-  .wisdom-cta-button {
-    padding: 13px 24px;
-    font-size: 14px;
-    width: auto;
-    max-width: 240px;
-  }
+  .wisdom-subtitle { font-size: 16px; margin-bottom: 28px; padding: 0 8px; }
+  .desktop-break { display: none; }
+  .wisdom-cta-button { padding: 13px 24px; font-size: 14px; width: auto; max-width: 240px; }
 }
 
-/* Extra Small Mobile (320px to 375px) */
+/* Extra Small Mobile (320px to 375px)
+   wisdom-label: 9px → 0.72rem  ↑
+   wisdom-title: 40px → 34px    ↓  */
 @media (max-width: 375px) {
-  .wisdom-container {
-    padding: 45px 10px;
-    background-image: url('/m3.jpg'); /* Replace with your mobile image */
-  }
-
+  .wisdom-container { padding: 45px 10px; background-image: url('/m3.jpg'); }
   .wisdom-label {
-    font-size: 9px;
+    font-size: 0.72rem;          /* ↑ increased from 9px */
     letter-spacing: 1.5px;
     margin-bottom: 16px;
   }
-
   .wisdom-title {
-    font-size: 40px; /* Fixed at 40px */
+    font-size: 34px;             /* ↓ reduced from 40px */
     margin-bottom: 18px;
   }
-
-  .wisdom-subtitle {
-    font-size: 15px;
-    margin-bottom: 24px;
-  }
-
-  .desktop-break {
-    display: none;
-  }
-
-  .wisdom-cta-button {
-    padding: 12px 20px;
-    font-size: 13px;
-    width: auto;
-    max-width: 220px;
-  }
+  .wisdom-subtitle { font-size: 15px; margin-bottom: 24px; }
+  .desktop-break { display: none; }
+  .wisdom-cta-button { padding: 12px 20px; font-size: 13px; width: auto; max-width: 220px; }
 }
 
-/* Extra Extra Small Devices (below 320px) */
+/* Extra Extra Small (below 320px)
+   wisdom-label: 9px → 0.68rem  ↑
+   wisdom-title: 40px → 34px    ↓  */
 @media (max-width: 319px) {
-  .wisdom-container {
-    padding: 45px 10px;
-    background-image: url('/m3.jpg'); /* Replace with your mobile image */
-  }
-
+  .wisdom-container { padding: 45px 10px; background-image: url('/m3.jpg'); }
   .wisdom-label {
-    font-size: 9px;
+    font-size: 0.68rem;          /* ↑ increased from 9px */
     letter-spacing: 1.5px;
     margin-bottom: 16px;
   }
-
   .wisdom-title {
-    font-size: 40px; /* Fixed at 40px */
+    font-size: 34px;             /* ↓ reduced from 40px */
     margin-bottom: 18px;
   }
-
-  .wisdom-subtitle {
-    font-size: 15px;
-    margin-bottom: 24px;
-  }
-
-  .desktop-break {
-    display: none;
-  }
-
-  .wisdom-cta-button {
-    padding: 12px 20px;
-    font-size: 13px;
-    width: auto;
-    max-width: 200px;
-  }
+  .wisdom-subtitle { font-size: 15px; margin-bottom: 24px; }
+  .desktop-break { display: none; }
+  .wisdom-cta-button { padding: 12px 20px; font-size: 13px; width: auto; max-width: 200px; }
 }
 
-/* Landscape Mobile */
+/* Landscape Mobile — UNCHANGED */
 @media (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
-  .wisdom-container {
-    min-height: 100vh;
-    padding: 40px 20px;
-  }
-
-  .wisdom-content {
-    padding: 20px;
-  }
-
-  .wisdom-label {
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin-bottom: 14px;
-  }
-
-  .wisdom-title {
-    font-size: 40px;
-    margin-bottom: 16px;
-  }
-
-  .wisdom-subtitle {
-    font-size: 16px;
-    margin-bottom: 24px;
-  }
-
-  .wisdom-cta-button {
-    padding: 12px 26px;
-    font-size: 14px;
-  }
+  .wisdom-container { min-height: 100vh; padding: 40px 20px; }
+  .wisdom-content { padding: 20px; }
+  .wisdom-label { font-size: 10px; letter-spacing: 2px; margin-bottom: 14px; }
+  .wisdom-title { font-size: 40px; margin-bottom: 16px; }
+  .wisdom-subtitle { font-size: 16px; margin-bottom: 24px; }
+  .wisdom-cta-button { padding: 12px 26px; font-size: 14px; }
 }
 
-/* High Resolution Displays */
+/* High Resolution Displays — UNCHANGED */
 @media (min-width: 1440px) {
-  .wisdom-container {
-    padding: 30px 20px;
-  }
-
-  .wisdom-label {
-    font-size: 14px;
-    letter-spacing: 2.8px;
-    margin-bottom: 16px;
-  }
-
-  .wisdom-title {
-    font-size: 100px;
-    margin-bottom: 16px;
-  }
-
-  .wisdom-subtitle {
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
-
-  .wisdom-cta-button {
-    padding: 18px 38px;
-    font-size: 18px;
-  }
+  .wisdom-container { padding: 30px 20px; }
+  .wisdom-label { font-size: 14px; letter-spacing: 2.8px; margin-bottom: 16px; }
+  .wisdom-title { font-size: 100px; margin-bottom: 16px; }
+  .wisdom-subtitle { font-size: 24px; margin-bottom: 24px; }
+  .wisdom-cta-button { padding: 18px 38px; font-size: 18px; }
 }
 
-/* Extra Large Displays */
+/* Extra Large Displays — UNCHANGED */
 @media (min-width: 1920px) {
-  .wisdom-content {
-    max-width: 1400px;
-  }
-
-  .wisdom-label {
-    font-size: 15px;
-    letter-spacing: 3px;
-    margin-bottom: 18px;
-  }
-
-  .wisdom-title {
-    font-size: 100px;
-    margin-bottom: 18px;
-  }
-
-  .wisdom-subtitle {
-    font-size: 26px;
-    margin-bottom: 28px;
-  }
-
-  .wisdom-cta-button {
-    padding: 19px 40px;
-    font-size: 19px;
-  }
+  .wisdom-content { max-width: 1400px; }
+  .wisdom-label { font-size: 15px; letter-spacing: 3px; margin-bottom: 18px; }
+  .wisdom-title { font-size: 100px; margin-bottom: 18px; }
+  .wisdom-subtitle { font-size: 26px; margin-bottom: 28px; }
+  .wisdom-cta-button { padding: 19px 40px; font-size: 19px; }
 }
 
 /* Animations */
 @keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-30px); }
+  to   { opacity: 1; transform: translateY(0); }
 }

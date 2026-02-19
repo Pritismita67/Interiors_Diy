@@ -1,0 +1,148 @@
+/* Twenty Component Styles */
+
+.twenty-container {
+  width: 100%;
+  background-color: #f5f5f0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 80px 20px;
+}
+
+.twenty-content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+/* ── Title ── */
+.twenty-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2C2C2C;
+  line-height: 1.25;
+  margin: 0;
+  letter-spacing: -0.4px;
+}
+
+/* ── Description ── */
+.twenty-description {
+  font-size: 15px;
+  color: #888888;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+/* ── CTA Button ── */
+.twenty-button {
+  display: inline-block;
+  background-color: #d4695b;
+  color: #FFFFFF;
+  padding: 16px 40px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(212, 105, 91, 0.3);
+  margin-top: 8px;
+}
+
+.twenty-button:hover {
+  background-color: #c45a4a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(212, 105, 91, 0.4);
+}
+
+.twenty-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(212, 105, 91, 0.3);
+}
+
+/* ── Trust Badges ── */
+.twenty-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.twenty-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #666666;
+  font-weight: 400;
+}
+
+.twenty-badge svg {
+  flex-shrink: 0;
+}
+
+/* ── Large Desktop 1440px+ ── */
+@media (min-width: 1440px) {
+  .twenty-container { padding: 100px 20px; }
+  .twenty-content { max-width: 800px; gap: 24px; }
+  .twenty-title { font-size: 42px; }
+  .twenty-description { font-size: 16px; }
+  .twenty-button { padding: 18px 48px; font-size: 18px; }
+  .twenty-badges { gap: 32px; }
+  .twenty-badge { font-size: 14px; }
+}
+
+/* ── Tablet max-1024px ── */
+@media (max-width: 1024px) {
+  .twenty-container { padding: 64px 20px; }
+  .twenty-title { font-size: 32px; }
+  .twenty-description { font-size: 14px; }
+  .twenty-button { padding: 15px 36px; font-size: 16px; }
+  .twenty-badges { gap: 22px; }
+}
+
+/* ── Mobile max-768px ── */
+@media (max-width: 768px) {
+  .twenty-container { padding: 52px 20px; }
+  .twenty-content { gap: 16px; }
+  .twenty-title { font-size: 26px; letter-spacing: -0.2px; }
+  .twenty-description { font-size: 13px; }
+  .twenty-button { padding: 14px 32px; font-size: 15px; margin-top: 4px; }
+  .twenty-badges { gap: 16px; }
+  .twenty-badge { font-size: 12px; }
+  .twenty-badge svg { width: 14px; height: 14px; }
+}
+
+/* ── Small Mobile max-480px ── */
+@media (max-width: 480px) {
+  .twenty-container { padding: 40px 16px; }
+  .twenty-content { gap: 14px; }
+  .twenty-title { font-size: 22px; }
+  .twenty-description { font-size: 13px; }
+  .twenty-button { padding: 13px 28px; font-size: 14px; width: 100%; max-width: 280px; }
+  .twenty-badges {
+    gap: 12px 20px;
+  }
+  .twenty-badge { font-size: 12px; }
+}
+
+/* ── Extra Small max-360px ── */
+@media (max-width: 360px) {
+  .twenty-container { padding: 32px 12px; }
+  .twenty-content { gap: 12px; }
+  .twenty-title { font-size: 20px; }
+  .twenty-description { font-size: 12px; }
+  .twenty-button { padding: 12px 24px; font-size: 13px; }
+  .twenty-badges { gap: 10px 16px; }
+  .twenty-badge { font-size: 11px; }
+}

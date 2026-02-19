@@ -1,0 +1,172 @@
+/* Alen Component Styles */
+
+.alen-container {
+  width: 100%;
+  background-color: #f5f5f0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 32px 20px 80px 20px;   /* ↓ top reduced from 80px to 32px */
+}
+
+.alen-content {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* Title */
+.alen-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2C2C2C;
+  line-height: 1.25;
+  margin: 0 0 48px 0;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+/* 2x2 Grid */
+.alen-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 48px;
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+/* Each card */
+.alen-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* Icon box */
+.alen-icon {
+  width: 44px;
+  height: 44px;
+  background-color: #FBE9E1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Card text */
+.alen-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.alen-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.alen-card-desc {
+  font-size: 14px;
+  color: #888888;
+  margin: 0;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+/* CTA Button */
+.alen-button {
+  display: inline-block;
+  background-color: #d4695b;
+  color: #FFFFFF;
+  padding: 16px 40px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(212, 105, 91, 0.3);
+}
+
+.alen-button:hover {
+  background-color: #c45a4a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(212, 105, 91, 0.4);
+}
+
+.alen-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(212, 105, 91, 0.3);
+}
+
+/* ── Large Desktop 1440px+ ── */
+@media (min-width: 1440px) {
+  .alen-container { padding: 40px 20px 100px 20px; }
+  .alen-content { max-width: 1000px; }
+  .alen-title { font-size: 42px; margin-bottom: 56px; }
+  .alen-grid { gap: 36px 60px; margin-bottom: 60px; }
+  .alen-icon { width: 50px; height: 50px; border-radius: 12px; }
+  .alen-card-title { font-size: 17px; }
+  .alen-card-desc { font-size: 15px; }
+  .alen-button { padding: 18px 48px; font-size: 18px; }
+}
+
+/* ── Tablet max-1024px ── */
+@media (max-width: 1024px) {
+  .alen-container { padding: 28px 20px 70px 20px; }
+  .alen-title { font-size: 32px; margin-bottom: 40px; }
+  .alen-grid { gap: 28px 36px; margin-bottom: 44px; }
+  .alen-card-title { font-size: 15px; }
+  .alen-card-desc { font-size: 13px; }
+  .alen-button { padding: 15px 36px; font-size: 16px; }
+}
+
+/* ── Mobile max-768px ── */
+@media (max-width: 768px) {
+  .alen-container { padding: 24px 20px 56px 20px; }
+  .alen-title { font-size: 26px; margin-bottom: 32px; }
+  .alen-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+  .alen-icon { width: 40px; height: 40px; }
+  .alen-icon svg { width: 18px; height: 18px; }
+  .alen-card-title { font-size: 15px; }
+  .alen-card-desc { font-size: 13px; }
+  .alen-button { padding: 14px 32px; font-size: 15px; }
+}
+
+/* ── Small Mobile max-480px ── */
+@media (max-width: 480px) {
+  .alen-container { padding: 20px 16px 44px 16px; }
+  .alen-title { font-size: 22px; margin-bottom: 28px; }
+  .alen-grid { gap: 20px; margin-bottom: 32px; }
+  .alen-card { gap: 12px; }
+  .alen-icon { width: 36px; height: 36px; border-radius: 8px; }
+  .alen-icon svg { width: 16px; height: 16px; }
+  .alen-card-title { font-size: 14px; }
+  .alen-card-desc { font-size: 12px; }
+  .alen-button { padding: 13px 28px; font-size: 14px; }
+}
+
+/* ── Extra Small max-360px ── */
+@media (max-width: 360px) {
+  .alen-container { padding: 16px 12px 36px 12px; }
+  .alen-title { font-size: 20px; margin-bottom: 24px; }
+  .alen-grid { gap: 18px; margin-bottom: 28px; }
+  .alen-card { gap: 10px; }
+  .alen-icon { width: 34px; height: 34px; }
+  .alen-card-title { font-size: 13px; }
+  .alen-card-desc { font-size: 12px; }
+  .alen-button { padding: 12px 24px; font-size: 13px; }
+}

@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-/* Free Download Badge */
+/* Free Download Badge — design only, not clickable */
 .free-download-badge {
   background-color: #fce8e6;
   color: #d9534f;
@@ -36,19 +36,7 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 32px;
-  cursor: pointer;
-  transition: all 0.3s ease;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.free-download-badge:hover {
-  background-color: #fad4d0;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(217, 83, 79, 0.2);
-}
-
-.free-download-badge:active {
-  transform: translateY(0);
 }
 
 .download-icon {
