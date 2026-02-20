@@ -36,7 +36,7 @@
 }
 
 .simple-title {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 52px;
   font-weight: 600;
   color: #ffffff;
@@ -58,7 +58,7 @@
 }
 
 .step-title {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #ffffff;
@@ -68,7 +68,7 @@
 }
 
 .step-description {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 17px;
   line-height: 1.6;
   color: #ffffff;

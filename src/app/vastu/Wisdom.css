@@ -1,5 +1,5 @@
 /* Wisdom Component Styles */
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 .wisdom-container {
   width: 100%;
   min-height: 100vh;
@@ -12,7 +12,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 20px;
   overflow: hidden;
 }
@@ -92,7 +92,7 @@
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   box-shadow: 0 4px 12px rgba(217, 120, 83, 0.35);
   animation: fadeInDown 1s ease-out;
 }
@@ -118,113 +118,109 @@
   .wisdom-cta-button { padding: 15px 30px; font-size: 16px; }
 }
 
-/* Mobile (max-768px)
-   wisdom-label: 11px → 0.8rem  ↑
-   wisdom-title: 44px → 38px    ↓  */
+/* ============================================
+   MOBILE STYLES (≤768px)
+   ============================================ */
 @media (max-width: 768px) {
-  .wisdom-container { padding: 60px 16px; min-height: 85vh; }
-  .wisdom-content { padding: 20px 16px; }
-  .wisdom-label {
-    font-size: 0.8rem;           /* ↑ increased from 11px */
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+  .wisdom-container {
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 20px;
+    align-items: flex-start;        /* push content to top */
   }
+
+  .wisdom-content {
+    padding-top: 15vh;              /* breathing room from top */
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+  }
+
+  .wisdom-label {
+    font-size: 0.78rem;
+    letter-spacing: 2.5px;
+    margin-bottom: 1rem;
+  }
+
   .wisdom-title {
-    font-size: 38px;             /* ↓ reduced from 44px */
-    margin-bottom: 24px;
+    font-size: 2.35rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
     letter-spacing: -0.5px;
+    line-height: 1.25;
   }
-  .wisdom-subtitle { font-size: 18px; margin-bottom: 32px; padding: 0 10px; }
+
+  .wisdom-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.75rem;
+    padding: 0;
+    line-height: 1.6;
+  }
+
   .desktop-break { display: none; }
-  .wisdom-cta-button { padding: 14px 28px; font-size: 15px; width: auto; max-width: 240px; }
+
+  .wisdom-cta-button {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    box-sizing: border-box;
+    max-width: none;
+  }
 }
 
-/* Mobile Large (481px to 599px)
-   wisdom-label: 10px → 0.78rem  ↑
-   wisdom-title: 50px → 42px     ↓  */
+/* Mobile Large (481px to 599px) */
 @media screen and (max-width: 599px) and (min-width: 481px) {
-  .wisdom-container { padding: 50px 12px; min-height: 80vh; background-image: url('/m3.jpg'); }
-  .wisdom-content { padding: 16px 12px; }
-  .wisdom-label {
-    font-size: 0.78rem;          /* ↑ increased from 10px */
-    letter-spacing: 1.8px;
-    margin-bottom: 18px;
-  }
-  .wisdom-title {
-    font-size: 42px;             /* ↓ reduced from 50px */
-    margin-bottom: 20px;
-  }
-  .wisdom-subtitle { font-size: 16px; margin-bottom: 28px; padding: 0 8px; }
-  .desktop-break { display: none; }
-  .wisdom-cta-button { padding: 13px 24px; font-size: 14px; width: auto; max-width: 240px; }
+  .wisdom-container { background-image: url('/m3.jpg'); padding: 0 16px; }
+  .wisdom-content { padding-top: 16vh; padding-left: 12px; padding-right: 12px; }
+  .wisdom-label { font-size: 0.8rem; letter-spacing: 2.8px; }
+  .wisdom-title { font-size: 2.5rem; }
+  .wisdom-subtitle { font-size: 1.15rem; }
+  .wisdom-cta-button { width: 75%; font-size: 1.05rem; padding: 1.05rem 1.5rem; }
 }
 
-/* Small Mobile (376px to 480px)
-   wisdom-label: 10px → 0.76rem  ↑
-   wisdom-title: 50px → 42px     ↓  */
+/* Small Mobile (376px to 480px) */
 @media (max-width: 480px) and (min-width: 376px) {
-  .wisdom-container { padding: 50px 12px; min-height: 80vh; background-image: url('/m3.jpg'); }
-  .wisdom-content { padding: 16px 12px; }
-  .wisdom-label {
-    font-size: 0.76rem;          /* ↑ increased from 10px */
-    letter-spacing: 1.8px;
-    margin-bottom: 18px;
-  }
-  .wisdom-title {
-    font-size: 42px;             /* ↓ reduced from 50px */
-    margin-bottom: 20px;
-  }
-  .wisdom-subtitle { font-size: 16px; margin-bottom: 28px; padding: 0 8px; }
-  .desktop-break { display: none; }
-  .wisdom-cta-button { padding: 13px 24px; font-size: 14px; width: auto; max-width: 240px; }
+  .wisdom-container { background-image: url('/m3.jpg'); padding: 0 16px; }
+  .wisdom-content { padding-top: 15vh; padding-left: 12px; padding-right: 12px; }
+  .wisdom-label { font-size: 0.76rem; letter-spacing: 2.5px; }
+  .wisdom-title { font-size: 2.35rem; }
+  .wisdom-subtitle { font-size: 1.1rem; }
+  .wisdom-cta-button { width: 80%; font-size: 1rem; padding: 1rem 1.5rem; }
 }
 
-/* Extra Small Mobile (320px to 375px)
-   wisdom-label: 9px → 0.72rem  ↑
-   wisdom-title: 40px → 34px    ↓  */
+/* Extra Small Mobile (≤375px) */
 @media (max-width: 375px) {
-  .wisdom-container { padding: 45px 10px; background-image: url('/m3.jpg'); }
-  .wisdom-label {
-    font-size: 0.72rem;          /* ↑ increased from 9px */
-    letter-spacing: 1.5px;
-    margin-bottom: 16px;
-  }
-  .wisdom-title {
-    font-size: 34px;             /* ↓ reduced from 40px */
-    margin-bottom: 18px;
-  }
-  .wisdom-subtitle { font-size: 15px; margin-bottom: 24px; }
-  .desktop-break { display: none; }
-  .wisdom-cta-button { padding: 12px 20px; font-size: 13px; width: auto; max-width: 220px; }
+  .wisdom-container { background-image: url('/m3.jpg'); padding: 0 14px; }
+  .wisdom-content { padding-top: 14vh; padding-left: 10px; padding-right: 10px; }
+  .wisdom-label { font-size: 0.72rem; letter-spacing: 2.2px; }
+  .wisdom-title { font-size: 2rem; }
+  .wisdom-subtitle { font-size: 1rem; }
+  .wisdom-cta-button { width: 85%; font-size: 0.95rem; padding: 0.95rem 1.25rem; }
 }
 
-/* Extra Extra Small (below 320px)
-   wisdom-label: 9px → 0.68rem  ↑
-   wisdom-title: 40px → 34px    ↓  */
+/* Extra Extra Small (≤319px) */
 @media (max-width: 319px) {
-  .wisdom-container { padding: 45px 10px; background-image: url('/m3.jpg'); }
-  .wisdom-label {
-    font-size: 0.68rem;          /* ↑ increased from 9px */
-    letter-spacing: 1.5px;
-    margin-bottom: 16px;
-  }
-  .wisdom-title {
-    font-size: 34px;             /* ↓ reduced from 40px */
-    margin-bottom: 18px;
-  }
-  .wisdom-subtitle { font-size: 15px; margin-bottom: 24px; }
-  .desktop-break { display: none; }
-  .wisdom-cta-button { padding: 12px 20px; font-size: 13px; width: auto; max-width: 200px; }
+  .wisdom-container { background-image: url('/m3.jpg'); padding: 0 12px; }
+  .wisdom-content { padding-top: 12vh; padding-left: 10px; padding-right: 10px; }
+  .wisdom-label { font-size: 0.68rem; letter-spacing: 1.8px; }
+  .wisdom-title { font-size: 1.75rem; }
+  .wisdom-subtitle { font-size: 0.95rem; }
+  .wisdom-cta-button { width: 90%; font-size: 0.9rem; padding: 0.9rem 1rem; }
 }
 
 /* Landscape Mobile — UNCHANGED */
 @media (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
-  .wisdom-container { min-height: 100vh; padding: 40px 20px; }
+  .wisdom-container { min-height: 100vh; padding: 40px 20px; align-items: center; }
   .wisdom-content { padding: 20px; }
   .wisdom-label { font-size: 10px; letter-spacing: 2px; margin-bottom: 14px; }
   .wisdom-title { font-size: 40px; margin-bottom: 16px; }
   .wisdom-subtitle { font-size: 16px; margin-bottom: 24px; }
-  .wisdom-cta-button { padding: 12px 26px; font-size: 14px; }
+  .wisdom-cta-button { display: inline-block; width: auto; padding: 12px 26px; font-size: 14px; }
 }
 
 /* High Resolution Displays — UNCHANGED */
@@ -233,7 +229,7 @@
   .wisdom-label { font-size: 14px; letter-spacing: 2.8px; margin-bottom: 16px; }
   .wisdom-title { font-size: 100px; margin-bottom: 16px; }
   .wisdom-subtitle { font-size: 24px; margin-bottom: 24px; }
-  .wisdom-cta-button { padding: 18px 38px; font-size: 18px; }
+  .wisdom-cta-button { display: inline-block; width: auto; padding: 18px 38px; font-size: 18px; }
 }
 
 /* Extra Large Displays — UNCHANGED */

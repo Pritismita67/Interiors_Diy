@@ -1,3 +1,4 @@
+import '../globals.css';
 import Footer from "@/components/Footer";
 import Depth from "./Depth";
 import Ground from "./Ground";

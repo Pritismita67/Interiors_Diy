@@ -4,7 +4,7 @@
   width: 100%;
   background-color: #f5f1ed;
   padding: 80px 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .list-content {
@@ -19,7 +19,7 @@
   color: #2d2d2d;
   text-align: center;
   margin-bottom: 60px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* List Items Container */
@@ -69,7 +69,7 @@
   color: #2d2d2d;
   line-height: 1.4;
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* List Item Description */
@@ -78,7 +78,7 @@
   color: #6b6b6b;
   line-height: 1.5;
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Tablet Responsive (768px - 1024px) */

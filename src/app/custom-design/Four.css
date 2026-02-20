@@ -1,10 +1,11 @@
 /* Four Component Styles */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 .four-container {
   width: 100%;
   min-height: 100vh;
   background-color: #E8E2D8;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 80px 0;
   display: flex;
   align-items: center;
@@ -29,6 +30,7 @@
   color: #4A4A4A;
   margin: 0 0 16px 0;
   letter-spacing: 0.5px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .four-title {
@@ -38,6 +40,7 @@
   line-height: 1.2;
   margin: 0 0 16px 0;
   letter-spacing: -0.5px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .four-subtitle {
@@ -46,6 +49,7 @@
   margin: 0;
   font-weight: 400;
   line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Cards Section */
@@ -61,6 +65,7 @@
   padding: 40px 32px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "DM Sans", sans-serif;
 }
 
 .four-card:hover {
@@ -87,6 +92,7 @@
   color: #2C2C2C;
   margin: 0 0 24px 0;
   line-height: 1.3;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Card Features */
@@ -106,6 +112,7 @@
   font-size: 15px;
   color: #4A4A4A;
   line-height: 1.6;
+  font-family: "DM Sans", sans-serif;
 }
 
 .checkmark {
@@ -115,85 +122,49 @@
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
-  .four-container {
-    padding: 60px 0;
-  }
-
-  .four-header {
-    margin-bottom: 50px;
-  }
-
-  .four-label {
-    font-size: 13px;
-    margin-bottom: 14px;
-  }
-
-  .four-title {
-    font-size: 44px;
-    margin-bottom: 14px;
-  }
-
-  .four-subtitle {
-    font-size: 17px;
-  }
-
-  .four-cards {
-    gap: 24px;
-  }
-
-  .four-card {
-    padding: 36px 28px;
-  }
-
-  .card-icon {
-    width: 52px;
-    height: 52px;
-    margin-bottom: 20px;
-  }
-
-  .card-icon svg {
-    width: 22px;
-    height: 22px;
-  }
-
-  .card-title {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-
-  .card-features {
-    gap: 14px;
-  }
-
-  .card-features li {
-    font-size: 14px;
-  }
+  .four-container { padding: 60px 0; }
+  .four-header { margin-bottom: 50px; }
+  .four-label { font-size: 13px; margin-bottom: 14px; }
+  .four-title { font-size: 44px; margin-bottom: 14px; }
+  .four-subtitle { font-size: 17px; }
+  .four-cards { gap: 24px; }
+  .four-card { padding: 36px 28px; }
+  .card-icon { width: 52px; height: 52px; margin-bottom: 20px; }
+  .card-icon svg { width: 22px; height: 22px; }
+  .card-title { font-size: 22px; margin-bottom: 20px; }
+  .card-features { gap: 14px; }
+  .card-features li { font-size: 14px; }
 }
 
-/* Mobile Styles */
+/* ============================================
+   MOBILE STYLES (≤768px)
+   ============================================ */
 @media (max-width: 768px) {
   .four-container {
-    padding: 30px 0 0 0;
+    padding: 20px 0 28px 0;    /* reduced top & bottom, content up */
+    min-height: auto;
+    align-items: flex-start;
   }
 
   .four-content {
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   .four-header {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
   }
 
   .four-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
-    margin-bottom: 12px;
+    font-size: 0.74rem;
+    letter-spacing: 2.2px;
+    margin-bottom: 10px;
   }
 
   .four-title {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-    line-height: 1.25;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
   }
 
   .four-subtitle {
@@ -203,69 +174,6 @@
 
   .four-cards {
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .four-card {
-    padding: 32px 24px;
-  }
-
-  .card-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 18px;
-  }
-
-  .card-icon svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .card-title {
-    font-size: 1.25rem;
-    margin-bottom: 18px;
-  }
-
-  .card-features {
-    gap: 12px;
-  }
-
-  .card-features li {
-    font-size: 0.95rem;
-  }
-}
-
-/* Small Mobile Styles */
-@media (max-width: 480px) {
-  .four-container {
-    padding: 30px 0 0 0;
-  }
-
-  .four-content {
-    padding: 0 20px;
-  }
-
-  .four-header {
-    margin-bottom: 32px;
-  }
-
-  .four-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 10px;
-  }
-
-  .four-title {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    line-height: 1.3;
-  }
-
-  .four-subtitle {
-    font-size: 1rem;
-  }
-
-  .four-cards {
     gap: 16px;
   }
 
@@ -274,162 +182,77 @@
   }
 
   .card-icon {
-    width: 44px;
-    height: 44px;
+    width: 46px;
+    height: 46px;
     margin-bottom: 16px;
   }
 
   .card-icon svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
   }
 
   .card-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
     margin-bottom: 16px;
   }
 
   .card-features {
-    gap: 11px;
+    gap: 12px;
   }
 
   .card-features li {
-    font-size: 0.9rem;
-    gap: 10px;
-  }
-
-  .checkmark {
-    width: 16px;
-    height: 16px;
+    font-size: 1rem;
   }
 }
 
-/* Extra Small Devices */
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .four-container { padding: 16px 0 24px 0; }
+  .four-content { padding: 0 16px; }
+  .four-header { margin-bottom: 20px; }
+  .four-title { font-size: 2.1rem; }
+  .four-cards { gap: 14px; }
+  .four-card { padding: 24px 18px; }
+  .card-title { font-size: 1.2rem; }
+  .card-features li { font-size: 0.95rem; gap: 10px; }
+  .checkmark { width: 16px; height: 16px; }
+}
+
+/* Extra Small (≤360px) */
 @media (max-width: 360px) {
-  .four-container {
-    padding: 30px 0 0 0;
-  }
-
-  .four-content {
-    padding: 0 20px;
-  }
-
-  .four-header {
-    margin-bottom: 28px;
-  }
-
-  .four-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.08em;
-  }
-
-  .four-title {
-    font-size: 1.8rem;
-  }
-
-  .four-subtitle {
-    font-size: 1rem;
-  }
-
-  .four-card {
-    padding: 24px 16px;
-  }
-
-  .card-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .card-title {
-    font-size: 1.15rem;
-  }
-
-  .card-features li {
-    font-size: 0.85rem;
-  }
+  .four-container { padding: 12px 0 20px 0; }
+  .four-content { padding: 0 14px; }
+  .four-header { margin-bottom: 18px; }
+  .four-title { font-size: 1.9rem; }
+  .four-card { padding: 20px 14px; }
+  .card-title { font-size: 1.1rem; }
+  .card-features li { font-size: 0.9rem; }
 }
 
 /* Large Desktop Styles */
 @media (min-width: 1440px) {
-  .four-container {
-    padding: 100px 0;
-  }
-
-  .four-content {
-    max-width: 1300px;
-    padding: 0 60px;
-  }
-
-  .four-header {
-    margin-bottom: 70px;
-  }
-
-  .four-label {
-    font-size: 15px;
-    margin-bottom: 18px;
-  }
-
-  .four-title {
-    font-size: 52px;
-    margin-bottom: 18px;
-  }
-
-  .four-subtitle {
-    font-size: 19px;
-  }
-
-  .four-cards {
-    gap: 36px;
-  }
-
-  .four-card {
-    padding: 44px 36px;
-  }
-
-  .card-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 28px;
-  }
-
-  .card-icon svg {
-    width: 26px;
-    height: 26px;
-  }
-
-  .card-title {
-    font-size: 26px;
-    margin-bottom: 28px;
-  }
-
-  .card-features {
-    gap: 18px;
-  }
-
-  .card-features li {
-    font-size: 16px;
-  }
+  .four-container { padding: 100px 0; }
+  .four-content { max-width: 1300px; padding: 0 60px; }
+  .four-header { margin-bottom: 70px; }
+  .four-label { font-size: 15px; margin-bottom: 18px; }
+  .four-title { font-size: 52px; margin-bottom: 18px; }
+  .four-subtitle { font-size: 19px; }
+  .four-cards { gap: 36px; }
+  .four-card { padding: 44px 36px; }
+  .card-icon { width: 60px; height: 60px; margin-bottom: 28px; }
+  .card-icon svg { width: 26px; height: 26px; }
+  .card-title { font-size: 26px; margin-bottom: 28px; }
+  .card-features { gap: 18px; }
+  .card-features li { font-size: 16px; }
 }
 
 /* Extra Large Displays */
 @media (min-width: 1920px) {
-  .four-content {
-    max-width: 1400px;
-  }
-
-  .four-title {
-    font-size: 56px;
-  }
-
-  .four-subtitle {
-    font-size: 20px;
-  }
-
-  .four-cards {
-    gap: 40px;
-  }
-
-  .four-card {
-    padding: 48px 40px;
-  }
+  .four-content { max-width: 1400px; }
+  .four-title { font-size: 56px; }
+  .four-subtitle { font-size: 20px; }
+  .four-cards { gap: 40px; }
+  .four-card { padding: 48px 40px; }
 }

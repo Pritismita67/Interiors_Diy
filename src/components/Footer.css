@@ -3,7 +3,7 @@
 .footer-container {
   width: 100%;
   background-color: #F0EBE3;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 60px 40px 30px 40px;
 }
 
@@ -137,7 +137,7 @@
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-family: "DM Sans", sans-serif;
   width: fit-content;
   white-space: nowrap;
 }

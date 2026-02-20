@@ -8,10 +8,13 @@ const Home = () => {
         <div className="hero-content">
           <p className="hero-subtitle">WELCOME TO DIY INTERIORS</p>
           <h1 className="hero-title">
-            Your Home tells a Story. Let's Write it Together.
+            Your home tells a{' '}
+            <br />story. Let's write it{' '}
+            <br />together.
           </h1>
           <p className="hero-description">
-            Professional design. Your execution. Your budget
+            Professional design. Your execution.{' '}
+            <br />Your budget.
           </p>
           <a 
             href="https://api.whatsapp.com/send?phone=917710051499" 

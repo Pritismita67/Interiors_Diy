@@ -22,7 +22,7 @@
 }
 
 .what-chapter {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 11px;
   letter-spacing: 2px;
   color: #666;
@@ -31,7 +31,7 @@
 }
 
 .what-title {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 48px;
   font-weight: 600;
   color: #1a1a1a;
@@ -40,7 +40,7 @@
 }
 
 .what-description {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #4a4a4a;
@@ -49,7 +49,7 @@
 }
 
 .what-tagline {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #b8634f;
@@ -118,24 +118,24 @@
     order: 1;
   }
 
+  .what-chapter {
+    font-size: 10px;
+    margin-bottom: 28px; /* more space between CHAPTER 1 and title */
+  }
+
   .what-title {
     font-size: 1.8rem;
     margin-bottom: 24px;
   }
 
-  .what-chapter {
-    font-size: 10px;
-    margin-bottom: 16px;
-  }
-
   .what-description {
-    font-size: 15px;
-    line-height: 1.65;
+    font-size: 16px;
+    line-height: 1.7;
     margin-bottom: 18px;
   }
 
   .what-tagline {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 20px;
   }
 }
@@ -150,25 +150,25 @@
     gap: 30px;
   }
 
+  .what-chapter {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px; /* increased space between CHAPTER 1 and title */
+  }
+
   .what-title {
     font-size: 1.8rem;
     margin-bottom: 20px;
   }
 
-  .what-chapter {
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    margin-bottom: 14px;
-  }
-
   .what-description {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 16px; /* increased to match image */
+    line-height: 1.7;
     margin-bottom: 16px;
   }
 
   .what-tagline {
-    font-size: 14px;
+    font-size: 16px; /* increased to match image */
     margin-top: 18px;
   }
 }
@@ -179,12 +179,16 @@
     padding: 35px 12px;
   }
 
+  .what-chapter {
+    margin-bottom: 32px;
+  }
+
   .what-title {
     font-size: 1.8rem;
   }
 
   .what-description,
   .what-tagline {
-    font-size: 13px;
+    font-size: 15px;
   }
 }

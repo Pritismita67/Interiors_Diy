@@ -1,3 +1,4 @@
+import '../globals.css';
 import Footer from "@/components/Footer";
 import List from "./List";
 import Shopping from "./Shopping";
@@ -12,9 +13,9 @@ import Twenty from "./Twenty";
 export default function FreeGuide() {
   return (
     <>
-    <Shopping />
+    {/* <Shopping /> */}
     <Happy />
-    <List />
+    {/* <List /> */}
     <Nine />
     <Ten />
     <Alen />

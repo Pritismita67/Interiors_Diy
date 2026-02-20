@@ -13,8 +13,7 @@
 .analysis-container {
   width: 100%;
   background-color: #f5f5f0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 80px 20px 80px 60px;
 }
 
@@ -146,8 +145,7 @@
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .vastu-button:hover {

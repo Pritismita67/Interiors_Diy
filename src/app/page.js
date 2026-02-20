@@ -1,4 +1,4 @@
-
+import '../app/globals.css';
 import Footer from "@/components/Footer";
 import Home from "@/components/Home";
 import Made from "@/components/Made";

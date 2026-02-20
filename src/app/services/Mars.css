@@ -3,7 +3,7 @@
 .mars-container {
   width: 100%;
   background-color: #f5f5f0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 80px 20px 80px 60px;
 }
 
@@ -14,6 +14,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
+  padding: 0 24px;
 }
 
 /* Image Section */
@@ -39,7 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 20px 0;
+  padding: 20px 36px;
 }
 
 .mars-icon-box {
@@ -77,6 +78,11 @@
   line-height: 1.6;
   margin: 12px 0 24px 0;
   max-width: 600px;
+}
+
+/* Features wrapper — desktop: no special styling */
+.mars-features-wrapper {
+  width: 100%;
 }
 
 /* Features List */
@@ -135,7 +141,7 @@
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .mars-templates-btn:hover {
@@ -176,10 +182,12 @@
   }
 }
 
-/* Mobile Styles */
+/* ============================================
+   MOBILE STYLES (≤768px) — updated
+   ============================================ */
 @media (max-width: 768px) {
   .mars-container {
-    padding: 16px;
+    padding: 20px 20px 32px 20px;
     min-height: auto;
     background-color: #f5f5f0;
   }
@@ -192,11 +200,11 @@
   }
 
   .mars-image-wrapper {
-    min-height: 300px;
-    max-height: 400px;
+    min-height: 260px;
+    max-height: 340px;
     border-radius: 12px;
     box-shadow: none;
-    margin: 0 0 16px 0;
+    margin: 0 0 20px 0;
     overflow: hidden;
   }
 
@@ -205,13 +213,13 @@
   }
 
   .mars-text-section {
-    padding: 0px 0px 24px 0px;
-    gap: 12px;
+    padding: 0;
+    gap: 14px;
   }
 
   .mars-icon-box {
-    width: 44px;
-    height: 44px;
+    width: 46px;
+    height: 46px;
     margin-bottom: 4px;
   }
 
@@ -221,67 +229,95 @@
   }
 
   .mars-main-title {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
+    font-weight: 700;
     white-space: normal;
+    line-height: 1.2;
   }
 
   .mars-main-subtitle {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
 
   .mars-description-text {
     font-size: 1rem;
-    margin: 8px 0 16px 0;
+    line-height: 1.65;
+    margin: 4px 0 4px 0;
+    max-width: 100%;
   }
 
-  .mars-features-list {
+  /* ── Centered features wrapper ── */
+  .mars-features-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4px 0;
+  }
+
+  .mars-features-wrapper .mars-features-list {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 8px;
+    margin: 0;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .mars-features-wrapper .mars-feature-item {
+    font-size: 1rem;
     gap: 12px;
-    margin-bottom: 24px;
+    align-items: flex-start;
   }
 
-  .mars-feature-item {
-    font-size: 14px;
+  .mars-features-wrapper .mars-checkmark {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
   }
 
   .mars-pricing-title {
-    font-size: 26px;
+    font-size: 1.8rem;
+    font-weight: 700;
   }
 
   .mars-pricing-subtitle {
-    font-size: 14px;
-    margin-bottom: 18px;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
   }
 
+  /* Button — full width and tall */
   .mars-templates-btn {
-    width: auto;
+    display: block;
+    width: 100%;
     text-align: center;
-    padding: 13px 28px;
-    font-size: 15px;
+    padding: 16px 24px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 6px;
+    box-sizing: border-box;
   }
 }
 
-/* Small Mobile Styles */
+/* Small Mobile (≤480px) */
 @media (max-width: 480px) {
   .mars-container {
-    padding: 12px;
+    padding: 16px 16px 28px 16px;
   }
 
   .mars-image-wrapper {
-    min-height: 250px;
-    max-height: 350px;
-    border-radius: 12px;
-    margin: 0 0 12px 0;
+    min-height: 230px;
+    max-height: 300px;
+    margin: 0 0 18px 0;
   }
 
   .mars-text-section {
-    padding: 0px 0px 28px 0px;
-    gap: 10px;
+    gap: 12px;
   }
 
   .mars-icon-box {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 2px;
+    width: 42px;
+    height: 42px;
   }
 
   .mars-icon-box svg {
@@ -290,101 +326,80 @@
   }
 
   .mars-main-title {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
   }
 
   .mars-main-subtitle {
-    font-size: 17px;
+    font-size: 1rem;
   }
 
   .mars-description-text {
-    font-size: 1rem;
-    margin: 6px 0 14px 0;
+    font-size: 0.97rem;
   }
 
-  .mars-features-list {
-    gap: 11px;
-    margin-bottom: 20px;
+  .mars-features-wrapper .mars-features-list {
+    padding: 0 4px;
+    gap: 14px;
   }
 
-  .mars-feature-item {
-    font-size: 13px;
-    gap: 10px;
-  }
-
-  .mars-checkmark {
-    width: 18px;
-    height: 18px;
+  .mars-features-wrapper .mars-feature-item {
+    font-size: 0.95rem;
   }
 
   .mars-pricing-title {
-    font-size: 24px;
+    font-size: 1.6rem;
   }
 
   .mars-pricing-subtitle {
-    font-size: 13px;
-    margin-bottom: 16px;
+    font-size: 0.9rem;
+    margin-bottom: 18px;
   }
 
   .mars-templates-btn {
-    padding: 12px 26px;
-    font-size: 14px;
+    padding: 15px 20px;
+    font-size: 1rem;
   }
 }
 
-/* Extra Small Devices */
+/* Extra Small (≤360px) */
 @media (max-width: 360px) {
+  .mars-container {
+    padding: 12px 14px 24px 14px;
+  }
+
   .mars-image-wrapper {
-    min-height: 240px;
-    max-height: 320px;
-    border-radius: 12px;
-    margin: 0 0 10px 0;
-  }
-
-  .mars-text-section {
-    padding: 0px 0px 24px 0px;
-    gap: 8px;
-  }
-
-  .mars-icon-box {
-    width: 36px;
-    height: 36px;
-    margin-bottom: 0;
-  }
-
-  .mars-icon-box svg {
-    width: 18px;
-    height: 18px;
+    min-height: 200px;
+    max-height: 270px;
+    margin: 0 0 16px 0;
   }
 
   .mars-main-title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .mars-main-subtitle {
-    font-size: 16px;
+    font-size: 0.95rem;
   }
 
   .mars-description-text {
-    font-size: 1rem;
-    margin: 4px 0 12px 0;
+    font-size: 0.93rem;
   }
 
-  .mars-feature-item {
-    font-size: 12px;
+  .mars-features-wrapper .mars-feature-item {
+    font-size: 0.9rem;
   }
 
   .mars-pricing-title {
-    font-size: 22px;
+    font-size: 1.5rem;
   }
 
   .mars-pricing-subtitle {
-    font-size: 12px;
+    font-size: 0.88rem;
   }
 
   .mars-templates-btn {
-    padding: 11px 24px;
-    font-size: 13px;
+    padding: 14px 16px;
+    font-size: 0.95rem;
   }
 }
 

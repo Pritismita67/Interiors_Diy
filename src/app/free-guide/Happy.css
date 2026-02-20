@@ -4,6 +4,7 @@
    ================================================================ */
 
 /* ── Hero Section ────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 .happy-hero {
   position: relative;
   min-height: auto;
@@ -15,7 +16,7 @@
     radial-gradient(ellipse 55% 60% at 96% 8%,  rgba(192, 68, 42, 0.05) 0%, transparent 65%);
   overflow: hidden;
   padding: 40px 24px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   box-sizing: border-box;
 }
 
@@ -96,7 +97,7 @@
   width: fit-content;
   box-shadow: 0 2px 10px rgba(28, 25, 22, 0.06);
   letter-spacing: 0.015em;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .happy-badge-dot {
@@ -116,7 +117,7 @@
 
 /* Heading */
 .happy-heading {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(38px, 5vw, 66px);
   font-weight: 700;
   color: #1c1916;
@@ -145,7 +146,7 @@
 
 /* Subtext */
 .happy-subtext {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(14.5px, 1.75vw, 16.5px);
   color: #7a6f6a;
   line-height: 1.78;
@@ -176,7 +177,7 @@
   font-size: 13.5px;
   font-weight: 500;
   color: #1c1916;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .happy-perk-icon {
@@ -207,7 +208,7 @@
 }
 
 .happy-card-title {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(18px, 2.4vw, 24px);
   font-weight: 700;
   color: #1c1916;
@@ -220,7 +221,7 @@
   font-size: 13px;
   color: #7a6f6a;
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* ── Form ────────────────────────────────────────────────────────── */
@@ -241,7 +242,7 @@
   font-weight: 500;
   color: #1c1916;
   letter-spacing: 0.01em;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .happy-req      { color: #d4695b; }
@@ -253,7 +254,7 @@
   padding: 11px 14px;
   border: 1.5px solid #e6ddd8;
   border-radius: 8px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 14px;
   color: #1c1916;
   background: #fdfcfb;
@@ -292,7 +293,7 @@
   white-space: nowrap;
   flex-shrink: 0;
   user-select: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .happy-phone-input {
@@ -309,7 +310,7 @@
   padding: 11px 36px 11px 14px;
   border: 1.5px solid #e6ddd8;
   border-radius: 8px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 14px;
   color: #1c1916;
   background: #fdfcfb;
@@ -350,7 +351,7 @@
   font-size: 13.5px;
   color: #d4695b;
   font-weight: 500;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Button */
@@ -362,7 +363,7 @@
   color: #ffffff;
   border: none;
   border-radius: 8px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -454,7 +455,7 @@
 }
 
 .happy-success-title {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(22px, 3vw, 28px);
   font-weight: 700;
   color: #1c1916;
@@ -468,7 +469,7 @@
   line-height: 1.78;
   margin: 0;
   max-width: 360px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .happy-success-text strong { color: #1c1916; }
@@ -482,7 +483,7 @@
   padding: 9px 20px;
   margin-top: 4px;
   line-height: 1.55;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* ── RESPONSIVE ──────────────────────────────────────────────────── */

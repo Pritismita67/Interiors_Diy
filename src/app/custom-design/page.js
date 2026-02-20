@@ -1,3 +1,4 @@
+import '../globals.css';
 import Footer from "@/components/Footer";
 import Five from "./Five";
 import Four from "./Four";

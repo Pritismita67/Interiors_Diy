@@ -1,5 +1,5 @@
 /* Path Component Styles */
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 .path-container {
   width: 100%;
   min-height: 100vh;
@@ -11,7 +11,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 80px 20px 60px 20px;
 }
 
@@ -98,7 +98,7 @@
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   box-shadow: 0 4px 12px rgba(217, 120, 83, 0.35);
 }
 
@@ -124,115 +124,119 @@
   .path-cta-button { padding: 15px 26px; font-size: 16px; }
 }
 
-/* Mobile Styles (max 768px)
-   path-label: 11px → 0.8rem  ↑
-   path-title: 44px → 38px    ↓  */
+/* ============================================
+   MOBILE STYLES (≤768px)
+   ============================================ */
 @media (max-width: 768px) {
-  .path-container { height: 100vh; min-height: 100vh; padding: 0 16px; }
-  .path-content { padding: 20px 16px; }
-  .path-label {
-    font-size: 0.8rem;         /* ↑ increased from 11px */
-    letter-spacing: 2px;
-    margin-bottom: 16px;
+  .path-container {
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 20px;
+    align-items: flex-start;        /* push content up */
   }
+
+  .path-content {
+    padding-top: 15vh;              /* breathing room from top */
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+  }
+
+  .path-label {
+    font-size: 0.78rem;
+    letter-spacing: 2.5px;
+    margin-bottom: 1rem;
+  }
+
   .path-title {
-    font-size: 38px;           /* ↓ reduced from 44px */
-    margin-bottom: 20px;
+    font-size: 2.35rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
     letter-spacing: -0.5px;
+    line-height: 1.25;
   }
-  .path-subtitle { font-size: 20px; margin-bottom: 12px; }
-  .path-description { font-size: 15px; margin-bottom: 28px; padding: 0 10px; }
+
+  .path-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .path-description {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+    padding: 0;
+    line-height: 1.6;
+  }
+
   .desktop-break { display: none; }
-  .path-cta-button { padding: 14px 24px; font-size: 15px; width: auto; max-width: 200px; }
+
+  /* Full-width button like Home */
+  .path-cta-button {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    box-sizing: border-box;
+    max-width: none;
+  }
 }
 
-/* Mobile Large (481px to 599px)
-   path-label: 10px → 0.78rem ↑
-   path-title: 50px → 42px    ↓  */
+/* Mobile Large (481px to 599px) */
 @media screen and (max-width: 599px) and (min-width: 481px) {
-  .path-container { height: 100vh; min-height: 100vh; padding: 0 12px; }
-  .path-content { padding: 16px 12px; }
-  .path-label {
-    font-size: 0.78rem;        /* ↑ increased from 10px */
-    letter-spacing: 1.8px;
-    margin-bottom: 14px;
-  }
-  .path-title {
-    font-size: 42px;           /* ↓ reduced from 50px */
-    margin-bottom: 16px;
-  }
-  .path-subtitle { font-size: 18px; margin-bottom: 10px; }
-  .path-description { font-size: 14px; margin-bottom: 24px; padding: 0 8px; }
-  .desktop-break { display: none; }
-  .path-cta-button { padding: 13px 22px; font-size: 14px; width: auto; max-width: 180px; }
+  .path-container { padding: 0 16px; }
+  .path-content { padding-top: 16vh; padding-left: 12px; padding-right: 12px; }
+  .path-label { font-size: 0.8rem; letter-spacing: 2.8px; }
+  .path-title { font-size: 2.5rem; }
+  .path-subtitle { font-size: 1.15rem; }
+  .path-description { font-size: 1.05rem; }
+  .path-cta-button { width: 75%; font-size: 1.05rem; padding: 1.05rem 1.5rem; }
 }
 
-/* Small Mobile (376px to 480px)
-   path-label: 10px → 0.76rem ↑
-   path-title: 50px → 42px    ↓  */
+/* Small Mobile (376px to 480px) */
 @media (max-width: 480px) and (min-width: 376px) {
-  .path-container { height: 100vh; min-height: 100vh; padding: 0 12px; }
-  .path-content { padding: 16px 12px; }
-  .path-label {
-    font-size: 0.76rem;        /* ↑ increased from 10px */
-    letter-spacing: 1.8px;
-    margin-bottom: 14px;
-  }
-  .path-title {
-    font-size: 42px;           /* ↓ reduced from 50px */
-    margin-bottom: 16px;
-  }
-  .path-subtitle { font-size: 18px; margin-bottom: 10px; }
-  .path-description { font-size: 14px; margin-bottom: 24px; padding: 0 8px; }
-  .desktop-break { display: none; }
-  .path-cta-button { padding: 13px 22px; font-size: 14px; width: auto; max-width: 180px; }
+  .path-container { padding: 0 16px; }
+  .path-content { padding-top: 15vh; padding-left: 12px; padding-right: 12px; }
+  .path-label { font-size: 0.76rem; letter-spacing: 2.5px; }
+  .path-title { font-size: 2.35rem; }
+  .path-subtitle { font-size: 1.1rem; }
+  .path-description { font-size: 1rem; }
+  .path-cta-button { width: 80%; font-size: 1rem; padding: 1rem 1.5rem; }
 }
 
-/* Extra Small Mobile (320px to 375px)
-   path-label: 9px → 0.72rem  ↑
-   path-title: 40px → 34px    ↓  */
+/* Extra Small Mobile (≤375px) */
 @media (max-width: 375px) {
-  .path-container { height: 100vh; min-height: 100vh; padding: 0 10px; }
-  .path-label {
-    font-size: 0.72rem;        /* ↑ increased from 9px */
-    letter-spacing: 1.5px;
-  }
-  .path-title {
-    font-size: 34px;           /* ↓ reduced from 40px */
-  }
-  .path-subtitle { font-size: 17px; }
-  .path-description { font-size: 13px; margin-bottom: 20px; }
-  .desktop-break { display: none; }
-  .path-cta-button { padding: 12px 20px; font-size: 13px; width: auto; max-width: 160px; }
+  .path-container { padding: 0 14px; }
+  .path-content { padding-top: 14vh; padding-left: 10px; padding-right: 10px; }
+  .path-label { font-size: 0.72rem; letter-spacing: 2.2px; }
+  .path-title { font-size: 2rem; }
+  .path-subtitle { font-size: 1rem; }
+  .path-description { font-size: 0.95rem; }
+  .path-cta-button { width: 85%; font-size: 0.95rem; padding: 0.95rem 1.25rem; }
 }
 
-/* Extra Extra Small (below 320px)
-   path-label: 9px → 0.68rem  ↑
-   path-title: 40px → 34px    ↓  */
+/* Extra Extra Small (≤319px) */
 @media (max-width: 319px) {
-  .path-container { height: 100vh; min-height: 100vh; padding: 0 10px; }
-  .path-label {
-    font-size: 0.68rem;        /* ↑ increased from 9px */
-    letter-spacing: 1.5px;
-  }
-  .path-title {
-    font-size: 34px;           /* ↓ reduced from 40px */
-  }
-  .path-subtitle { font-size: 17px; }
-  .path-description { font-size: 13px; margin-bottom: 20px; }
-  .desktop-break { display: none; }
-  .path-cta-button { padding: 12px 20px; font-size: 13px; width: auto; max-width: 150px; }
+  .path-content { padding-top: 12vh; }
+  .path-label { font-size: 0.68rem; letter-spacing: 1.8px; }
+  .path-title { font-size: 1.75rem; }
+  .path-subtitle { font-size: 0.95rem; }
+  .path-description { font-size: 0.88rem; }
+  .path-cta-button { width: 90%; font-size: 0.9rem; padding: 0.9rem 1rem; }
 }
 
 /* Landscape Mobile — UNCHANGED */
 @media (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
-  .path-container { min-height: 100vh; padding: 40px 20px 30px 20px; }
+  .path-container { min-height: 100vh; padding: 40px 20px 30px 20px; align-items: center; }
   .path-content { padding: 20px; }
   .path-label { font-size: 10px; letter-spacing: 2px; margin-bottom: 10px; }
   .path-title { font-size: 38px; margin-bottom: 12px; }
   .path-subtitle { font-size: 17px; margin-bottom: 8px; }
   .path-description { font-size: 14px; margin-bottom: 20px; }
-  .path-cta-button { padding: 12px 24px; font-size: 14px; }
+  .path-cta-button { display: inline-block; width: auto; padding: 12px 24px; font-size: 14px; }
 }
 
 /* High Resolution Displays — UNCHANGED */
@@ -242,7 +246,7 @@
   .path-title { font-size: 110px; }
   .path-subtitle { font-size: 26px; margin-bottom: 18px; }
   .path-description { font-size: 19px; margin-bottom: 40px; }
-  .path-cta-button { padding: 18px 32px; font-size: 18px; }
+  .path-cta-button { display: inline-block; width: auto; padding: 18px 32px; font-size: 18px; }
 }
 
 /* Extra Large Displays — UNCHANGED */

@@ -1,10 +1,11 @@
 /* Led Component Styles */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 .led-container {
   width: 100%;
   min-height: 100vh;
   background-color: #f5f5f0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 80px 0;
   display: flex;
   align-items: center;
@@ -27,6 +28,7 @@
   flex-direction: column;
   gap: 20px;
   padding: 20px 0;
+  font-family: "DM Sans", sans-serif;
 }
 
 .led-label {
@@ -36,6 +38,7 @@
   letter-spacing: 2.5px;
   text-transform: uppercase;
   margin: 0 0 4px 0;
+  font-family: "DM Sans", sans-serif;
 }
 
 .led-title {
@@ -45,6 +48,7 @@
   line-height: 1.2;
   margin: 0 0 12px 0;
   letter-spacing: -0.5px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .led-description {
@@ -52,6 +56,7 @@
   color: #4A4A4A;
   line-height: 1.65;
   margin: 0;
+  font-family: "DM Sans", sans-serif;
 }
 
 .led-tagline {
@@ -60,6 +65,7 @@
   font-weight: 600;
   line-height: 1.5;
   margin: 8px 0 0 0;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Image Section */
@@ -81,78 +87,57 @@
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
+  .led-container { padding: 60px 0; }
+  .led-content { gap: 60px; grid-template-columns: 1fr; padding: 0 20px; }
+  .led-text { padding: 0; order: 1; }
+  .led-image { min-height: 400px; max-height: 500px; order: 2; }
+  .led-label { font-size: 11px; letter-spacing: 2.3px; margin-bottom: 2px; }
+  .led-title { font-size: 44px; }
+  .led-description { font-size: 16px; }
+  .led-tagline { font-size: 16px; }
+}
+
+/* ============================================
+   MOBILE STYLES (≤768px)
+   ============================================ */
+@media (max-width: 768px) {
   .led-container {
-    padding: 60px 0;
+    padding: 20px 0 28px 0;    /* tight top & bottom */
+    min-height: auto;
+    align-items: flex-start;
   }
 
   .led-content {
-    gap: 60px;
-    grid-template-columns: 1fr;
+    gap: 16px;                  /* tight gap between image and text */
     padding: 0 20px;
+    grid-template-columns: 1fr;
   }
 
   .led-text {
+    gap: 14px;
+    order: 2;
     padding: 0;
-    order: 1;
   }
 
   .led-image {
-    min-height: 400px;
-    max-height: 500px;
-    order: 2;
+    min-height: 240px;
+    max-height: 300px;
+    order: 1;
+    border-radius: 12px;
+    box-shadow: none;
   }
 
   .led-label {
-    font-size: 11px;
-    letter-spacing: 2.3px;
+    font-size: 0.74rem;
+    letter-spacing: 2.2px;
     margin-bottom: 2px;
   }
 
   .led-title {
-    font-size: 44px;
-  }
-
-  .led-description {
-    font-size: 16px;
-  }
-
-  .led-tagline {
-    font-size: 16px;
-  }
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .led-container {
-    padding: 30px 0 0 0;
-  }
-
-  .led-content {
-    gap: 40px;
-    padding: 0 30px;
-  }
-
-  .led-text {
-    gap: 12px;
-  }
-
-  .led-image {
-    min-height: 300px;
-    max-height: 400px;
-    order: -1;
-  }
-
-  .led-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
-    margin-bottom: 4px;
-  }
-
-  .led-title {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    line-height: 1.25;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.2;
   }
 
   .led-description {
@@ -162,154 +147,87 @@
 
   .led-tagline {
     font-size: 1rem;
-    margin-top: 6px;
-  }
-}
-
-/* Small Mobile Styles */
-@media (max-width: 480px) {
-  .led-container {
-    padding: 30px 0 0 0;
-  }
-
-  .led-content {
-    gap: 30px;
-    padding: 0 20px;
-  }
-
-  .led-text {
-    gap: 10px;
-  }
-
-  .led-image {
-    min-height: 250px;
-    max-height: 350px;
-    border-radius: 8px;
-  }
-
-  .led-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 2px;
-  }
-
-  .led-title {
-    font-size: 1.8rem;
-    margin-bottom: 8px;
-    margin-top: 0px;
-    line-height: 1.3;
-  }
-
-  .led-description {
-    font-size: 1rem;
-    line-height: 1.75;
-  }
-
-  .led-tagline {
-    font-size: 1rem;
     margin-top: 4px;
   }
 }
 
-/* Extra Small Devices */
-@media (max-width: 360px) {
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
   .led-container {
-    padding: 30px 0 0 0;
+    padding: 16px 0 24px 0;
   }
 
   .led-content {
-    gap: 28px;
-    padding: 0 20px;
+    gap: 14px;
+    padding: 0 16px;
   }
 
-  .led-text {
-    gap: 8px;
-  }
-
-  .led-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.08em;
-    margin-bottom: 0px;
+  .led-image {
+    min-height: 210px;
+    max-height: 270px;
+    border-radius: 10px;
   }
 
   .led-title {
-    font-size: 1.8rem;
-    margin-top: 0px;
+    font-size: 2.1rem;
   }
 
   .led-description {
-    font-size: 1rem;
+    font-size: 0.97rem;
   }
 
   .led-tagline {
-    font-size: 1rem;
+    font-size: 0.97rem;
+  }
+}
+
+/* Extra Small (≤360px) */
+@media (max-width: 360px) {
+  .led-container {
+    padding: 12px 0 20px 0;
+  }
+
+  .led-content {
+    gap: 12px;
+    padding: 0 14px;
+  }
+
+  .led-image {
+    min-height: 190px;
+    max-height: 240px;
+  }
+
+  .led-title {
+    font-size: 1.9rem;
+  }
+
+  .led-description {
+    font-size: 0.93rem;
+  }
+
+  .led-tagline {
+    font-size: 0.93rem;
   }
 }
 
 /* Large Desktop Styles */
 @media (min-width: 1440px) {
-  .led-container {
-    padding: 100px 0;
-  }
-
-  .led-content {
-    gap: 100px;
-    padding: 0 60px;
-  }
-
-  .led-text {
-    gap: 22px;
-  }
-
-  .led-image {
-    min-height: 550px;
-  }
-
-  .led-label {
-    font-size: 13px;
-    letter-spacing: 2.8px;
-  }
-
-  .led-title {
-    font-size: 52px;
-    margin-bottom: 14px;
-  }
-
-  .led-description {
-    font-size: 18px;
-  }
-
-  .led-tagline {
-    font-size: 18px;
-    margin-top: 10px;
-  }
+  .led-container { padding: 100px 0; }
+  .led-content { gap: 100px; padding: 0 60px; }
+  .led-text { gap: 22px; }
+  .led-image { min-height: 550px; }
+  .led-label { font-size: 13px; letter-spacing: 2.8px; }
+  .led-title { font-size: 52px; margin-bottom: 14px; }
+  .led-description { font-size: 18px; }
+  .led-tagline { font-size: 18px; margin-top: 10px; }
 }
 
 /* Extra Large Displays */
 @media (min-width: 1920px) {
-  .led-content {
-    max-width: 1600px;
-    gap: 120px;
-  }
-
-  .led-image {
-    min-height: 600px;
-  }
-
-  .led-label {
-    font-size: 14px;
-    letter-spacing: 3px;
-  }
-
-  .led-title {
-    font-size: 56px;
-  }
-
-  .led-description {
-    font-size: 19px;
-  }
-
-  .led-tagline {
-    font-size: 19px;
-  }
+  .led-content { max-width: 1600px; gap: 120px; }
+  .led-image { min-height: 600px; }
+  .led-label { font-size: 14px; letter-spacing: 3px; }
+  .led-title { font-size: 56px; }
+  .led-description { font-size: 19px; }
+  .led-tagline { font-size: 19px; }
 }

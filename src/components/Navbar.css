@@ -1,4 +1,5 @@
 /* Navbar Container */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 .navbar {
   position: fixed;
   top: 0;
@@ -478,7 +479,7 @@
 /* Add padding to body to prevent content from going under fixed navbar */
 body {
   padding-top: 62px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Responsive body padding */

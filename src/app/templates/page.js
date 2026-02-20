@@ -1,3 +1,4 @@
+import '../globals.css';
 import Footer from "@/components/Footer";
 import Browse from "./Browse";
 import Budget from "./Budget";

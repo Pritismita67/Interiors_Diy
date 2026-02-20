@@ -62,7 +62,6 @@ const Made = () => {
 
   const whatsappLink = 'https://api.whatsapp.com/send?phone=917710051499';
 
-  // Fullscreen image handlers
   const openFullscreen = (images, index) => {
     setFullscreenImage(images);
     setCurrentImageIndex(index);
@@ -87,7 +86,6 @@ const Made = () => {
     );
   };
 
-  // Image Gallery Component
   const ImageGallery = ({ images, templateTitle }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -128,7 +126,6 @@ const Made = () => {
           ))}
         </div>
         
-        {/* Image indicators */}
         <div className="made-img-indicators">
           {images.map((_, index) => (
             <button
@@ -140,7 +137,6 @@ const Made = () => {
           ))}
         </div>
 
-        {/* Fullscreen button */}
         <button 
           className="made-fullscreen-btn"
           onClick={() => openFullscreen(images, currentIndex)}
@@ -151,7 +147,6 @@ const Made = () => {
           </svg>
         </button>
 
-        {/* Navigation arrows for desktop */}
         {images.length > 1 && (
           <>
             <button 
@@ -185,8 +180,11 @@ const Made = () => {
           <p className="made-subtitle">QUICK START</p>
           <h2 className="made-title">Ready-Made Templates</h2>
           <p className="made-description">
-            Pre-designed room layouts crafted by professionals. Download instantly and start 
-            implementing today.
+            Pre-designed room layouts crafted by
+            <br className="made-desc-br" />
+            {' '}professionals. Download instantly
+            <br className="made-desc-br" />
+            {' '}and start implementing today.
           </p>
         </div>
 
@@ -270,7 +268,6 @@ const Made = () => {
         </div>
       </div>
 
-      {/* Fullscreen Modal */}
       {fullscreenImage && (
         <div className="made-fullscreen-modal" onClick={closeFullscreen}>
           <button className="made-modal-close" onClick={closeFullscreen}>
@@ -302,12 +299,10 @@ const Made = () => {
               </>
             )}
 
-            {/* Image counter */}
             <div className="made-modal-counter">
               {currentImageIndex + 1} / {fullscreenImage.length}
             </div>
 
-            {/* Thumbnail navigation */}
             <div className="made-modal-thumbnails">
               {fullscreenImage.map((img, index) => (
                 <img

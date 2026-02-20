@@ -11,7 +11,7 @@
   min-height: 100vh;
   background: linear-gradient(to bottom, #f8f5f2 0%, #ffffff 100%);
   padding: 60px 20px 80px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .shopping-content {
@@ -36,7 +36,7 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 32px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .download-icon {
@@ -52,7 +52,7 @@
   line-height: 1.2;
   margin-bottom: 24px;
   max-width: 900px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Subtitle */
@@ -62,7 +62,7 @@
   line-height: 1.6;
   margin-bottom: 80px;
   max-width: 700px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Section Heading */
@@ -71,7 +71,7 @@
   font-weight: 600;
   color: #2d2d2d;
   margin-bottom: 48px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Benefits Container */
@@ -105,14 +105,14 @@
   font-weight: 600;
   color: #2d2d2d;
   margin-bottom: 16px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .benefit-description {
   font-size: 16px;
   color: #6b6b6b;
   line-height: 1.6;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Tablet Responsive (768px - 1024px) */

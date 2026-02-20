@@ -36,7 +36,7 @@
 }
 
 .problem-chapter {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 11px;
   letter-spacing: 2px;
   color: #666;
@@ -45,7 +45,7 @@
 }
 
 .problem-title {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 48px;
   font-weight: 600;
   color: #1a1a1a;
@@ -54,7 +54,7 @@
 }
 
 .problem-description {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #4a4a4a;
@@ -63,7 +63,7 @@
 }
 
 .problem-solution {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #c75a3c;
@@ -118,24 +118,24 @@
     order: 2;
   }
 
+  .problem-chapter {
+    font-size: 10px;
+    margin-bottom: 28px; /* more space between CHAPTER 2 and title */
+  }
+
   .problem-title {
     font-size: 1.8rem;
     margin-bottom: 24px;
   }
 
-  .problem-chapter {
-    font-size: 10px;
-    margin-bottom: 16px;
-  }
-
   .problem-description {
-    font-size: 15px;
-    line-height: 1.65;
+    font-size: 16px;
+    line-height: 1.7;
     margin-bottom: 18px;
   }
 
   .problem-solution {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 20px;
   }
 }
@@ -150,25 +150,25 @@
     gap: 30px;
   }
 
+  .problem-chapter {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px; /* increased space between CHAPTER 2 and title */
+  }
+
   .problem-title {
     font-size: 1.8rem;
     margin-bottom: 20px;
   }
 
-  .problem-chapter {
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    margin-bottom: 14px;
-  }
-
   .problem-description {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 16px; /* increased to match reference */
+    line-height: 1.7;
     margin-bottom: 16px;
   }
 
   .problem-solution {
-    font-size: 14px;
+    font-size: 16px; /* increased to match reference */
     margin-top: 18px;
   }
 }
@@ -179,12 +179,16 @@
     padding: 35px 12px;
   }
 
+  .problem-chapter {
+    margin-bottom: 32px;
+  }
+
   .problem-title {
     font-size: 1.8rem;
   }
 
   .problem-description,
   .problem-solution {
-    font-size: 13px;
+    font-size: 15px;
   }
 }

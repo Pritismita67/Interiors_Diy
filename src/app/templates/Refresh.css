@@ -3,7 +3,7 @@
   width: 100%;
   background-color: #f5f5f0;
   padding: 100px 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Container */
@@ -50,7 +50,7 @@
 
 /* Label */
 .refresh-label {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(0.75rem, 1.2vw, 0.85rem);
   font-weight: 400;
   color: #666666;
@@ -61,7 +61,7 @@
 
 /* Title */
 .refresh-title {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   color: #2d2d2d;
@@ -72,7 +72,7 @@
 
 /* Description */
 .refresh-description {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(1rem, 1.8vw, 1.15rem);
   font-weight: 400;
   color: #4d4d4d;
@@ -82,7 +82,7 @@
 
 /* Main Text */
 .refresh-text {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(0.95rem, 1.6vw, 1.1rem);
   font-weight: 400;
   color: #4d4d4d;
@@ -92,7 +92,7 @@
 
 /* Tagline */
 .refresh-tagline {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(0.95rem, 1.6vw, 1.1rem);
   font-weight: 600;
   color: #c94a35;

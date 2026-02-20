@@ -26,7 +26,7 @@ const Custom = () => {
             </svg>
           </div>
           
-          <h2 className="custom-main-title">Custom Design Consult</h2>
+          <h2 className="custom-main-title">Custom Design <br />Consult</h2>
           
           <p className="custom-main-subtitle">Personalized to your lifestyle</p>
           

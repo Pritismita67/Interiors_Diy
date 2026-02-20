@@ -1,3 +1,4 @@
+import '../globals.css';
 import Footer from "@/components/Footer";
 import Custom from "./Custom";
 import Online from "./Online";
