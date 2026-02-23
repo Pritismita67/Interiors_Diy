@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
 import './Yellow.css';
 
 const Yellow = () => {
@@ -9,18 +8,11 @@ const Yellow = () => {
   const [fullscreenImage, setFullscreenImage] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Template data with multiple images
   const templates = [
     {
       id: 1,
       category: 'Living Rooms',
-      images: [
-        '/t2.png',
-        '/t1.png',
-        '/t3.png',
-        '/t4.png'
-       
-      ],
+      images: ['/t2.png', '/t1.png', '/t3.png', '/t4.png'],
       title: 'Urban Grove',
       style: 'Contemporary Minimal',
       size: '14*10 ft',
@@ -31,12 +23,7 @@ const Yellow = () => {
     {
       id: 2,
       category: 'Living Rooms',
-      images: [
-        '/o3.png',
-        '/o1.png',
-        '/o2.png',
-        
-      ],
+      images: ['/o3.png', '/o1.png', '/o2.png'],
       title: 'Arcadia Calm',
       style: 'Modern Comfort',
       size: '14*10 ft',
@@ -47,12 +34,7 @@ const Yellow = () => {
     {
       id: 3,
       category: 'Living Rooms',
-      images: [
-        '/h7.png',
-        '/h8.png',
-        '/h9.png',
-    
-      ],
+      images: ['/h7.png', '/h8.png', '/h9.png'],
       title: 'The Neutral Nook',
       style: 'Scandinavian Modern',
       size: '14*10 ft',
@@ -68,12 +50,7 @@ const Yellow = () => {
       size: '11*13 ft',
       description: 'Natural boho-chic interiors with cane and wood accents',
       price: '₹3,299',
-      images: [
-        '/h12.png',
-        '/h11.png',
-        '/h13.png',
-        '/h10.png'
-      ],
+      images: ['/h12.png', '/h11.png', '/h13.png', '/h10.png'],
       isPopular: false
     },
     {
@@ -84,42 +61,29 @@ const Yellow = () => {
       size: '12*12 ft',
       description: 'Soft botanical backdrop with refined furnishings',
       price: '₹2,799',
-      images: [
-        '/2.png',
-        '/4.png',
-        '/3.png',
-        '/1.png'
-        
-      ],
+      images: ['/2.png', '/4.png', '/3.png', '/1.png'],
       isPopular: true
     },
     {
       id: 6,
       category: 'Bedrooms',
       title: 'Royal Canvas',
-      style: ' Modern Luxe',
+      style: 'Modern Luxe',
       size: '12*12 ft',
       description: 'Gallery-style backdrop with refined lighting',
       price: '₹3,499',
-      images: [
-        '/n1.png',
-        '/n3.png',
-        '/n2.png'
-      ],
+      images: ['/n1.png', '/n3.png', '/n2.png'],
       isPopular: false
     }
   ];
 
-  // Filter templates based on active category
-  const filteredTemplates = activeFilter === 'All Templates' 
-    ? templates 
+  const filteredTemplates = activeFilter === 'All Templates'
+    ? templates
     : templates.filter(template => template.category === activeFilter);
 
-  // Split templates for display - first 3 and remaining
   const firstRowTemplates = filteredTemplates.slice(0, 3);
   const secondRowTemplates = filteredTemplates.slice(3);
 
-  // Get count for each category
   const getCategoryCount = (category) => {
     if (category === 'All Templates') return templates.length;
     return templates.filter(t => t.category === category).length;
@@ -136,7 +100,6 @@ const Yellow = () => {
 
   const whatsappLink = 'https://api.whatsapp.com/send?phone=917710051499';
 
-  // Fullscreen image handlers
   const openFullscreen = (images, index) => {
     setFullscreenImage(images);
     setCurrentImageIndex(index);
@@ -150,18 +113,17 @@ const Yellow = () => {
   };
 
   const nextImage = () => {
-    setCurrentImageIndex((prev) => 
+    setCurrentImageIndex((prev) =>
       prev === fullscreenImage.length - 1 ? 0 : prev + 1
     );
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prev) => 
+    setCurrentImageIndex((prev) =>
       prev === 0 ? fullscreenImage.length - 1 : prev - 1
     );
   };
 
-  // Image Gallery Component
   const ImageGallery = ({ images, templateTitle }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -170,10 +132,7 @@ const Yellow = () => {
       const container = document.getElementById(`gallery-${templateTitle}`);
       if (container) {
         const imageWidth = container.offsetWidth;
-        container.scrollTo({
-          left: imageWidth * index,
-          behavior: 'smooth'
-        });
+        container.scrollTo({ left: imageWidth * index, behavior: 'smooth' });
       }
     };
 
@@ -186,8 +145,8 @@ const Yellow = () => {
 
     return (
       <div className="yellow-img-wrapper">
-        <div 
-          className="yellow-img-gallery" 
+        <div
+          className="yellow-img-gallery"
           id={`gallery-${templateTitle}`}
           onScroll={handleScroll}
         >
@@ -201,8 +160,7 @@ const Yellow = () => {
             />
           ))}
         </div>
-        
-        {/* Image indicators */}
+
         <div className="yellow-img-indicators">
           {images.map((_, index) => (
             <button
@@ -214,8 +172,7 @@ const Yellow = () => {
           ))}
         </div>
 
-        {/* Fullscreen button */}
-        <button 
+        <button
           className="yellow-fullscreen-btn"
           onClick={() => openFullscreen(images, currentIndex)}
           aria-label="View fullscreen"
@@ -225,10 +182,9 @@ const Yellow = () => {
           </svg>
         </button>
 
-        {/* Navigation arrows for desktop */}
         {images.length > 1 && (
           <>
-            <button 
+            <button
               className="yellow-nav-btn yellow-nav-prev"
               onClick={() => scrollToImage(currentIndex === 0 ? images.length - 1 : currentIndex - 1)}
               aria-label="Previous image"
@@ -237,7 +193,7 @@ const Yellow = () => {
                 <polyline points="15 18 9 12 15 6"/>
               </svg>
             </button>
-            <button 
+            <button
               className="yellow-nav-btn yellow-nav-next"
               onClick={() => scrollToImage(currentIndex === images.length - 1 ? 0 : currentIndex + 1)}
               aria-label="Next image"
@@ -252,7 +208,6 @@ const Yellow = () => {
     );
   };
 
-  // Template Card Component
   const TemplateCard = ({ template }) => (
     <div className="yellow-card">
       {template.isPopular && (
@@ -261,9 +216,9 @@ const Yellow = () => {
           <span className="yellow-popular-text">Popular</span>
         </div>
       )}
-      
+
       <ImageGallery images={template.images} templateTitle={template.title} />
-      
+
       <div className="yellow-card-body">
         <h3 className="yellow-card-title">{template.title}</h3>
         <div className="yellow-card-meta">
@@ -277,9 +232,9 @@ const Yellow = () => {
             <span className="yellow-price">{template.price}</span>
             <span className="yellow-price-label">Complete design pack</span>
           </div>
-          <a 
-            href={whatsappLink} 
-            target="_blank" 
+          <a
+            href={whatsappLink}
+            target="_blank"
             rel="noopener noreferrer"
             className="yellow-btn"
           >
@@ -292,9 +247,9 @@ const Yellow = () => {
   );
 
   return (
-    <section className="yellow-section">
+    // ✅ id="templates-section" here is what Browse.jsx scrolls to
+    <section className="yellow-section" id="templates-section">
       <div className="yellow-wrapper">
-        {/* Header */}
         <div className="yellow-header">
           <div className="yellow-badge">
             <span className="yellow-badge-icon">✨</span>
@@ -308,7 +263,6 @@ const Yellow = () => {
           </p>
         </div>
 
-        {/* Filter Tabs */}
         <div className="yellow-filters">
           {filters.map((filter) => (
             <button
@@ -322,7 +276,6 @@ const Yellow = () => {
           ))}
         </div>
 
-        {/* Template Cards - First Row (3 cards) */}
         {firstRowTemplates.length > 0 && (
           <div className="yellow-grid yellow-grid-first">
             {firstRowTemplates.map((template) => (
@@ -331,7 +284,6 @@ const Yellow = () => {
           </div>
         )}
 
-        {/* Template Cards - Second Row (remaining cards - centered if 2, full width if more) */}
         {secondRowTemplates.length > 0 && (
           <div className={`yellow-grid ${secondRowTemplates.length === 2 ? 'yellow-grid-second' : 'yellow-grid-first'}`}>
             {secondRowTemplates.map((template) => (
@@ -340,7 +292,6 @@ const Yellow = () => {
           </div>
         )}
 
-        {/* No Results Message */}
         {filteredTemplates.length === 0 && (
           <div className="yellow-no-results">
             <p>No templates found in this category.</p>
@@ -348,7 +299,6 @@ const Yellow = () => {
         )}
       </div>
 
-      {/* Fullscreen Modal */}
       {fullscreenImage && (
         <div className="yellow-fullscreen-modal" onClick={closeFullscreen}>
           <button className="yellow-modal-close" onClick={closeFullscreen}>
@@ -359,8 +309,8 @@ const Yellow = () => {
           </button>
 
           <div className="yellow-modal-content" onClick={(e) => e.stopPropagation()}>
-            <img 
-              src={fullscreenImage[currentImageIndex]} 
+            <img
+              src={fullscreenImage[currentImageIndex]}
               alt={`Fullscreen view ${currentImageIndex + 1}`}
               className="yellow-modal-img"
             />
@@ -380,12 +330,10 @@ const Yellow = () => {
               </>
             )}
 
-            {/* Image counter */}
             <div className="yellow-modal-counter">
               {currentImageIndex + 1} / {fullscreenImage.length}
             </div>
 
-            {/* Thumbnail navigation */}
             <div className="yellow-modal-thumbnails">
               {fullscreenImage.map((img, index) => (
                 <img

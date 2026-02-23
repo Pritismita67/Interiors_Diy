@@ -3,7 +3,7 @@ import './What.css';
 
 const What = () => {
   return (
-    <section className="what-section">
+    <section className="what-section" id="what-section">
       <div className="what-container">
         <div className="what-content">
           <div className="what-text">

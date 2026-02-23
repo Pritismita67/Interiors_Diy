@@ -34,21 +34,19 @@ const LeadSchema = new mongoose.Schema(
 
 const Lead = mongoose.models.Lead || mongoose.model('Lead', LeadSchema);
 
-// ── Send email with PDF directly attached ───────────────────────────
+// ── Send Email ───────────────────────────────────────────────────────
 async function sendKitEmail(toEmail, toName) {
   const firstName = toName.split(' ')[0];
 
-  const pdfPath   = path.join(process.cwd(), 'public', 'free.pdf');
+  const pdfPath   = path.join(process.cwd(), 'public', 'guide.pdf');
   const pdfExists = fs.existsSync(pdfPath);
 
-  if (!pdfExists) {
-    console.warn('⚠️ PDF not found at:', pdfPath);
-  }
+  if (!pdfExists) console.warn('⚠️ PDF not found at:', pdfPath);
 
   await resend.emails.send({
     from:    'DIY Interiors <info@dointeriorsyourself.com>',
     to:      toEmail,
-    subject: `🏠 Your free Interior Kit is here, ${firstName}!`,
+    subject: 'Your Start-Right Interior Decision Kit — guide.pdf attached',
     html: `
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +62,6 @@ async function sendKitEmail(toEmail, toName) {
         style="max-width:100%;background:#fff;border-radius:20px;overflow:hidden;
                box-shadow:0 12px 40px rgba(28,25,22,.12);">
 
-        <!-- Header -->
         <tr>
           <td style="background:#c0442a;padding:36px 44px;text-align:center;">
             <p style="margin:0 0 8px;font-size:11px;letter-spacing:.14em;
@@ -73,49 +70,110 @@ async function sendKitEmail(toEmail, toName) {
             </p>
             <h1 style="margin:0;font-size:27px;font-weight:700;color:#fff;
                        font-family:Georgia,serif;line-height:1.22;">
-              Your Free Guide Has Arrived! 🎉
+              Your Interior Decision Kit
             </h1>
           </td>
         </tr>
 
-        <!-- Body -->
         <tr>
           <td style="padding:38px 44px 34px;">
-            <p style="margin:0 0 16px;font-size:16px;font-weight:600;color:#1c1916;">
+            <p style="margin:0 0 20px;font-size:16px;color:#1c1916;line-height:1.6;">
               Hi ${firstName},
             </p>
-            <p style="margin:0 0 18px;font-size:15px;color:#7a6f6a;line-height:1.78;">
-              Welcome to the Start-Right community! 🙌 Your
-              <strong style="color:#1c1916;">Start-Right Interior Decision Kit</strong>
-              is <strong style="color:#c0442a;">attached to this email</strong> as a PDF.
-              Just open the attachment to start planning your dream home the smart way!
+            <p style="margin:0 0 24px;font-size:15px;color:#4a4a4a;line-height:1.78;">
+              Thank you for requesting the Start-Right Interior Decision Kit.
             </p>
 
-            <!-- Attachment notice box -->
-            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+              style="margin-bottom:28px;">
               <tr>
-                <td style="background:#faf8f5;border:1.5px dashed #e6ddd8;border-radius:10px;
-                            padding:16px 20px;">
-                  <p style="margin:0;font-size:14px;color:#1c1916;font-weight:600;">
-                    📎 Start-Right-Interior-Kit.pdf
+                <td style="background:#f0faf0;border:2px solid #3a9e3a;border-radius:12px;
+                            padding:22px 24px;text-align:center;">
+                  <p style="margin:0 0 8px;font-size:36px;line-height:1;">📎</p>
+                  <p style="margin:0 0 6px;font-size:17px;font-weight:700;color:#1c1916;">
+                    guide.pdf is attached to this email
                   </p>
-                  <p style="margin:4px 0 0;font-size:13px;color:#7a6f6a;">
-                    Open the attachment below to access your free guide.
+                  <p style="margin:0;font-size:14px;color:#4a4a4a;line-height:1.65;">
+                    Scroll to the bottom of this email and tap <strong>guide.pdf</strong><br/>
+                    to open and save your kit.
                   </p>
                 </td>
               </tr>
             </table>
 
-            <p style="margin:24px 0 0;font-size:14px;color:#7a6f6a;line-height:1.75;">
-              Inside the kit you'll find everything you need to make confident,
-              cost-effective interior decisions before spending a single rupee. 🏠
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+              style="margin-bottom:20px;">
+              <tr>
+                <td style="background:#fdf5f3;border-left:3px solid #c0442a;
+                            border-radius:0 8px 8px 0;padding:14px 18px;">
+                  <p style="margin:0 0 6px;font-size:13px;font-weight:600;
+                             color:#c0442a;text-transform:uppercase;letter-spacing:.06em;">
+                    Before you open it, remember this:
+                  </p>
+                  <p style="margin:0;font-size:15px;color:#1c1916;line-height:1.7;font-weight:500;">
+                    Most interior regret doesn't happen during execution.<br/>
+                    It happens when decisions are taken in the <em>wrong order.</em>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <p style="margin:0 0 14px;font-size:15px;color:#4a4a4a;line-height:1.78;">
+              Inside this kit, you'll find:
             </p>
 
-            <hr style="border:none;border-top:1px solid #e6ddd8;margin:28px 0 22px;"/>
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+              style="margin-bottom:28px;">
+              <tr><td style="padding:0 0 10px 0;">
+                <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+                  <td style="width:22px;vertical-align:top;padding-top:2px;"><span style="color:#c0442a;font-size:16px;">•</span></td>
+                  <td style="font-size:15px;color:#4a4a4a;line-height:1.65;">The correct decision sequence</td>
+                </tr></table>
+              </td></tr>
+              <tr><td style="padding:0 0 10px 0;">
+                <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+                  <td style="width:22px;vertical-align:top;padding-top:2px;"><span style="color:#c0442a;font-size:16px;">•</span></td>
+                  <td style="font-size:15px;color:#4a4a4a;line-height:1.65;">A structured shopping comparison sheet</td>
+                </tr></table>
+              </td></tr>
+              <tr><td style="padding:0 0 10px 0;">
+                <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+                  <td style="width:22px;vertical-align:top;padding-top:2px;"><span style="color:#c0442a;font-size:16px;">•</span></td>
+                  <td style="font-size:15px;color:#4a4a4a;line-height:1.65;">5 expensive mistakes to avoid</td>
+                </tr></table>
+              </td></tr>
+              <tr><td>
+                <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+                  <td style="width:22px;vertical-align:top;padding-top:2px;"><span style="color:#c0442a;font-size:16px;">•</span></td>
+                  <td style="font-size:15px;color:#4a4a4a;line-height:1.65;">A practical framework to visualise your home properly</td>
+                </tr></table>
+              </td></tr>
+            </table>
+
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+              style="margin-bottom:28px;">
+              <tr>
+                <td style="background:#f9ede9;border-radius:10px;padding:18px 20px;">
+                  <p style="margin:0 0 8px;font-size:14px;color:#4a4a4a;line-height:1.72;">
+                    If you have already taken possession or are starting within the next
+                    3 months and would like structured guidance before spending, reply
+                    to this email with:
+                  </p>
+                  <p style="margin:0;font-size:22px;font-weight:700;color:#c0442a;
+                             letter-spacing:.04em;text-align:center;">
+                    START
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e6ddd8;margin:0 0 20px;"/>
+
+            <p style="margin:0 0 4px;font-size:14px;color:#1c1916;font-weight:600;">— DIY Team</p>
+            <p style="margin:0 0 20px;font-size:13px;color:#7a6f6a;">Structured Interior Guidance</p>
 
             <p style="margin:0 0 6px;font-size:12.5px;color:#a89e99;text-align:center;">
-              📬 Can't find this email? Check your <strong>Spam</strong> or
-              <strong>Promotions</strong> folder.
+              📬 Can't find this email? Check your <strong>Spam</strong> or <strong>Promotions</strong> folder.
             </p>
             <p style="margin:0;font-size:11.5px;color:#c0b6b1;text-align:center;">
               © ${new Date().getFullYear()} DIY Interiors · You requested this free kit.
@@ -131,7 +189,7 @@ async function sendKitEmail(toEmail, toName) {
 
     attachments: pdfExists
       ? [{
-          filename: 'Start-Right-Interior-Kit.pdf',
+          filename: 'guide.pdf',
           content:  fs.readFileSync(pdfPath).toString('base64'),
           type:     'application/pdf',
         }]
@@ -174,16 +232,18 @@ export async function POST(request) {
     await connectDB();
 
     const normalizedEmail = email.trim().toLowerCase();
-    const existing = await Lead.findOne({ email: normalizedEmail });
+    const cleanMobile     = mobile.replace(/[\s\-()]/g, '');
+    const existing        = await Lead.findOne({ email: normalizedEmail });
+
     let emailSent = false;
 
     if (!existing) {
       const newLead = await Lead.create({
         fullName: fullName.trim(),
-        email: normalizedEmail,
-        mobile: mobile.replace(/[\s\-()]/g, ''),
+        email:    normalizedEmail,
+        mobile:   cleanMobile,
         possessionStatus,
-        city: city?.trim() || '',
+        city:     city?.trim() || '',
       });
       console.log(`💾 Lead saved: ${normalizedEmail}`);
 
@@ -194,8 +254,9 @@ export async function POST(request) {
       } catch (emailErr) {
         console.error('⚠️ Email failed:', emailErr.message);
       }
+
     } else {
-      console.log(`ℹ️ Duplicate: ${normalizedEmail} — resending email`);
+      console.log(`ℹ️ Duplicate: ${normalizedEmail} — resending`);
       try {
         await sendKitEmail(normalizedEmail, existing.fullName);
         emailSent = true;

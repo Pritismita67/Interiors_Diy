@@ -13,10 +13,11 @@ export default function Templates() {
   return (
    <>
    <Browse />
+   <Yellow />
    <Budget />
    <Refresh />
    <Kitchen />
-   <Yellow />
+   
    <Proven />
    <Help />
    <Footer />

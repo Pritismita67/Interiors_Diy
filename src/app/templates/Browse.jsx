@@ -1,7 +1,16 @@
+'use client';
+
 import React from 'react';
 import './Browse.css';
 
 const Browse = () => {
+  const handleBrowseClick = () => {
+    const yellowSection = document.getElementById('templates-section');
+    if (yellowSection) {
+      yellowSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section className="browse-section">
       <div className="browse-overlay"></div>
@@ -13,14 +22,12 @@ const Browse = () => {
         <p className="browse-description">
           Sometimes, all you need is a proven template and the confidence to execute it yourself.
         </p>
-        <a 
-          href="https://api.whatsapp.com/send?phone=917710051499" 
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
           className="browse-button"
+          onClick={handleBrowseClick}
         >
           Browse Templates
-        </a>
+        </button>
       </div>
     </section>
   );

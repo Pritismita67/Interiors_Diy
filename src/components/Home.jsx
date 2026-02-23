@@ -1,6 +1,15 @@
+'use client';
+
 import './Home.css';
 
 const Home = () => {
+  const handleStartClick = () => {
+    const whatSection = document.getElementById('what-section');
+    if (whatSection) {
+      whatSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="home">
       <section className="hero-section">
@@ -16,14 +25,12 @@ const Home = () => {
             Professional design. Your execution.{' '}
             <br />Your budget.
           </p>
-          <a 
-            href="https://api.whatsapp.com/send?phone=917710051499" 
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
             className="cta-button"
+            onClick={handleStartClick}
           >
             Start Your Journey
-          </a>
+          </button>
         </div>
       </section>
     </div>
